@@ -34,20 +34,4 @@ python3 skill/scripts/validate.py result --case examples/minimal/run/input/case.
 
 `result.example.json` 是示意输出；不得复制成真实运行结果。完整操作和恢复规则见示例 README。
 
-## 方法与验证
-
-v0.3.0 新增原子断言与证据情境绑定、原始要求和六类交付审计、可恢复批量记账。机制能检查记录矛盾和缺口，不能认证科学语义。
-
-本地 89 项回归通过。三个新合成案例×三组共 9 次全部交付：新版科学可答要求完整且正确为 14/14，旧版与无 Skill 各为 13/14；差异来自局部证据限定措辞，三组核心计算均正确。新版结果写出耗时仍更长，不能宣称整体提速。样本较小，未验证真实文献真实性、统计显著性或官方得分。
-
-[评分导向优化报告](docs/SCORE_OPTIMIZATION-v0.3.0.md) 逐条映射全部 16 个评分细项；[评估材料说明](evaluation/README.md) 解释公开证据与原始记录的边界。
-
-```sh
-python3 -m unittest discover -s tests -v
-python3 skill/scripts/validate.py package --path skill
-python3 scripts/check_release.py
-python3 build_package.py
-```
-
-发布材料中的输入、模板与原始输出都已标明合成属性。使用真实来源时遵循其访问及使用条件；凭据不写入记录。来源见 [第三方说明](skill/THIRD_PARTY_NOTICES.txt)。本次整理没有替作者选择项目开源许可证；上游 MIT/Apache 标签仅描述设计参考，不能作为本项目许可证。
 
