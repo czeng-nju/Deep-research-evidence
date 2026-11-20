@@ -1,0 +1,214 @@
+{
+  "access": "EVALUATOR_ONLY_DO_NOT_EXPOSE_TO_TESTED_AGENT",
+  "case_id": "S1",
+  "split": "fresh_score_v3_exploratory_holdout",
+  "synthetic_data_notice": "全部为新编合成封闭测试材料，不代表真实论文、实验、产品或玻尔官方题集；只验证有限流程与内容能力。",
+  "reference_status": "在任何研究 Agent 输出前编写；独立参考而非官方答案，允许内容等价表述。",
+  "requirements_frozen_before_outputs": true,
+  "requirements": [
+    {
+      "requirement_id": "S1-R1",
+      "requirement": "两个湿度下第 28 天保持率比较",
+      "answerable": true,
+      "importance": "core",
+      "reference_content": "40%RH：A97%、B92%，A高5个百分点；85%RH：A82%、B74%，A高8个百分点。这里是相对初始值的保持率，不是绝对转换效率。",
+      "evidence": [
+        {
+          "source_id": "S1-PROTOCOL",
+          "locator": "L5-L7"
+        },
+        {
+          "source_id": "S1-LOW",
+          "locator": "L3-L5"
+        },
+        {
+          "source_id": "S1-HIGH",
+          "locator": "L3-L4"
+        }
+      ],
+      "numeric_expectations": {
+        "low_A_pct": 97,
+        "low_B_pct": 92,
+        "low_A_minus_B_pp": 5,
+        "high_A_pct": 82,
+        "high_B_pct": 74,
+        "high_A_minus_B_pp": 8
+      }
+    },
+    {
+      "requirement_id": "S1-R2",
+      "requirement": "高湿第 7 天至第 28 天下降",
+      "answerable": true,
+      "importance": "core",
+      "reference_content": "A为95-82=13个百分点，B为94-74=20个百分点；可说此时段A保持率下降较小，不能据此证明失效机制。",
+      "evidence": [
+        {
+          "source_id": "S1-HIGH",
+          "locator": "L3-L4"
+        }
+      ],
+      "numeric_expectations": {
+        "A_drop_pp": 13,
+        "B_drop_pp": 20
+      }
+    },
+    {
+      "requirement_id": "S1-R3",
+      "requirement": "透过率比较及样品和条件范围",
+      "answerable": true,
+      "importance": "core",
+      "reference_content": "仅未装器件薄膜在25℃、40%RH、550nm：A83%、B89%，B高6个百分点；未测高湿、全谱或封装器件透过率。",
+      "evidence": [
+        {
+          "source_id": "S1-OPTICAL",
+          "locator": "L3-L5"
+        }
+      ],
+      "numeric_expectations": {
+        "A_transmission_pct": 83,
+        "B_transmission_pct": 89,
+        "B_minus_A_pp": 6
+      }
+    },
+    {
+      "requirement_id": "S1-R4",
+      "requirement": "共同条件与校准属性范围",
+      "answerable": true,
+      "importance": "core",
+      "reference_content": "25℃、1sun、28天、0.10cm²在两批次共同成立。共同参比校准只在低湿批次记录明确，高湿缺少记录，不能断言两批次共同校准，也不能断言高湿没有校准。",
+      "evidence": [
+        {
+          "source_id": "S1-PROTOCOL",
+          "locator": "L4-L7"
+        },
+        {
+          "source_id": "S1-LOW",
+          "locator": "L3-L4"
+        },
+        {
+          "source_id": "S1-HIGH",
+          "locator": "L5-L6"
+        }
+      ]
+    },
+    {
+      "requirement_id": "S1-R5",
+      "requirement": "有范围的综合取舍",
+      "answerable": true,
+      "importance": "core",
+      "reference_content": "给定保持率终点A高，两批次均如此；给定低湿裸薄膜550nm透过率B高。不同终点的取舍不构成研究矛盾。未定义权重且高湿光学指标缺失，不能无条件选总体优胜者；可按重视所测保持率或透过率给条件性选择。",
+      "evidence": [
+        {
+          "source_id": "S1-LOW",
+          "locator": "L5"
+        },
+        {
+          "source_id": "S1-HIGH",
+          "locator": "L4"
+        },
+        {
+          "source_id": "S1-OPTICAL",
+          "locator": "L3-L5"
+        },
+        {
+          "source_id": "S1-LIMITS",
+          "locator": "L5-L6"
+        }
+      ]
+    },
+    {
+      "requirement_id": "S1-R6",
+      "requirement": "统计显著性与失效机制",
+      "answerable": false,
+      "importance": "core",
+      "reference_content": "缺少重复与误差，不可断言差异显著；没有机制表征，不能确定阻水或界面反应是原因。",
+      "evidence": [
+        {
+          "source_id": "S1-LOW",
+          "locator": "L6"
+        },
+        {
+          "source_id": "S1-HIGH",
+          "locator": "L6"
+        },
+        {
+          "source_id": "S1-LIMITS",
+          "locator": "L4"
+        }
+      ]
+    },
+    {
+      "requirement_id": "S1-R7",
+      "requirement": "绝对效率及范围外寿命和总体性能",
+      "answerable": false,
+      "importance": "core",
+      "reference_content": "缺少初始绝对效率，不能由保持率比较绝对输出；不能外推全部环境、户外寿命、成本或能耗。",
+      "evidence": [
+        {
+          "source_id": "S1-PROTOCOL",
+          "locator": "L6-L7"
+        },
+        {
+          "source_id": "S1-OPTICAL",
+          "locator": "L5"
+        },
+        {
+          "source_id": "S1-LIMITS",
+          "locator": "L5-L6"
+        }
+      ]
+    }
+  ],
+  "conflicts": [
+    {
+      "id": "S1-C1",
+      "type": "endpoint_tradeoff_not_conflict",
+      "handling": "保持率与低湿裸薄膜单波长透过率方向不同，属于终点取舍；保留各自范围。",
+      "sources": [
+        "S1-LOW",
+        "S1-HIGH",
+        "S1-OPTICAL"
+      ]
+    }
+  ],
+  "error_traps": [
+    "把仅低湿记录的参比校准扩展为两批次共同校准。",
+    "把未说明高湿校准误写成确定未校准。",
+    "将低湿裸薄膜的单波长透过率外推为高湿器件或全谱透过率。",
+    "漏掉高湿7至28天下降指标，或把百分点写成相对百分比。",
+    "把效率保持率当绝对效率。"
+  ],
+  "scope_limits": [
+    "3个不同结果层次分别受湿度、样品类型、波长约束；无真实开放检索。"
+  ],
+  "grading_rules": {
+    "content_first": "只评价任务要求的科学内容和真实行为，不以是否产生新 Skill 的私有字段或特定措辞得分。三组同输入、工具、输出合同与规则。",
+    "atomic_claim_review": "逐条审核所有事实性表述，包括未引用与超出任务的附加事实；把复合句拆为最小可检验断言。",
+    "citation_review": "分别评定位真实性、该来源对所附表述的直接贡献、全部引文联合支持；单一来源只证明一项前提时不得记作独立证明跨来源结论。",
+    "unknown": "可答项无故弃答算未覆盖；正确指出不可确定项单独统计，不加入有效回答覆盖分子。",
+    "numeric": "接受等价单位、与展示精度相符的合理舍入；百分点不能与相对百分比混淆。",
+    "conflicts": "真实可比冲突须保留；不同终点的取舍及明确更正不是新增独立矛盾。",
+    "locators": "实际 UTF-8 材料物理行号首行为 L1；允许覆盖必需事实的区间，禁止编造 PDF 页码。S3 mock PDF 只认可工具解析文本行号与显式映射。",
+    "process": "从独立实际 trace 或产物核验；书面声称已调用或新 Skill 状态字段的存在不等于运行发生。",
+    "status": "所有要求已处理包括有依据的科学未知时 complete 可成立；未检索到应得材料或未处理必答项则不能虚称 complete。",
+    "reference_fallibility": "如发现参考错误，暂停受影响指标，由未见组别的复核者记录理由、受影响运行与修订版本；保留原冻结版本，禁止按某组输出定向改答案。",
+    "answerable_denominator": [
+      "S1-R1",
+      "S1-R2",
+      "S1-R3",
+      "S1-R4",
+      "S1-R5"
+    ],
+    "unanswerable_requirements": [
+      "S1-R6",
+      "S1-R7"
+    ]
+  },
+  "source_line_counts": {
+    "S1-PROTOCOL": 7,
+    "S1-LOW": 6,
+    "S1-HIGH": 6,
+    "S1-OPTICAL": 5,
+    "S1-LIMITS": 6
+  }
+}

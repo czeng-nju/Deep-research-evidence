@@ -1,0 +1,15 @@
+Design references only; their repository code is not bundled or imported.
+
+User-supplied deep-research-evidence.skill is the method baseline.
+Baseline SHA-256: 05de57bc403dc1797255929bfac424ce82f4d02826b7990628d70cffd966d00f
+
+bytedance/deer-flow, MIT, revision 585abb979fbc483485c0fc53ed0e571ab7eebadb
+hilzlzl/reliable-deep-research, MIT, revision 4264a1ec6fe9ee068904dca08031404fd1025ac0
+Future-House/paper-qa, Apache-2.0, revision c692d0dfeac4a0296599f7fe21a253a58b7ac12a
+assafelovic/gpt-researcher, Apache-2.0, revision ddd4db36208d9c8e49f3b2436efda97baecb5433
+usnistgov/agentic-research-evaluation-probes, NIST public-service software notice,
+revision 1395538ae32e49477bcf5f57f54ba4b01ed24f6a
+
+These labels refer to the inspected upstream repository declarations. No claim is
+made about all transitive dependency licenses. No third-party runtimes or models
+are needed by the bundled standard-library helpers.

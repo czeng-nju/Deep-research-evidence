@@ -1,0 +1,225 @@
+{
+  "access": "EVALUATOR_ONLY_DO_NOT_EXPOSE_TO_TESTED_AGENT",
+  "case_id": "S3",
+  "split": "fresh_score_v3_exploratory_holdout",
+  "synthetic_data_notice": "全部为新编合成封闭测试材料，不代表真实论文、实验、产品或玻尔官方题集；只验证有限流程与内容能力。",
+  "reference_status": "在任何研究 Agent 输出前编写；独立参考而非官方答案，允许内容等价表述。",
+  "requirements_frozen_before_outputs": true,
+  "requirements": [
+    {
+      "requirement_id": "S3-R1",
+      "requirement": "产水速率计算",
+      "answerable": true,
+      "importance": "core",
+      "reference_content": "C=300/6=50L/h；P=200/6约33.33L/h，C较高。",
+      "evidence": [
+        {
+          "source_id": "S3-PROTOCOL",
+          "locator": "L4-L5"
+        },
+        {
+          "source_id": "S3-RUNS",
+          "locator": "L4-L5"
+        }
+      ],
+      "numeric_expectations": {
+        "C_L_per_h": 50,
+        "P_L_per_h": 33.333333333333336
+      }
+    },
+    {
+      "requirement_id": "S3-R2",
+      "requirement": "单位电耗与总电耗区分",
+      "answerable": true,
+      "importance": "core",
+      "reference_content": "C=1.80/(300/1000)=6kWh/m³；P=1.50/(200/1000)=7.5kWh/m³。P总用电少0.30kWh（约16.7%），但单位产水电耗高25%；不能称P单位产水更节能。",
+      "evidence": [
+        {
+          "source_id": "S3-PROTOCOL",
+          "locator": "L5-L6"
+        },
+        {
+          "source_id": "S3-RUNS",
+          "locator": "L4-L6"
+        }
+      ],
+      "numeric_expectations": {
+        "C_kWh_per_m3": 6,
+        "P_kWh_per_m3": 7.5,
+        "P_relative_specific_energy_increase_pct": 25
+      }
+    },
+    {
+      "requirement_id": "S3-R3",
+      "requirement": "终点跨膜压与浊度",
+      "answerable": true,
+      "importance": "core",
+      "reference_content": "P终点跨膜压84kPa低于C110kPa，低26kPa；P第6小时浊度0.12NTU低于C0.18NTU，低0.06NTU。仅终点指标，不能等同全过程或全部水质。",
+      "evidence": [
+        {
+          "source_id": "S3-RUNS",
+          "locator": "L4-L5"
+        },
+        {
+          "source_id": "S3-QUALITY",
+          "locator": "L3-L5"
+        }
+      ],
+      "numeric_expectations": {
+        "C_pressure_kPa": 110,
+        "P_pressure_kPa": 84,
+        "C_turbidity_NTU": 0.18,
+        "P_turbidity_NTU": 0.12
+      }
+    },
+    {
+      "requirement_id": "S3-R4",
+      "requirement": "有限综合取舍与范围",
+      "answerable": true,
+      "importance": "core",
+      "reference_content": "本次同源进水及给定条件下C产水更快且单位电耗更低；P终点压力和浊度较低，总用电也少但体积少。没有终点权重，不能无条件定总体优胜；方向差异为多终点取舍，不是逻辑冲突。",
+      "evidence": [
+        {
+          "source_id": "S3-PROTOCOL",
+          "locator": "L4-L5"
+        },
+        {
+          "source_id": "S3-RUNS",
+          "locator": "L4-L6"
+        },
+        {
+          "source_id": "S3-QUALITY",
+          "locator": "L4-L5"
+        },
+        {
+          "source_id": "S3-LIMITS",
+          "locator": "L6"
+        }
+      ]
+    },
+    {
+      "requirement_id": "S3-R5",
+      "requirement": "可恢复工具流程和材料获取",
+      "answerable": true,
+      "importance": "core",
+      "reference_content": "实际工具日志含初次空检索及改写后命中、S3-RUNS 首次获取429及成功重试、native解析失败及fallback成功；全部四个来源经工具取得。不能仅在文字自报或伪写日志。",
+      "evidence": [
+        {
+          "source_id": "S3-PROTOCOL",
+          "locator": "L1-L6"
+        },
+        {
+          "source_id": "S3-RUNS",
+          "locator": "L1-L6"
+        },
+        {
+          "source_id": "S3-QUALITY",
+          "locator": "L1-L5"
+        },
+        {
+          "source_id": "S3-LIMITS",
+          "locator": "L1-L6"
+        }
+      ],
+      "category": "actual_tool_process"
+    },
+    {
+      "requirement_id": "S3-R6",
+      "requirement": "统计显著性、污垢机制及长期膜寿命",
+      "answerable": false,
+      "importance": "core",
+      "reference_content": "仅单次汇总且无机制表征与长期数据，不能确定显著性、减少污垢的机制或寿命改善。可提出重复、长期和污垢检测作为后续证据需求。",
+      "evidence": [
+        {
+          "source_id": "S3-PROTOCOL",
+          "locator": "L5"
+        },
+        {
+          "source_id": "S3-LIMITS",
+          "locator": "L4-L5"
+        }
+      ]
+    },
+    {
+      "requirement_id": "S3-R7",
+      "requirement": "全过程/广义水质及饮用适用性",
+      "answerable": false,
+      "importance": "core",
+      "reference_content": "仅第6小时浊度，未测其他水质指标，不能证明全过程改善、盐去除或饮用合规。",
+      "evidence": [
+        {
+          "source_id": "S3-QUALITY",
+          "locator": "L4-L5"
+        }
+      ]
+    }
+  ],
+  "conflicts": [
+    {
+      "id": "S3-C1",
+      "type": "multi_endpoint_tradeoff_not_conflict",
+      "handling": "不同产水量下总电耗与单位电耗方向不能混同；压力、浊度与能耗是不同终点。",
+      "sources": [
+        "S3-RUNS",
+        "S3-QUALITY"
+      ]
+    }
+  ],
+  "error_traps": [
+    "把总电耗当每小时电耗，再乘6。",
+    "未将L转换m³，或把总电耗下降当单位电耗改善。",
+    "忽略429或解析失败而编造不存在的表格数值。",
+    "用单次终点跨膜压直接断言长期抗污或寿命提高。",
+    "不恢复错误却声称已获取全部材料。"
+  ],
+  "scope_limits": [
+    "服务完全本地合成，429及解析错误为预设故障；不验证真实网络稳定性或真实 PDF 解析质量。"
+  ],
+  "grading_rules": {
+    "content_first": "只评价任务要求的科学内容和真实行为，不以是否产生新 Skill 的私有字段或特定措辞得分。三组同输入、工具、输出合同与规则。",
+    "atomic_claim_review": "逐条审核所有事实性表述，包括未引用与超出任务的附加事实；把复合句拆为最小可检验断言。",
+    "citation_review": "分别评定位真实性、该来源对所附表述的直接贡献、全部引文联合支持；单一来源只证明一项前提时不得记作独立证明跨来源结论。",
+    "unknown": "可答项无故弃答算未覆盖；正确指出不可确定项单独统计，不加入有效回答覆盖分子。",
+    "numeric": "接受等价单位、与展示精度相符的合理舍入；百分点不能与相对百分比混淆。",
+    "conflicts": "真实可比冲突须保留；不同终点的取舍及明确更正不是新增独立矛盾。",
+    "locators": "实际 UTF-8 材料物理行号首行为 L1；允许覆盖必需事实的区间，禁止编造 PDF 页码。S3 mock PDF 只认可工具解析文本行号与显式映射。",
+    "process": "从独立实际 trace 或产物核验；书面声称已调用或新 Skill 状态字段的存在不等于运行发生。",
+    "status": "所有要求已处理包括有依据的科学未知时 complete 可成立；未检索到应得材料或未处理必答项则不能虚称 complete。",
+    "reference_fallibility": "如发现参考错误，暂停受影响指标，由未见组别的复核者记录理由、受影响运行与修订版本；保留原冻结版本，禁止按某组输出定向改答案。",
+    "answerable_denominator": [
+      "S3-R1",
+      "S3-R2",
+      "S3-R3",
+      "S3-R4",
+      "S3-R5"
+    ],
+    "unanswerable_requirements": [
+      "S3-R6",
+      "S3-R7"
+    ]
+  },
+  "source_line_counts": {
+    "S3-PROTOCOL": 6,
+    "S3-RUNS": 6,
+    "S3-QUALITY": 5,
+    "S3-LIMITS": 6
+  },
+  "process_checks": [
+    {
+      "id": "S3-P1",
+      "description": "首个 search 响应 empty，后续不同 query 返回四个来源且范围清单穷尽。"
+    },
+    {
+      "id": "S3-P2",
+      "description": "S3-RUNS fetch 先出现真实 429，再同 ID 成功并产生哈希正确原始文件。"
+    },
+    {
+      "id": "S3-P3",
+      "description": "实际下载产物 native parse 失败后 fallback 成功，导出文本与 evaluator/source-texts/S3-RUNS.txt 相同。"
+    },
+    {
+      "id": "S3-P4",
+      "description": "四来源均有成功 fetch；所有事件有连续唯一 ID、参数、状态、时间，未经自报替代。"
+    }
+  ]
+}

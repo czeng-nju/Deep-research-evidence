@@ -1,0 +1,19 @@
+{
+  "test_kind": "deterministic_example_interface_check_not_agent_run",
+  "skill_version": "0.3.0",
+  "example_contract_validation_exit_code": 0,
+  "evidence_rows_locator_checked": 6,
+  "excerpt_matches": 2,
+  "difference_check": "9 - 6 = 3 mg/L",
+  "prepare_inputs_match": true,
+  "prepared_files": [
+    "case.json",
+    "materials/filter-a.txt",
+    "materials/filter-b.txt",
+    "task.md"
+  ],
+  "prepared_result_or_state": false,
+  "repeat_prepare_exit_code": 2,
+  "research_agents_run": 0,
+  "limits": "Checks the illustrative output format, locators and simple arithmetic; not a research performance benchmark."
+}

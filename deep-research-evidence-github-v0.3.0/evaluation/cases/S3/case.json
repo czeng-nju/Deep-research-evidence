@@ -1,0 +1,103 @@
+{
+  "case_id": "S3",
+  "question": "使用给定的本地检索工具查找项目“岚泉微滤 / LSMF”的材料，对连续运行 C 与脉冲运行 P 做六小时比较。计算各自平均产水速率（L/h）与单位产水电耗（kWh/m³），指出总电耗较少是否代表更节能；比较终点跨膜压与产水浊度。给出有限的运行取舍，并说明统计显著性、污垢机制、长期膜寿命及水质范围方面的未知。工具可能出现空检索、限流与解析失败，请按工具接口完成可恢复处理并保留真实日志，每个关键结论指向实际获取文本行号。",
+  "source_scope": "closed_mock_retrieval",
+  "synthetic_data_notice": "全部为新编合成封闭测试材料，不代表真实论文、实验、产品或玻尔官方题集；只验证有限流程与内容能力。",
+  "materials": [
+    {
+      "source_id": "S3-PROTOCOL",
+      "title": "LSMF 六小时微滤试验协议",
+      "synthetic": true
+    },
+    {
+      "source_id": "S3-RUNS",
+      "title": "LSMF 运行计量表的模拟解析文本",
+      "synthetic": true
+    },
+    {
+      "source_id": "S3-QUALITY",
+      "title": "LSMF 终点水质记录",
+      "synthetic": true
+    },
+    {
+      "source_id": "S3-LIMITS",
+      "title": "LSMF 数据边界",
+      "synthetic": true
+    }
+  ],
+  "output_contract": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "SyntheticClosedResearchResult",
+    "type": "object",
+    "required": [
+      "case_id",
+      "status",
+      "answer",
+      "evidence",
+      "uncertainty"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "case_id": {
+        "type": "string"
+      },
+      "status": {
+        "type": "string",
+        "enum": [
+          "complete",
+          "partial",
+          "blocked"
+        ],
+        "description": "complete 表示已按任务要求交代全部问题，包括有依据的不可确定项；partial 表示仍有未完成处理的必答部分；blocked 表示无法开展实质处理。"
+      },
+      "answer": {
+        "type": "string",
+        "description": "直接回答任务的中文文本；表达和组织自由，数值结论注明单位与必要计算。"
+      },
+      "evidence": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "source_id",
+            "locator",
+            "supports"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "source_id": {
+              "type": "string"
+            },
+            "locator": {
+              "type": "string",
+              "description": "材料实际文件行号，如 L4-L6；可附 P 段落标记。"
+            },
+            "supports": {
+              "type": "string",
+              "description": "该定位支持、限定或反对的具体表述。"
+            },
+            "excerpt": {
+              "type": "string",
+              "description": "可选的原文短引。"
+            }
+          }
+        }
+      },
+      "uncertainty": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "尚不能确定的结论、原因和适用限制；没有未解决项时为空数组。"
+      }
+    }
+  },
+  "instructions": {
+    "source_boundary": "只通过 materials/tool-interface.md 中的本地 service.py 工具检索、获取和解析材料；不要读取 service.py 源码或 corpus 目录。不访问外部网络或 evaluator。",
+    "locator_rule": "实际文本文件物理行号，自 source_id 首行 L1 开始。",
+    "output_file": "result.json",
+    "style": "中文直接回答，附具体定位；内部工作形式自由，不要求使用任何 Skill 私有状态字段。",
+    "workflow": "在 work/ 中保留简短的子问题及依赖、检索覆盖与停止理由、实际工具调用及产物路径、证据对应、冲突处置、结论与研究空白。可合并为 research-notes.md；原始工具日志可独立保留。"
+  },
+  "tool_entrypoint": "materials/tool-interface.md"
+}

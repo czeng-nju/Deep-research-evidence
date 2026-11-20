@@ -1,0 +1,1261 @@
+{
+  "candidate_id": "candidate-2a86b45406",
+  "case_id": "S3",
+  "review_complete": true,
+  "all_factual_statements_reviewed": true,
+  "all_citations_reviewed": true,
+  "requirements": [
+    {
+      "requirement_id": "S3-R1",
+      "answerable": true,
+      "category": "scientific_content",
+      "coverage": "complete",
+      "correctness": "correct",
+      "output_excerpt": "C：300 L ÷ 6 h = 50 L/h；1.80 kWh ÷ 0.300 m³ = 6.0 kWh/m³。",
+      "rationale": "S3-RUNS L4-L5 给出 C 300 L、P 200 L，均 6 h（PROTOCOL L5）；正文分别算 50 与 33.33 L/h 并说明单次汇总，覆盖两模式与单位。"
+    },
+    {
+      "requirement_id": "S3-R2",
+      "answerable": true,
+      "category": "scientific_content",
+      "coverage": "complete",
+      "correctness": "correct",
+      "output_excerpt": "P 六小时总用电比 C 少 0.30 kWh，但同时少产水 100 L；P 每立方米用电反而多 1.5 kWh，即相对 C 高 25%。",
+      "rationale": "1.80/(300/1000)=6、1.50/(200/1000)=7.5 kWh/m³；正确使用整段电量，P 总量少 0.30 kWh 但单位电耗高 25%。无把总电耗误当功率或漏 L→m³。"
+    },
+    {
+      "requirement_id": "S3-R3",
+      "answerable": true,
+      "category": "scientific_content",
+      "coverage": "complete",
+      "correctness": "correct",
+      "output_excerpt": "终点跨膜压：C 为 110 kPa，P 为 84 kPa，P 低 26 kPa。",
+      "rationale": "正文完整给出 C/P 终点压 110/84 kPa、差 26；第六小时浊度 0.18/0.12 NTU、差 0.06。RUNS L4-L5、QUALITY L3-L5 支持，未把终点当全程。"
+    },
+    {
+      "requirement_id": "S3-R4",
+      "answerable": true,
+      "category": "scientific_content",
+      "coverage": "complete",
+      "correctness": "correct",
+      "output_excerpt": "若优先考虑本次六小时产水量和单位产水电耗，可偏向 C；若优先考虑较低终点跨膜压和终点浊度，并接受较少产水与较高单位产水电耗，可考虑 P。",
+      "rationale": "共同条件回到 PROTOCOL L4-L5；条件式偏好分别对应产能/比能耗与终点压/浊度，承认低总电量同时少产水；LIMITS L6 无综合权重，未指定无条件总体赢家。"
+    },
+    {
+      "requirement_id": "S3-R5",
+      "answerable": true,
+      "category": "actual_tool_process",
+      "coverage": "complete",
+      "correctness": "correct",
+      "output_excerpt": "首次空检索后按提示使用 LSMF 别名重搜；S3-RUNS 遇一次可重试 429 后按 retry_after_seconds=0 重试；native 解析失败后对同一下载文件使用指定 fallback 成功。",
+      "rationale": "已读实际 events：001 空查询→002 不同 LSMF 查询列四来源并 exhaustive；004 同源 fetch 429、retry_after_seconds=0→005 成功；006 native 失败→007 fallback 同 input_sha256 成功；003/005/008/009 四来源成功获取。 九条唯一连续 ID 均有参数、状态与时间；独立核对日志及五个输出 SHA256 与 service-audit 一致，四份文本与冻结源文一致。实际流程 coverage=1/1，独立于科学可答项。"
+    },
+    {
+      "requirement_id": "S3-R6",
+      "answerable": false,
+      "category": "scientific_content",
+      "coverage": "complete",
+      "correctness": "correct",
+      "output_excerpt": "没有重复数大于 1 的实验、离散程度或显著性检验，不能判定差异有统计显著性，也不能据此判定无显著差异；没有拆膜或污垢成分表征，较低终点跨膜压不能证明特定污垢机制或污垢减少。",
+      "rationale": "PROTOCOL L5 与 LIMITS L4-L5 明示单次、无变异/检验、无拆膜/成分、无长期/清洗/寿命等资料；正文对统计显著性、机制和寿命逐项保留有因有界未知。额外经济性缺口也有直接来源。"
+    },
+    {
+      "requirement_id": "S3-R7",
+      "answerable": false,
+      "category": "scientific_content",
+      "coverage": "complete",
+      "correctness": "correct",
+      "output_excerpt": "未测微生物、溶解有机物、盐截留率或全过程平均浊度，不能把终点浊度较低扩展为整体水质更优或饮用水达标；",
+      "rationale": "QUALITY L4-L5 只给第六小时浊度且列出其他未测终点，正文和 uncertainty 明确不能推断全过程平均、整体水质或饮用水达标；盐截留未测亦正确保留。"
+    }
+  ],
+  "atomic_claims": [
+    {
+      "text": "材料为人工合成的封闭测试材料。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "task/case.json synthetic_data_notice",
+        "S3-PROTOCOL L3",
+        "S3-RUNS L3",
+        "S3-QUALITY L3",
+        "S3-LIMITS L3"
+      ],
+      "scope_error": false,
+      "rationale": "正文合成声明与任务、四份来源均一致。",
+      "claim_id": "S3-A001"
+    },
+    {
+      "text": "项目别名为岚泉微滤、LanSpray-MF、LSMF。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-PROTOCOL L3"
+      ],
+      "scope_error": false,
+      "rationale": "各 evidence.supports 提及项目别名；其 excerpt 所列三个名称与 L3 一致。",
+      "claim_id": "S3-A002"
+    },
+    {
+      "text": "C 为连续运行。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-PROTOCOL L4"
+      ],
+      "scope_error": false,
+      "rationale": "正文和协议定义一致；该定义不能从数字本身推出，但已提供协议。",
+      "claim_id": "S3-A003"
+    },
+    {
+      "text": "P 为脉冲运行。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-PROTOCOL L4"
+      ],
+      "scope_error": false,
+      "rationale": "正文和协议定义一致，没有另行添加占空比或脉冲参数。",
+      "claim_id": "S3-A004"
+    },
+    {
+      "text": "C/P 使用同源进水。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-PROTOCOL L4"
+      ],
+      "scope_error": false,
+      "rationale": "共同进水属性明确同时适用于两模式。",
+      "claim_id": "S3-A005"
+    },
+    {
+      "text": "进水温度为 20 ℃。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-PROTOCOL L4"
+      ],
+      "scope_error": false,
+      "rationale": "温度只限当前 C/P 进水，不外推其他温度。",
+      "claim_id": "S3-A006"
+    },
+    {
+      "text": "进水盐度为 0.5 g/L。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-PROTOCOL L4"
+      ],
+      "scope_error": false,
+      "rationale": "盐度单位和数值正确。",
+      "claim_id": "S3-A007"
+    },
+    {
+      "text": "C 的膜面积为 0.20 m²。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-PROTOCOL L5"
+      ],
+      "scope_error": false,
+      "rationale": "“膜面积均”明确覆盖 C。",
+      "claim_id": "S3-A008"
+    },
+    {
+      "text": "P 的膜面积为 0.20 m²。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-PROTOCOL L5"
+      ],
+      "scope_error": false,
+      "rationale": "“膜面积均”明确覆盖 P。",
+      "claim_id": "S3-A009"
+    },
+    {
+      "text": "C 运行时间为 6 小时。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-PROTOCOL L5",
+        "S3-RUNS L4"
+      ],
+      "scope_error": false,
+      "rationale": "协议与计量均给出 C 的六小时时段。",
+      "claim_id": "S3-A010"
+    },
+    {
+      "text": "P 运行时间为 6 小时。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-PROTOCOL L5",
+        "S3-RUNS L5"
+      ],
+      "scope_error": false,
+      "rationale": "协议与计量均给出 P 的六小时时段。",
+      "claim_id": "S3-A011"
+    },
+    {
+      "text": "C 只有单次运行汇总。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-PROTOCOL L5",
+        "S3-QUALITY L3"
+      ],
+      "scope_error": false,
+      "rationale": "“各为单次”源于设计声明。",
+      "claim_id": "S3-A012"
+    },
+    {
+      "text": "P 只有单次运行汇总。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-PROTOCOL L5",
+        "S3-QUALITY L3"
+      ],
+      "scope_error": false,
+      "rationale": "“各为单次”源于设计声明。",
+      "claim_id": "S3-A013"
+    },
+    {
+      "text": "不是重复试验均值。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-PROTOCOL L5"
+      ],
+      "scope_error": false,
+      "rationale": "原文直接说明不是重复试验平均；正文未把六小时平均混为重复均值。",
+      "claim_id": "S3-A014"
+    },
+    {
+      "text": "平均产水速率 = 累计产水量 ÷ 6 h。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-PROTOCOL L5",
+        "S3-RUNS L4-L5"
+      ],
+      "scope_error": false,
+      "rationale": "对整段六小时产水量按时间归一，量纲为 L/h。",
+      "claim_id": "S3-A015"
+    },
+    {
+      "text": "单位产水电耗 = 整段总电耗 ÷ 实际产水体积。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-PROTOCOL L6",
+        "S3-RUNS L6"
+      ],
+      "scope_error": false,
+      "rationale": "按任务要求实际产水量归一，电量定义来自 RUNS L6。",
+      "claim_id": "S3-A016"
+    },
+    {
+      "text": "1 m³ = 1000 L，L 换为 m³ 时除以 1000。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-PROTOCOL L6"
+      ],
+      "scope_error": false,
+      "rationale": "换算直接载于协议且量纲正确。",
+      "claim_id": "S3-A017"
+    },
+    {
+      "text": "电表增量是整段总用电量，不是每小时电耗。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-RUNS L6"
+      ],
+      "scope_error": false,
+      "rationale": "原文明确排除每小时电耗口径，正文没有再乘六。",
+      "claim_id": "S3-A018"
+    },
+    {
+      "text": "C 六小时累计产水 300 L。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-RUNS L4"
+      ],
+      "scope_error": false,
+      "rationale": "数值、对象、时段一致；也审阅 evidence.supports 中同一输入。",
+      "claim_id": "S3-A019"
+    },
+    {
+      "text": "P 六小时累计产水 200 L。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-RUNS L5"
+      ],
+      "scope_error": false,
+      "rationale": "数值、对象、时段一致；也审阅 evidence.supports 中同一输入。",
+      "claim_id": "S3-A020"
+    },
+    {
+      "text": "C 总电耗 1.80 kWh。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-RUNS L4,L6"
+      ],
+      "scope_error": false,
+      "rationale": "L4 电表增量加 L6 总量定义，不是功率或小时电耗。",
+      "claim_id": "S3-A021"
+    },
+    {
+      "text": "P 总电耗 1.50 kWh。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-RUNS L5-L6"
+      ],
+      "scope_error": false,
+      "rationale": "L5 电表增量加 L6 总量定义。",
+      "claim_id": "S3-A022"
+    },
+    {
+      "text": "300 L = 0.300 m³。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-RUNS L4",
+        "S3-PROTOCOL L6"
+      ],
+      "scope_error": false,
+      "rationale": "300/1000=0.300；协议单独给换算，具体试验量来自计量。",
+      "claim_id": "S3-A023"
+    },
+    {
+      "text": "200 L = 0.200 m³。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-RUNS L5",
+        "S3-PROTOCOL L6"
+      ],
+      "scope_error": false,
+      "rationale": "200/1000=0.200；协议单独给换算，具体试验量来自计量。",
+      "claim_id": "S3-A024"
+    },
+    {
+      "text": "C = 300 L ÷ 6 h = 50 L/h。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-RUNS L4",
+        "S3-PROTOCOL L5"
+      ],
+      "scope_error": false,
+      "rationale": "除法、单位及六小时平均范围正确，50.00/50 为等价精度。",
+      "claim_id": "S3-A025"
+    },
+    {
+      "text": "P = 200 L ÷ 6 h ≈ 33.33 L/h。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-RUNS L5",
+        "S3-PROTOCOL L5"
+      ],
+      "scope_error": false,
+      "rationale": "200/6=33.333…，展示舍入正确。",
+      "claim_id": "S3-A026"
+    },
+    {
+      "text": "C = 1.80 kWh ÷ 0.300 m³ = 6.0 kWh/m³。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-RUNS L4,L6",
+        "S3-PROTOCOL L6"
+      ],
+      "scope_error": false,
+      "rationale": "单位体积电耗计算正确；6.00 与 6.0 等价。",
+      "claim_id": "S3-A027"
+    },
+    {
+      "text": "P = 1.50 kWh ÷ 0.200 m³ = 7.5 kWh/m³。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-RUNS L5-L6",
+        "S3-PROTOCOL L6"
+      ],
+      "scope_error": false,
+      "rationale": "单位体积电耗计算正确。",
+      "claim_id": "S3-A028"
+    },
+    {
+      "text": "C 的六小时平均产水速率更高。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-RUNS L4-L5",
+        "S3-PROTOCOL L5"
+      ],
+      "scope_error": false,
+      "rationale": "50>33.33；共同六小时时长使产水量排序与平均流率排序相同。",
+      "claim_id": "S3-A029"
+    },
+    {
+      "text": "P 六小时总用电比 C 少 0.30 kWh。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-RUNS L4-L6"
+      ],
+      "scope_error": false,
+      "rationale": "1.80-1.50=0.30，限定固定时段而非相同产水量。",
+      "claim_id": "S3-A030"
+    },
+    {
+      "text": "P 比 C 少产水 100 L。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-RUNS L4-L5"
+      ],
+      "scope_error": false,
+      "rationale": "300-200=100，比较同为六小时。",
+      "claim_id": "S3-A031"
+    },
+    {
+      "text": "P 每立方米用电比 C 多 1.5 kWh。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-RUNS L4-L6",
+        "S3-PROTOCOL L6"
+      ],
+      "scope_error": false,
+      "rationale": "7.5-6=1.5 kWh/m³。",
+      "claim_id": "S3-A032"
+    },
+    {
+      "text": "P 的单位产水电耗相对 C 高 25%。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-RUNS L4-L6",
+        "S3-PROTOCOL L6"
+      ],
+      "scope_error": false,
+      "rationale": "(7.5-6)/6=25%，基准是 C，不是 25 个百分点。",
+      "claim_id": "S3-A033"
+    },
+    {
+      "text": "总电耗较少不代表按单位产水更节能。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-RUNS L4-L6",
+        "S3-PROTOCOL L6",
+        "S3-LIMITS L6"
+      ],
+      "scope_error": false,
+      "rationale": "产水量不同导致总量与比能耗方向相反；该区分也由 LIMITS 明示。",
+      "claim_id": "S3-A034"
+    },
+    {
+      "text": "本次按单位产水电耗指标 C 更有利。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-RUNS L4-L6",
+        "S3-PROTOCOL L6"
+      ],
+      "scope_error": false,
+      "rationale": "6<7.5，评价只对给定指标，不扩为总体最优。",
+      "claim_id": "S3-A035"
+    },
+    {
+      "text": "C 终点跨膜压为 110 kPa。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-RUNS L4"
+      ],
+      "scope_error": false,
+      "rationale": "模式和单位均一致。",
+      "claim_id": "S3-A036"
+    },
+    {
+      "text": "P 终点跨膜压为 84 kPa。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-RUNS L5"
+      ],
+      "scope_error": false,
+      "rationale": "模式和单位均一致。",
+      "claim_id": "S3-A037"
+    },
+    {
+      "text": "P 终点跨膜压比 C 低 26 kPa。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-RUNS L4-L5"
+      ],
+      "scope_error": false,
+      "rationale": "110-84=26，只是本次终点压力差。",
+      "claim_id": "S3-A038"
+    },
+    {
+      "text": "水质记录与协议采用同一 C/P 单次运行。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-QUALITY L3"
+      ],
+      "scope_error": false,
+      "rationale": "evidence.supports 中的同次属性直接来自水质 L3。",
+      "claim_id": "S3-A039"
+    },
+    {
+      "text": "浊度记录的时间为第 6 小时。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-QUALITY L4"
+      ],
+      "scope_error": false,
+      "rationale": "时间定位明确，不是全过程平均。",
+      "claim_id": "S3-A040"
+    },
+    {
+      "text": "第 6 小时 C 产水浊度为 0.18 NTU。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-QUALITY L4"
+      ],
+      "scope_error": false,
+      "rationale": "对象、终点、单位正确。",
+      "claim_id": "S3-A041"
+    },
+    {
+      "text": "第 6 小时 P 产水浊度为 0.12 NTU。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-QUALITY L4"
+      ],
+      "scope_error": false,
+      "rationale": "对象、终点、单位正确。",
+      "claim_id": "S3-A042"
+    },
+    {
+      "text": "P 第 6 小时产水浊度比 C 低 0.06 NTU。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-QUALITY L4"
+      ],
+      "scope_error": false,
+      "rationale": "0.18-0.12=0.06；没有扩大成全部水质差异。",
+      "claim_id": "S3-A043"
+    },
+    {
+      "text": "若优先六小时产水能力与较低单位产水电耗，可偏向 C。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-PROTOCOL L4-L6",
+        "S3-RUNS L4-L6",
+        "S3-LIMITS L6"
+      ],
+      "scope_error": false,
+      "rationale": "条件式建议有产水和比能耗两个实测前提，局限本次试验。",
+      "claim_id": "S3-A044"
+    },
+    {
+      "text": "若优先较低终点压力与浊度，并接受少产水和较高单位电耗，可考虑 P。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-RUNS L4-L6",
+        "S3-QUALITY L3-L4",
+        "S3-LIMITS L6"
+      ],
+      "scope_error": false,
+      "rationale": "明确列出偏好与代价，未凭单个终点断言全面优越。",
+      "claim_id": "S3-A045"
+    },
+    {
+      "text": "材料未预设产水量、浊度、跨膜压、电耗之间的综合权重。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-LIMITS L6"
+      ],
+      "scope_error": false,
+      "rationale": "四指标权重缺失为原文直接声明。",
+      "claim_id": "S3-A046"
+    },
+    {
+      "text": "不能确定某模式全面最优。",
+      "kind": "unknown",
+      "verdict": "justified_unknown",
+      "evidence_refs": [
+        "S3-LIMITS L6",
+        "S3-RUNS L4-L6",
+        "S3-QUALITY L4"
+      ],
+      "scope_error": false,
+      "rationale": "多终点方向不同且无权重，保留综合排序未知合理。",
+      "claim_id": "S3-A047"
+    },
+    {
+      "text": "没有重复数大于 1 的实验。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-LIMITS L4",
+        "S3-PROTOCOL L5"
+      ],
+      "scope_error": false,
+      "rationale": "描述数据缺口，未把缺重复误写成证明无效。",
+      "claim_id": "S3-A048"
+    },
+    {
+      "text": "没有离散程度数据。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-LIMITS L4"
+      ],
+      "scope_error": false,
+      "rationale": "原文直接声明。",
+      "claim_id": "S3-A049"
+    },
+    {
+      "text": "没有显著性检验。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-LIMITS L4"
+      ],
+      "scope_error": false,
+      "rationale": "原文直接声明；不是检验得出了不显著。",
+      "claim_id": "S3-A050"
+    },
+    {
+      "text": "统计显著性未知，不能把本次差异当作已证实显著差异。",
+      "kind": "unknown",
+      "verdict": "justified_unknown",
+      "evidence_refs": [
+        "S3-LIMITS L4",
+        "S3-PROTOCOL L5"
+      ],
+      "scope_error": false,
+      "rationale": "单次汇总无变异与检验，不支持显著性判断。",
+      "claim_id": "S3-A051"
+    },
+    {
+      "text": "缺少显著性检验也不能证明无显著差异或无差异。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-LIMITS L4"
+      ],
+      "scope_error": false,
+      "rationale": "正确区分未有证据和反向结论被证明。",
+      "claim_id": "S3-A052"
+    },
+    {
+      "text": "没有拆膜表征。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-LIMITS L4"
+      ],
+      "scope_error": false,
+      "rationale": "缺失声明直接支持。",
+      "claim_id": "S3-A053"
+    },
+    {
+      "text": "没有污垢成分表征。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-LIMITS L4"
+      ],
+      "scope_error": false,
+      "rationale": "缺失声明直接支持。",
+      "claim_id": "S3-A054"
+    },
+    {
+      "text": "较低终点跨膜压不足以确定特定污垢机制。",
+      "kind": "unknown",
+      "verdict": "justified_unknown",
+      "evidence_refs": [
+        "S3-RUNS L4-L5",
+        "S3-LIMITS L4"
+      ],
+      "scope_error": false,
+      "rationale": "只测终点压，机制表征缺失；未用压力替代污垢机制。",
+      "claim_id": "S3-A055"
+    },
+    {
+      "text": "没有长期运行数据。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-LIMITS L5"
+      ],
+      "scope_error": false,
+      "rationale": "直接缺失声明。",
+      "claim_id": "S3-A056"
+    },
+    {
+      "text": "没有清洗频次数据。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-LIMITS L5"
+      ],
+      "scope_error": false,
+      "rationale": "直接缺失声明。",
+      "claim_id": "S3-A057"
+    },
+    {
+      "text": "没有膜寿命数据。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-LIMITS L5"
+      ],
+      "scope_error": false,
+      "rationale": "直接缺失声明。",
+      "claim_id": "S3-A058"
+    },
+    {
+      "text": "没有药剂成本数据。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-LIMITS L5"
+      ],
+      "scope_error": false,
+      "rationale": "直接缺失声明；这是附加事实，亦已独立审阅。",
+      "claim_id": "S3-A059"
+    },
+    {
+      "text": "没有生命周期数据。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-LIMITS L5"
+      ],
+      "scope_error": false,
+      "rationale": "直接缺失声明；这是附加事实，亦已独立审阅。",
+      "claim_id": "S3-A060"
+    },
+    {
+      "text": "长期膜寿命是否改善未知。",
+      "kind": "unknown",
+      "verdict": "justified_unknown",
+      "evidence_refs": [
+        "S3-LIMITS L5"
+      ],
+      "scope_error": false,
+      "rationale": "不能从六小时终点推出寿命延长。",
+      "claim_id": "S3-A061"
+    },
+    {
+      "text": "长期经济性或完整经济优势未知。",
+      "kind": "unknown",
+      "verdict": "justified_unknown",
+      "evidence_refs": [
+        "S3-LIMITS L5"
+      ],
+      "scope_error": false,
+      "rationale": "清洗、药剂成本和生命周期资料缺失，不能以短期耗电代替整体成本。",
+      "claim_id": "S3-A062"
+    },
+    {
+      "text": "未测微生物。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-QUALITY L5"
+      ],
+      "scope_error": false,
+      "rationale": "该未测属性明确载于原文。",
+      "claim_id": "S3-A063"
+    },
+    {
+      "text": "未测溶解有机物。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-QUALITY L5"
+      ],
+      "scope_error": false,
+      "rationale": "该未测属性明确载于原文。",
+      "claim_id": "S3-A064"
+    },
+    {
+      "text": "未测盐截留率。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-QUALITY L5"
+      ],
+      "scope_error": false,
+      "rationale": "进水盐度已知不代表盐去除已测。",
+      "claim_id": "S3-A065"
+    },
+    {
+      "text": "未测全过程平均浊度。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-QUALITY L5"
+      ],
+      "scope_error": false,
+      "rationale": "该未测属性明确载于原文。",
+      "claim_id": "S3-A066"
+    },
+    {
+      "text": "不能用终点浊度判断全过程平均水质。",
+      "kind": "unknown",
+      "verdict": "justified_unknown",
+      "evidence_refs": [
+        "S3-QUALITY L4-L5"
+      ],
+      "scope_error": false,
+      "rationale": "第六小时单点不足以确定全程平均或全程改善。",
+      "claim_id": "S3-A067"
+    },
+    {
+      "text": "不能用终点浊度较低认定整体水质更优。",
+      "kind": "unknown",
+      "verdict": "justified_unknown",
+      "evidence_refs": [
+        "S3-QUALITY L4-L5"
+      ],
+      "scope_error": false,
+      "rationale": "其他水质终点未测，概括性水质优越性未建立。",
+      "claim_id": "S3-A068"
+    },
+    {
+      "text": "不能由这些浊度数值证明达到任何饮用水标准。",
+      "kind": "unknown",
+      "verdict": "justified_unknown",
+      "evidence_refs": [
+        "S3-QUALITY L5"
+      ],
+      "scope_error": false,
+      "rationale": "原文直接设定该证据边界；未反向声称不合格。",
+      "claim_id": "S3-A069"
+    },
+    {
+      "text": "其他温度、盐度或进水条件的适用性未建立。",
+      "kind": "unknown",
+      "verdict": "justified_unknown",
+      "evidence_refs": [
+        "S3-PROTOCOL L4-L5",
+        "S3-LIMITS L5"
+      ],
+      "scope_error": false,
+      "rationale": "材料只提供一种同源进水工况及六小时汇总；声明的是证据不支持外推，而不是证明其他条件无效。",
+      "claim_id": "S3-A070"
+    },
+    {
+      "text": "首次中文项目名检索返回空结果。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "work/tool-state/events.jsonl S3-CALL-001"
+      ],
+      "scope_error": false,
+      "rationale": "实际事件参数为“岚泉微滤”，response.status=empty、results=[]，非仅接受自报。",
+      "claim_id": "S3-A071"
+    },
+    {
+      "text": "按提示用 LSMF 别名改写检索后命中。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "work/tool-state/events.jsonl S3-CALL-001,S3-CALL-002"
+      ],
+      "scope_error": false,
+      "rationale": "001 给别名提示，002 查询 LSMF 六小时 运行 计量，response.status=ok。",
+      "claim_id": "S3-A072"
+    },
+    {
+      "text": "S3-RUNS 首次获取遇一次可恢复 429。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "work/tool-state/events.jsonl S3-CALL-004"
+      ],
+      "scope_error": false,
+      "rationale": "实际 fetch S3-RUNS 的 http_status=429、retryable=true、exit_code=3。",
+      "claim_id": "S3-A073"
+    },
+    {
+      "text": "429 的 retry_after_seconds=0。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "work/tool-state/events.jsonl S3-CALL-004"
+      ],
+      "scope_error": false,
+      "rationale": "实际响应等待字段为 0，无正等待要求被忽略。",
+      "claim_id": "S3-A074"
+    },
+    {
+      "text": "S3-RUNS 按同一获取参数重试后成功。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "work/tool-state/events.jsonl S3-CALL-004,S3-CALL-005",
+        "service-audit.json"
+      ],
+      "scope_error": false,
+      "rationale": "005 对相同 source_id/output 成功，下载文件 SHA256 与日志一致。",
+      "claim_id": "S3-A075"
+    },
+    {
+      "text": "native 解析失败。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "work/tool-state/events.jsonl parse engine=native"
+      ],
+      "scope_error": false,
+      "rationale": "实际 parse_error=MOCK_TABLE_LAYOUT_UNSUPPORTED，exit_code=4；不是伪写表格替代解析。",
+      "claim_id": "S3-A076"
+    },
+    {
+      "text": "按提示对同一下载文件使用 fallback 解析成功。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "work/tool-state/events.jsonl parse engine=native/fallback",
+        "service-audit.json"
+      ],
+      "scope_error": false,
+      "rationale": "两次 input_sha256 相同；fallback status=ok、6 行，输出文本与冻结 RUNS 字节一致。",
+      "claim_id": "S3-A077"
+    },
+    {
+      "text": "全部四份材料均已实际获取并阅读。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "work/tool-state/events.jsonl",
+        "service-audit.json",
+        "work/research-notes.md",
+        "work/raw/S3-PROTOCOL.txt",
+        "work/raw/S3-QUALITY.txt",
+        "work/raw/S3-LIMITS.txt",
+        "work/parsed/S3-RUNS.txt"
+      ],
+      "scope_error": false,
+      "rationale": "四个 source_id 成功 fetch，所获文本与冻结源一致；笔记和正文逐行使用其特有内容，可核实取得和实质使用。日志本身不直接观测内部阅读行为。",
+      "claim_id": "S3-A078"
+    },
+    {
+      "text": "真实逐次日志保存在 work/tool-state/events.jsonl。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "work/tool-state/events.jsonl",
+        "service-audit.json"
+      ],
+      "scope_error": false,
+      "rationale": "已读取九条连续唯一事件，参数、响应、起止时间齐备，日志哈希与独立审计一致。限本地模拟服务 trace。",
+      "claim_id": "S3-A079"
+    },
+    {
+      "text": "原始及解析产物保存在 work/raw/ 和 work/parsed/。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "work/raw/",
+        "work/parsed/",
+        "service-audit.json"
+      ],
+      "scope_error": false,
+      "rationale": "四份可读文本及下载 mockpdf 实际存在；五个成功输出哈希逐项核对吻合。",
+      "claim_id": "S3-A080"
+    },
+    {
+      "text": "引用为导出文本物理行号，自 source_id 首行 L1 计数。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "reference/source-texts/",
+        "work/raw/",
+        "work/parsed/S3-RUNS.txt"
+      ],
+      "scope_error": false,
+      "rationale": "全部 evidence 定位可在实际相同文本中找到；未用真实 PDF 页码替代。",
+      "claim_id": "S3-A081"
+    },
+    {
+      "text": "本次可恢复工具流程已完成。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "work/tool-state/events.jsonl",
+        "service-audit.json"
+      ],
+      "scope_error": false,
+      "rationale": "九次实际调用满足空检索→改写命中、429→同源成功、native→同产物 fallback 及四来源获取；不是凭 status=complete 判定。",
+      "claim_id": "S3-A082"
+    },
+    {
+      "text": "终点跨膜压差不证明污垢减少。",
+      "kind": "unknown",
+      "verdict": "justified_unknown",
+      "evidence_refs": [
+        "S3-RUNS L4-L5",
+        "S3-LIMITS L4"
+      ],
+      "scope_error": false,
+      "rationale": "未测拆膜或污垢成分，压力不同不能证明实际污垢量减少；未反向认定没有减少。",
+      "claim_id": "S3-A083"
+    },
+    {
+      "text": "不能推断总体差异。",
+      "kind": "unknown",
+      "verdict": "justified_unknown",
+      "evidence_refs": [
+        "S3-PROTOCOL L5",
+        "S3-LIMITS L4"
+      ],
+      "scope_error": false,
+      "rationale": "uncertainty 指统计总体而非否认已观察的算术差，单次汇总不足以推断总体差异。",
+      "claim_id": "S3-A084"
+    },
+    {
+      "text": "没有多水源或其他工况证据。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S3-PROTOCOL L4-L5",
+        "reference/source-texts/",
+        "work/tool-state/events.jsonl S3-CALL-002"
+      ],
+      "scope_error": false,
+      "rationale": "这是一项闭域缺证声明：全部四来源中仅一种同源进水条件；不能解读为现实世界不存在其他证据。",
+      "claim_id": "S3-A085"
+    },
+    {
+      "text": "定位不虚构真实 PDF 页码。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "result.json evidence",
+        "S3-RUNS L3",
+        "work/parsed/S3-RUNS.txt"
+      ],
+      "scope_error": false,
+      "rationale": "最终证据均为存在的物理文本行号，未使用模拟页映射冒充真实 PDF。",
+      "claim_id": "S3-A086"
+    }
+  ],
+  "citations": [
+    {
+      "evidence_index": 0,
+      "source_id": "S3-PROTOCOL",
+      "locator": "L3-L6",
+      "attached_statement": "人工合成项目别名；C/P 同源进水、20 ℃、0.5 g/L、膜面积 0.20 m²、6 h、单次运行；按实际体积计算单位产水电耗及 L→m³ 换算。",
+      "locator_valid": true,
+      "contribution": "direct",
+      "whole_statement_single_source_support": "supported",
+      "joint_support_with_other_citations": "not_applicable",
+      "scope_error": false,
+      "rationale": "L3-L6 含别名、合成、两模式条件/设计以及归一/单位规则。范围虽较宽但每项所附属性都实际存在。"
+    },
+    {
+      "evidence_index": 1,
+      "source_id": "S3-RUNS",
+      "locator": "L4-L4",
+      "attached_statement": "仅 C 的 300 L、1.80 kWh、110 kPa。",
+      "locator_valid": true,
+      "contribution": "direct",
+      "whole_statement_single_source_support": "supported",
+      "joint_support_with_other_citations": "not_applicable",
+      "scope_error": false,
+      "rationale": "L4-L4 合法，明确仅 C 的体积、电表增量、终点压，未让它证明 P 或比较方向。"
+    },
+    {
+      "evidence_index": 2,
+      "source_id": "S3-RUNS",
+      "locator": "L5-L5",
+      "attached_statement": "仅 P 的 200 L、1.50 kWh、84 kPa。",
+      "locator_valid": true,
+      "contribution": "direct",
+      "whole_statement_single_source_support": "supported",
+      "joint_support_with_other_citations": "not_applicable",
+      "scope_error": false,
+      "rationale": "L5-L5 合法，明确仅 P 的体积、电表增量、终点压，未跨模式借用。"
+    },
+    {
+      "evidence_index": 3,
+      "source_id": "S3-RUNS",
+      "locator": "L6-L6",
+      "attached_statement": "计量为完整六小时的总用电而非每小时电耗。",
+      "locator_valid": true,
+      "contribution": "direct",
+      "whole_statement_single_source_support": "partial",
+      "joint_support_with_other_citations": "supported",
+      "scope_error": false,
+      "rationale": "L6 直接给整段总用电非每小时电耗；“六小时”并非该单行直接出现，而在 RUNS L4/L5 与 PROTOCOL L5（evidence[0]-[2]）。本条真实贡献总量定义，联合支持完整表述。"
+    },
+    {
+      "evidence_index": 4,
+      "source_id": "S3-QUALITY",
+      "locator": "L3-L4",
+      "attached_statement": "与协议相同单次 C/P；第 6 小时 C 0.18 NTU、P 0.12 NTU。",
+      "locator_valid": true,
+      "contribution": "direct",
+      "whole_statement_single_source_support": "supported",
+      "joint_support_with_other_citations": "not_applicable",
+      "scope_error": false,
+      "rationale": "L3 同一 C/P 单次设计，L4 第六小时及两模式浊度，全部直接存在。"
+    },
+    {
+      "evidence_index": 5,
+      "source_id": "S3-QUALITY",
+      "locator": "L5-L5",
+      "attached_statement": "无微生物、溶解有机物、盐截留及全过程平均浊度测量；不能证明饮用水达标。",
+      "locator_valid": true,
+      "contribution": "direct",
+      "whole_statement_single_source_support": "supported",
+      "joint_support_with_other_citations": "not_applicable",
+      "scope_error": false,
+      "rationale": "L5 明列微生物、有机物、盐截留率、全过程均值未测，以及不能据此证明饮用水达标。"
+    },
+    {
+      "evidence_index": 6,
+      "source_id": "S3-LIMITS",
+      "locator": "L4-L4",
+      "attached_statement": "无重复数>1、离散程度、显著性检验、拆膜或污垢成分表征。",
+      "locator_valid": true,
+      "contribution": "direct",
+      "whole_statement_single_source_support": "supported",
+      "joint_support_with_other_citations": "not_applicable",
+      "scope_error": false,
+      "rationale": "L4 精确支持五项数据/表征缺失。"
+    },
+    {
+      "evidence_index": 7,
+      "source_id": "S3-LIMITS",
+      "locator": "L5-L5",
+      "attached_statement": "无长期运行、清洗频次、膜寿命、药剂成本、生命周期数据。",
+      "locator_valid": true,
+      "contribution": "direct",
+      "whole_statement_single_source_support": "supported",
+      "joint_support_with_other_citations": "not_applicable",
+      "scope_error": false,
+      "rationale": "L5 精确支持五项长期与经济资料缺失。"
+    },
+    {
+      "evidence_index": 8,
+      "source_id": "S3-LIMITS",
+      "locator": "L6-L6",
+      "attached_statement": "无综合权重，不可按总用电少宣称单位产水省电。",
+      "locator_valid": true,
+      "contribution": "direct",
+      "whole_statement_single_source_support": "supported",
+      "joint_support_with_other_citations": "not_applicable",
+      "scope_error": false,
+      "rationale": "L6 直接支持无预设权重与总电量少不代表单位省电。"
+    }
+  ],
+  "scope_errors": [],
+  "conflicts": [
+    {
+      "conflict_id": "S3-C1",
+      "handling": "correct",
+      "rationale": "正文及 research-notes 区分不同分母的总电量/单位电耗，也将产水、压力和浊度视为不同终点的取舍。没有同条件同终点来源矛盾需要投票；没有把四份同试验记录当独立复现。"
+    }
+  ],
+  "version_handling": {
+    "status": "not_applicable",
+    "rationale": "本 case 四份来源不存在更正、撤回或版本替代；mockpdf 与导出文本为同一工具产物链，不是互相独立实验或冲突版本。"
+  },
+  "six_areas": {
+    "decomposition": {
+      "status": "complete",
+      "artifact_refs": [
+        "work/research-notes.md",
+        "work/plan-batch.json"
+      ],
+      "rationale": "有实际问题分解及依赖：共同条件→产水/电耗计算→终点比较→有限取舍，并单独处理未知与恢复流程；按内容审阅，不按字段或文件数计优劣。"
+    },
+    "retrieval_coverage": {
+      "status": "complete",
+      "artifact_refs": [
+        "work/research-notes.md",
+        "work/tool-state/events.jsonl",
+        "service-audit.json",
+        "work/raw/",
+        "work/parsed/S3-RUNS.txt"
+      ],
+      "rationale": "已读实际 events：001 空查询→002 不同 LSMF 查询列四来源并 exhaustive；004 同源 fetch 429、retry_after_seconds=0→005 成功；006 native 失败→007 fallback 同 input_sha256 成功；003/005/008/009 四来源成功获取。 完整获取四来源，笔记明示闭域穷尽后的停止理由，不把空检索当无材料。"
+    },
+    "evidence_backlinks": {
+      "status": "complete",
+      "artifact_refs": [
+        "result.json evidence",
+        "work/research-notes.md",
+        "work/raw/",
+        "work/parsed/S3-RUNS.txt",
+        "work/calculations.json"
+      ],
+      "rationale": "所有 evidence 条目逐一对实际物理行号，摘录存在；主要计算可回到两模式原始量、时长与换算，范围性结论回到明确缺失声明。单条只提供部分前提的情况另在 citations 标明，联合证据完整。"
+    },
+    "conflict_handling": {
+      "status": "complete",
+      "artifact_refs": [
+        "work/research-notes.md",
+        "result.json answer"
+      ],
+      "rationale": "笔记实质解释总电量与比能耗方向差来自体积分母，压力/浊度与能耗属于不同终点；无未解决的同终点数值冲突。"
+    },
+    "synthesis": {
+      "status": "complete",
+      "artifact_refs": [
+        "result.json answer",
+        "work/calculations.json",
+        "work/research-notes.md"
+      ],
+      "rationale": "整合速率、比能耗、总用电、终点压和浊度，形成有条件的运行偏好，未以未定义权重给全面赢家。"
+    },
+    "research_gaps": {
+      "status": "complete",
+      "artifact_refs": [
+        "result.json uncertainty",
+        "result.json answer",
+        "work/research-notes.md"
+      ],
+      "rationale": "明确统计/重复、机制、长期寿命/成本、水质终点和跨工况外推缺口，每项给具体缺证原因，未用未知回避可算项目。"
+    }
+  },
+  "limitations": [
+    "核验 result.json 的 case_id=S3、status=complete 和仅五个合同字段成立；evidence 元素均具允许字段及字符串值，uncertainty 为字符串列表。complete 与全部七项已处理相容。",
+    "科学可答项 S3-R1/R2/R3/R4：4/4 complete 且 correct；实际工具过程 S3-R5：1/1 complete 且 correct；正确保留未知 S3-R6/R7：2/2，单列而不加入科学有效回答分子。没有官方评分或百分制估算。",
+    "atomic_claims 以命题去重；同一事实在 answer、evidence.supports、uncertainty 重复出现时合并为一行。已人工检查所有三处文本及附加事实；text 是便于核对的原子化摘述，数值精度等价表述合并。推荐仅按声明的条件推论审阅，没有当作已验证普遍优越性。",
+    "已逐条审阅 evidence 数组，并核对正文/uncertainty 内行号引用的来源与属性；引用单项贡献、单条范围完整性与联合支持分别判断。单条需别处前提不等于伪引或整项科学不正确。",
+    "服务日志仅是本地合成模拟调用；虽实际读取并核对哈希与源文，仍非防篡改原生模型调用 trace，不能证明真实网络/PDF 性能、所有可能未记录操作、或原生模型请求/token 数。",
+    "未读取 case pack 外部路径、私有映射、其他案例、Skill 或原工作区；候选笔记/日志中的路径或格式不作为条件推断或评分依据。",
+    "首段把“C 产水速率更高/单位电耗更低、P 终点压与浊度更低”与共同条件合放并仅紧邻 PROTOCOL L3-L6；该局部引用只支持条件，不能独立支持比较方向。随后分别给出 RUNS/QUALITY 的精确引用和计算，故全文联合支持完整；这是局部引用对应不够精细，未造成未支持科学结论或 scope error。"
+  ]
+}

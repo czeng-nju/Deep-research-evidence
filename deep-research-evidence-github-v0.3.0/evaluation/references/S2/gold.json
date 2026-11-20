@@ -1,0 +1,219 @@
+{
+  "access": "EVALUATOR_ONLY_DO_NOT_EXPOSE_TO_TESTED_AGENT",
+  "case_id": "S2",
+  "split": "fresh_score_v3_exploratory_holdout",
+  "synthetic_data_notice": "全部为新编合成封闭测试材料，不代表真实论文、实验、产品或玻尔官方题集；只验证有限流程与内容能力。",
+  "reference_status": "在任何研究 Agent 输出前编写；独立参考而非官方答案，允许内容等价表述。",
+  "requirements_frozen_before_outputs": true,
+  "requirements": [
+    {
+      "requirement_id": "S2-R1",
+      "requirement": "版本修订关系与独立证据计数",
+      "answerable": true,
+      "importance": "core",
+      "reference_content": "X-v2更正并替代X-v1，二者同一报告同一数据不能算两项独立证据；当前有甲组更正报告与乙组复核两个来源，来源独立不意味着测试样本独立，因两者用同一40段基准。",
+      "evidence": [
+        {
+          "source_id": "S2-PROTOCOL",
+          "locator": "L4-L6"
+        },
+        {
+          "source_id": "S2-X-V1",
+          "locator": "L3-L5"
+        },
+        {
+          "source_id": "S2-X-V2",
+          "locator": "L3-L5"
+        },
+        {
+          "source_id": "S2-Y",
+          "locator": "L3-L4"
+        }
+      ]
+    },
+    {
+      "requirement_id": "S2-R2",
+      "requirement": "甲组当前有效结果和方向",
+      "answerable": true,
+      "importance": "core",
+      "reference_content": "甲组v2 M2.1dB、N2.7dB，M-N=-0.6dB，N在该报告指标上更高。v1旧M3.2不再用作有效对比。",
+      "evidence": [
+        {
+          "source_id": "S2-X-V2",
+          "locator": "L4-L5"
+        }
+      ],
+      "numeric_expectations": {
+        "X_M_dB": 2.1,
+        "X_N_dB": 2.7,
+        "X_M_minus_N_dB": -0.6
+      }
+    },
+    {
+      "requirement_id": "S2-R3",
+      "requirement": "乙组结果和方向",
+      "answerable": true,
+      "importance": "core",
+      "reference_content": "乙组M3.1dB、N2.4dB，M-N=+0.7dB，M在该报告指标上更高。",
+      "evidence": [
+        {
+          "source_id": "S2-Y",
+          "locator": "L3-L4"
+        }
+      ],
+      "numeric_expectations": {
+        "Y_M_dB": 3.1,
+        "Y_N_dB": 2.4,
+        "Y_M_minus_N_dB": 0.7
+      }
+    },
+    {
+      "requirement_id": "S2-R4",
+      "requirement": "识别可比研究间的真冲突",
+      "answerable": true,
+      "importance": "core",
+      "reference_content": "两个当前有效报告声明同一测试包、方法版、终点与条件，却M-N方向相反，是未解决的研究间结果冲突；不能用不同终点或不同噪声条件解释，也不能把明确修订的v1-v2当两项独立冲突。",
+      "evidence": [
+        {
+          "source_id": "S2-PROTOCOL",
+          "locator": "L4-L6"
+        },
+        {
+          "source_id": "S2-X-V2",
+          "locator": "L4-L5"
+        },
+        {
+          "source_id": "S2-Y",
+          "locator": "L4"
+        },
+        {
+          "source_id": "S2-SCOPE",
+          "locator": "L4-L5"
+        }
+      ]
+    },
+    {
+      "requirement_id": "S2-R5",
+      "requirement": "有限综合与无效汇总策略",
+      "answerable": true,
+      "importance": "core",
+      "reference_content": "保持甲N较高、乙M较高并说明现有材料不足确定稳定优胜者；不能计v1凑2:1、把新日期自动等同更高质量，或用无根据平均值掩盖冲突。可以为说明算术展示均值但必须明确其不是经验证的合并效应或仲裁证据。",
+      "evidence": [
+        {
+          "source_id": "S2-X-V1",
+          "locator": "L5"
+        },
+        {
+          "source_id": "S2-X-V2",
+          "locator": "L3-L6"
+        },
+        {
+          "source_id": "S2-Y",
+          "locator": "L3-L5"
+        },
+        {
+          "source_id": "S2-SCOPE",
+          "locator": "L4-L6"
+        }
+      ]
+    },
+    {
+      "requirement_id": "S2-R6",
+      "requirement": "统计显著性和真实冲突原因",
+      "answerable": false,
+      "importance": "core",
+      "reference_content": "汇总中位数不足做显著性判断；没有逐段数据、完整环境或可执行代码，不能断言当前冲突由已修正通道错误、随机波动或任一实现问题造成。可把这些列为待检验假设并提出复核环境和逐段输出。",
+      "evidence": [
+        {
+          "source_id": "S2-X-V2",
+          "locator": "L5-L6"
+        },
+        {
+          "source_id": "S2-Y",
+          "locator": "L5"
+        },
+        {
+          "source_id": "S2-SCOPE",
+          "locator": "L4"
+        }
+      ]
+    },
+    {
+      "requirement_id": "S2-R7",
+      "requirement": "感知质量及部署性能和外推",
+      "answerable": false,
+      "importance": "core",
+      "reference_content": "SNR改善不等于已证明听感、延迟、算力或跨噪声环境优胜；相关数据缺失，不能判定。",
+      "evidence": [
+        {
+          "source_id": "S2-Y",
+          "locator": "L6"
+        },
+        {
+          "source_id": "S2-SCOPE",
+          "locator": "L6"
+        }
+      ]
+    }
+  ],
+  "conflicts": [
+    {
+      "id": "S2-C1",
+      "type": "true_conflict_same_declared_conditions",
+      "handling": "保留X-v2 N优与Y M优；来源不同而测试包相同；待复核差异来源。",
+      "sources": [
+        "S2-X-V2",
+        "S2-Y"
+      ]
+    },
+    {
+      "id": "S2-C2",
+      "type": "superseded_revision_not_independent_conflict",
+      "handling": "X-v1仅用于解释更正来源，不能当额外独立支持。",
+      "sources": [
+        "S2-X-V1",
+        "S2-X-V2"
+      ]
+    }
+  ],
+  "error_traps": [
+    "把三个版本文件算三个独立研究并多数表决。",
+    "因乙组日期最新而删掉甲组更正结果。",
+    "用平均汇总中位数声称消解真实冲突。",
+    "把旧错误直接当已经证明的当前组间差异原因。",
+    "同一基准包上的独立执行等同独立样本。"
+  ],
+  "scope_limits": [
+    "只测试明确版本关系和声明可比冲突；不能代表真实文献元分析。"
+  ],
+  "grading_rules": {
+    "content_first": "只评价任务要求的科学内容和真实行为，不以是否产生新 Skill 的私有字段或特定措辞得分。三组同输入、工具、输出合同与规则。",
+    "atomic_claim_review": "逐条审核所有事实性表述，包括未引用与超出任务的附加事实；把复合句拆为最小可检验断言。",
+    "citation_review": "分别评定位真实性、该来源对所附表述的直接贡献、全部引文联合支持；单一来源只证明一项前提时不得记作独立证明跨来源结论。",
+    "unknown": "可答项无故弃答算未覆盖；正确指出不可确定项单独统计，不加入有效回答覆盖分子。",
+    "numeric": "接受等价单位、与展示精度相符的合理舍入；百分点不能与相对百分比混淆。",
+    "conflicts": "真实可比冲突须保留；不同终点的取舍及明确更正不是新增独立矛盾。",
+    "locators": "实际 UTF-8 材料物理行号首行为 L1；允许覆盖必需事实的区间，禁止编造 PDF 页码。S3 mock PDF 只认可工具解析文本行号与显式映射。",
+    "process": "从独立实际 trace 或产物核验；书面声称已调用或新 Skill 状态字段的存在不等于运行发生。",
+    "status": "所有要求已处理包括有依据的科学未知时 complete 可成立；未检索到应得材料或未处理必答项则不能虚称 complete。",
+    "reference_fallibility": "如发现参考错误，暂停受影响指标，由未见组别的复核者记录理由、受影响运行与修订版本；保留原冻结版本，禁止按某组输出定向改答案。",
+    "answerable_denominator": [
+      "S2-R1",
+      "S2-R2",
+      "S2-R3",
+      "S2-R4",
+      "S2-R5"
+    ],
+    "unanswerable_requirements": [
+      "S2-R6",
+      "S2-R7"
+    ]
+  },
+  "source_line_counts": {
+    "S2-PROTOCOL": 6,
+    "S2-X-V1": 5,
+    "S2-X-V2": 6,
+    "S2-Y": 6,
+    "S2-SCOPE": 6
+  }
+}

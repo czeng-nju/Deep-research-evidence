@@ -1,0 +1,18 @@
+{
+  "case_id": "MINIMAL-SYNTHETIC-FILTERS",
+  "status": "complete",
+  "answer": "【示意输出；仅用于说明接口，不是实际 Agent 运行结果，也不是正式案例结果。】两份合成记录分别给出 A 的出水浓度 6 mg/L（EXAMPLE-A L5）和 B 的 9 mg/L（EXAMPLE-B L5）；联合计算 B−A=9−6=3 mg/L，故在所列条件和第 30 分钟这一终点上，A 的记录值比 B 低 3 mg/L。两份来源各自确认进水 20 mg/L、25 ℃、10 mL/min 和第 30 分钟记录（EXAMPLE-A L3-L4；EXAMPLE-B L3-L4）。这是同协议下两个不同过滤器的结果差异，材料没有对同一对象同一结果给出互相排斥的陈述，不能仅因数值不同就称为冲突。两份记录均未提供重复测量、误差或显著性检验、机理测量及其他条件数据（各来源 L6），不能确定统计显著性或作用机理，也不能据此推荐跨温度、跨时间的无条件总体优胜者。",
+  "evidence": [
+    {"source_id": "EXAMPLE-A", "locator": "L3-L4", "supports": "A 记录声明与 B 采用相同演示协议，并说明进水 20 mg/L、25 ℃、10 mL/min 和第 30 分钟这一终点。"},
+    {"source_id": "EXAMPLE-B", "locator": "L3-L4", "supports": "B 记录声明与 A 采用相同演示协议，并说明进水 20 mg/L、25 ℃、10 mL/min 和第 30 分钟这一终点。"},
+    {"source_id": "EXAMPLE-A", "locator": "L5", "supports": "A 的演示出水浓度为 6 mg/L；这是比较差值的一项前提。", "excerpt": "过滤器 A 的演示出水浓度为 6 mg/L。"},
+    {"source_id": "EXAMPLE-B", "locator": "L5", "supports": "B 的演示出水浓度为 9 mg/L；这是比较差值的另一项前提。", "excerpt": "过滤器 B 的演示出水浓度为 9 mg/L。"},
+    {"source_id": "EXAMPLE-A", "locator": "L6", "supports": "A 记录未提供重复测量、误差、显著性、机理及其他温度或时间点的结果。"},
+    {"source_id": "EXAMPLE-B", "locator": "L6", "supports": "B 记录未提供重复测量、误差、显著性、机理及其他温度或时间点的结果。"}
+  ],
+  "uncertainty": [
+    "需要重复测量及适当的不确定性分析，才能评估差异是否稳健或统计显著。",
+    "需要机理实验才能判断原因；现有出水浓度差值不能单独证明机制。",
+    "需要其他温度、时间及相关终点的证据才能讨论更广泛适用性。"
+  ]
+}

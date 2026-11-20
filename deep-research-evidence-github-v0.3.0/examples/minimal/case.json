@@ -1,0 +1,40 @@
+{
+  "case_id": "MINIMAL-SYNTHETIC-FILTERS",
+  "synthetic_data_notice": "独立合成调用示例，不是真实论文、实验或正式比赛题；不作为优化增益评测。",
+  "question": "在两份允许材料内比较过滤器 A 与 B：报告出水浓度与差值，交代共同条件和适用范围，判断显著性、机理与无条件总体优胜者是否可确定，说明是否存在研究冲突并给出研究空白。各结论须有实际材料行号。",
+  "source_scope": "closed",
+  "materials": [
+    {"source_id": "EXAMPLE-A", "path": "materials/filter-a.txt", "title": "过滤器 A 的合成演示记录", "media_type": "text/plain", "synthetic": true},
+    {"source_id": "EXAMPLE-B", "path": "materials/filter-b.txt", "title": "过滤器 B 的合成演示记录", "media_type": "text/plain", "synthetic": true}
+  ],
+  "output_contract": {
+    "type": "object",
+    "required": ["case_id", "status", "answer", "evidence", "uncertainty"],
+    "additionalProperties": false,
+    "properties": {
+      "case_id": {"type": "string"},
+      "status": {"type": "string", "enum": ["complete", "partial", "blocked"]},
+      "answer": {"type": "string"},
+      "evidence": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["source_id", "locator", "supports"],
+          "additionalProperties": false,
+          "properties": {
+            "source_id": {"type": "string"}, "locator": {"type": "string"},
+            "supports": {"type": "string"}, "excerpt": {"type": "string"}
+          }
+        }
+      },
+      "uncertainty": {"type": "array", "items": {"type": "string"}}
+    }
+  },
+  "instructions": {
+    "paths": "materials 路径相对本 case.json；最终结果和工作路径以实际调用提示为准。",
+    "locator_rule": "UTF-8 原始文本物理行号，自首行 L1 开始，范围含首尾行。",
+    "status_rule": "complete 可以包含按任务要求如实交代的未知；漏做必答部分应为 partial。",
+    "workflow": "保留问题及依赖、来源覆盖和停止理由、实际工具记录、定位证据、冲突判断、综合与研究空白。",
+    "forbidden_shortcut": "不读取或复制仓库的 result.example.json。"
+  }
+}

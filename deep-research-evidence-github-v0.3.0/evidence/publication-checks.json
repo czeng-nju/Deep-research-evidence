@@ -1,0 +1,47 @@
+{
+  "version": "0.3.0",
+  "started_at": "2026-11-20T08:29:20.741263+00:00",
+  "completed_at": "2026-11-20T08:29:34.108914+00:00",
+  "tested_from_new_temporary_directory": true,
+  "checks": [
+    {
+      "name": "regression",
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "release_integrity",
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "package",
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "example_contract",
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "prepare_inputs",
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "prepare_does_not_generate_answer_and_refuses_overwrite",
+      "passed": true
+    },
+    {
+      "name": "no_author_absolute_paths_in_public_text",
+      "passed": true
+    }
+  ],
+  "script_regressions": 89,
+  "example_check_scope": "Example output contract and actual input preparation only; no research Agent was run in this publication check.",
+  "runtime_skill_unchanged": true,
+  "archive_sha256": "36be6e406feda45abada17ec928002c625dfae824077da285b55d86422530d20",
+  "github_uploaded": false,
+  "bohrium_submitted": false
+}

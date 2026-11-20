@@ -1,0 +1,8 @@
+{
+  "method": "Python str.split whitespace-delimited words; not tokenizer counts",
+  "versions": {
+    "v0.2.1": 1270,
+    "v0.3.0": 1048
+  },
+  "reduction_percent": 17.48031496062992
+}

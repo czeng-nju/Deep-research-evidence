@@ -1,0 +1,151 @@
+{
+  "version": "0.3.0",
+  "official_score": null,
+  "report": "SCORE_OPTIMIZATION-v0.3.0.md",
+  "mapping": [
+    {
+      "criterion_id": "actual.task_completion",
+      "dimension": "实际效果",
+      "criterion": "任务完成度",
+      "maximum_points": 15,
+      "optimization": "保留原始要求清单；检查要求→子问题→已审结论的连接，查找未结束检索与可答问题漏答；优先补核心要求。",
+      "evidence_and_limits": "`research_audit.py` 和原始要求分母测试；缺少问题连接、无停止理由、将可答项改称未知均会报告缺口。最终仍须独立比对真实任务，脚本不能知道 Agent 在建账前遗漏了什么。",
+      "awarded_points": null
+    },
+    {
+      "criterion_id": "actual.correctness",
+      "dimension": "实际效果",
+      "criterion": "结果正确性",
+      "maximum_points": 15,
+      "optimization": "原子断言绑定自己的证据与适用情境；区分事实、推断、未知；共用条件必须有原文确认；重新审核受改动影响的内容。",
+      "evidence_and_limits": "已知 A 情境证据不能自动支持 B 情境事实；缺少范围标注报告未核验；允许有前提和解释的跨情境比较。30 项审计测试包含范围错配、错误共享、推断伪装及审核失效。上下文标签的语义真实性仍需阅读原文。",
+      "awarded_points": null
+    },
+    {
+      "criterion_id": "actual.completeness",
+      "dimension": "实际效果",
+      "criterion": "结果完整性",
+      "maximum_points": 5,
+      "optimization": "对问题拆解、检索覆盖、证据回链、冲突证据、综合结论、研究空白六类交付逐项给出状态、引用和理由。",
+      "evidence_and_limits": "缺项、空勾选、无效引用不能通过；有依据的未知单独统计。六项格式齐全不代表六项内容正确。",
+      "awarded_points": null
+    },
+    {
+      "criterion_id": "actual.verifiability",
+      "dimension": "实际效果",
+      "criterion": "结果可核验性",
+      "maximum_points": 5,
+      "optimization": "范围说明作为独立文件留存并登记哈希；审核绑定结论全文及证据内容；审计错误直接指出评分细项、记录路径及交付领域。",
+      "evidence_and_limits": "变更范围、结论或证据后旧审核失效；原始产物、批次回执、测试日志和评审保留。未进行外部人员异地复跑。",
+      "awarded_points": null
+    },
+    {
+      "criterion_id": "gain.quality",
+      "dimension": "使用增益",
+      "criterion": "质量增益",
+      "maximum_points": 15,
+      "optimization": "用新题比较无 Skill、0.2.1、0.3.0；检查所有事实和每条引用贡献，不只检查主答案。",
+      "evidence_and_limits": "3 个新合成案例×3 组各 1 次，结果见下文。功能测试不能充当质量增益；不使用旧题调参后的成绩证明新题优势。",
+      "awarded_points": null
+    },
+    {
+      "criterion_id": "gain.efficiency",
+      "dimension": "使用增益",
+      "criterion": "效率增益",
+      "maximum_points": 5,
+      "optimization": "新增批量记账；仅更新变化内容，按需读详细字段，减少重复编写报告；主入口缩短。",
+      "evidence_and_limits": "5 个等价账本操作从 5 次顶层命令合并为 1 次，减少 80%，逻辑操作与检查保留。该数值不代表整项研究提速 80%，也不代表模型请求下降；整体时耗另列。",
+      "awarded_points": null
+    },
+    {
+      "criterion_id": "gain.verifiable",
+      "dimension": "使用增益",
+      "criterion": "增益可验证性",
+      "maximum_points": 5,
+      "optimization": "实现、输入、gold、评分规则在运行前分别冻结；同模型配置、相同材料与预算，轮换顺序；保留全部尝试；匿名内容审阅。",
+      "evidence_and_limits": "51 个题集／评估文件预先逐一哈希；两版 Skill 独立快照，原始输出不修改。只作探索性比较；无操作系统级隔离或统计显著性证明。",
+      "awarded_points": null
+    },
+    {
+      "criterion_id": "innovation.capability",
+      "dimension": "创新增益",
+      "criterion": "新增能力",
+      "maximum_points": 5,
+      "optimization": "相对 0.2.1 新增可执行的情境一致性与六类交付审计，以及可恢复的批次记账。",
+      "evidence_and_limits": "新脚本与 41 项新增回归可检查其行为；证明相对本项目旧版的新增能力，不能证明行业首创或基础 Agent 完全不具备相同判断能力。",
+      "awarded_points": null
+    },
+    {
+      "criterion_id": "innovation.method",
+      "dimension": "创新增益",
+      "criterion": "方法改进",
+      "maximum_points": 5,
+      "optimization": "把段落级引用细化为原子断言→独立证据→适用情境；把交付检查落实到原始要求和记录引用；将一次次记账改为可恢复的顺序批处理。",
+      "evidence_and_limits": "针对旧版具体失败模式设计反例；新旧整体对照只能评价组合效果，没有模块消融，不能把差值全归因于某一组件。",
+      "awarded_points": null
+    },
+    {
+      "criterion_id": "innovation.evidence",
+      "dimension": "创新增益",
+      "criterion": "创新证据",
+      "maximum_points": 5,
+      "optimization": "保存旧版快照、改动、反例、测试、失败边界及新题对照；保留已有 GitHub 方案调研。",
+      "evidence_and_limits": "设计与既有方案、本报告和逐次评审可追踪。未完成广泛同类产品实测、独立专家鉴定或创新性认证。",
+      "awarded_points": null
+    },
+    {
+      "criterion_id": "reliable.usability",
+      "dimension": "可靠体验",
+      "criterion": "调用与易用性",
+      "maximum_points": 3,
+      "optimization": "主入口缩短、按需加载详细合同；批处理字段在入口可发现；给出审计退出码和本地运行命令。",
+      "evidence_and_limits": "新上下文按文档实际运行；入口长度记录：按空白分词从 1,270 词降至 1,048 词（17.5%），不等于 token 降幅。未测真实用户满意度、所有宿主自动触发。",
+      "awarded_points": null
+    },
+    {
+      "criterion_id": "reliable.stability",
+      "dimension": "可靠体验",
+      "criterion": "运行稳定性",
+      "maximum_points": 4,
+      "optimization": "保留原有不可变产物、恢复和失效传播；增加批次中断窗口、账本回滚、陈旧审核检测。",
+      "evidence_and_limits": "89 项脚本回归全部通过；新题全量运行另列。单次新题对照不证明跨来源长期稳定。",
+      "awarded_points": null
+    },
+    {
+      "criterion_id": "reliable.exceptions",
+      "dimension": "可靠体验",
+      "criterion": "异常处理",
+      "maximum_points": 3,
+      "optimization": "批次失败保留已完成步骤与错误；重跑跳过已提交动作；拒绝同 ID 偷换内容与含混恢复；区分证据缺失、情境冲突和交付未完成。",
+      "evidence_and_limits": "11 项批处理回归；S3 实际执行本地模拟的空搜索、429、解析失败及回退并独立核验日志。没有真实网络、权限和 PDF/OCR 故障验证。",
+      "awarded_points": null
+    },
+    {
+      "criterion_id": "ecosystem.docs",
+      "dimension": "生态贡献",
+      "criterion": "文档完整性",
+      "maximum_points": 3,
+      "optimization": "补齐新接口、依赖、示例、限制、恢复规则、评分映射与复现方式；历史结果单独保留。",
+      "evidence_and_limits": "README、批处理说明、情境及交付说明、本报告和测试记录。标准库依赖、无需额外密钥；尚无外部文档验收。",
+      "awarded_points": null
+    },
+    {
+      "criterion_id": "ecosystem.reuse",
+      "dimension": "生态贡献",
+      "criterion": "资源可复用性",
+      "maximum_points": 4,
+      "optimization": "发布包仅含可复用 Skill；脚本、字段合同、模板、题集、gold、审阅工具与报告分别保存，避免把固定答案装入 Skill。",
+      "evidence_and_limits": "12 个 UTF-8 资源文件，189,975 字节；Python 3.9+ 标准库；可独立打包和跑测试。未证明外部团队实际采用。",
+      "awarded_points": null
+    },
+    {
+      "criterion_id": "ecosystem.sharing",
+      "dimension": "生态贡献",
+      "criterion": "分享推广价值",
+      "maximum_points": 3,
+      "optimization": "沉淀可复跑案例、失败复盘、指标边界和评分证据清单。",
+      "evidence_and_limits": "已完成本地可分享资源；遵照用户要求没有发布，因此下载、传播、引用、真实应用价值尚无实测。",
+      "awarded_points": null
+    }
+  ]
+}

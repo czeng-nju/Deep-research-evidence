@@ -1,0 +1,10 @@
+condition,case_id,run_id,output_written_wall_seconds,contract_valid,output_within_900s_target
+A,S1,v3-01,243.622358,True,True
+B,S2,v3-02,414.698759,True,True
+C,S3,v3-03,538.123446,True,True
+B,S1,v3-04,345.991419,True,True
+C,S2,v3-05,428.788772,True,True
+A,S3,v3-06,304.990196,True,True
+C,S1,v3-07,402.637404,True,True
+A,S2,v3-08,207.126831,True,True
+B,S3,v3-09,448.469029,True,True

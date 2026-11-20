@@ -1,0 +1,68 @@
+{
+  "archive": "deep-research-evidence-0.3.0.skill",
+  "sha256": "36be6e406feda45abada17ec928002c625dfae824077da285b55d86422530d20",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 8279,
+      "sha256": "79a4c09bb45fdc968b668664a2cb165074e86a4f834987bf60ca9e446a48b8ff"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.txt",
+      "bytes": 913,
+      "sha256": "d4540f2b1669f14e312a5de57a544d227f39ec65783f57a34f15a1fdd260dca7"
+    },
+    {
+      "path": "references/batch.md",
+      "bytes": 5105,
+      "sha256": "0540303600f47a48d4b230e15401a9e250cbd651055e716fd3c5084ddb2e85ef"
+    },
+    {
+      "path": "references/bohrium-runtime.md",
+      "bytes": 2649,
+      "sha256": "ef3b60c2201eaa39780343d204f3e053981b323e276795679e739e1b88f7c4b8"
+    },
+    {
+      "path": "references/claim-scope.md",
+      "bytes": 14063,
+      "sha256": "e4848a04d44272baced39cfa2c73b8b6ef3356621b413d0d94846371f2df2c2d"
+    },
+    {
+      "path": "references/records.md",
+      "bytes": 5615,
+      "sha256": "ee7a6f236ee188e3d2322933848c02f793ad2ae4ad418b0f9dc196a5b7bd3ce5"
+    },
+    {
+      "path": "references/research-method.md",
+      "bytes": 4328,
+      "sha256": "dd7aa129aef1ea9723e9aa3116fb6d39122408ef8d1c56977a711e3a26662d52"
+    },
+    {
+      "path": "scripts/record_batch.py",
+      "bytes": 13910,
+      "sha256": "97f46d18c60b6376fa73adbbf514c0fca1e3e383590f758da8b0f1a309c64ced"
+    },
+    {
+      "path": "scripts/research_audit.py",
+      "bytes": 27566,
+      "sha256": "7ba9224814f73b7b96ac3ed4ee2af054c3432de7a922c4e9f9145e2767b0a31a"
+    },
+    {
+      "path": "scripts/research_state.py",
+      "bytes": 53121,
+      "sha256": "c5fa262cb72a7e023b4321aff060a3b2586ee8a526188736aeebc659bfcd449b"
+    },
+    {
+      "path": "scripts/validate.py",
+      "bytes": 52418,
+      "sha256": "d60116952610d4d16d867069160f5931f018525693a9eeffcc74c57a797e1f55"
+    },
+    {
+      "path": "templates/research_record.md",
+      "bytes": 2008,
+      "sha256": "342988c49c1c64f0b98517cd96406b20e40f4be2e6ea515d60002823e50a82e8"
+    }
+  ],
+  "text_bytes": 189975,
+  "scope": "Packaging integrity only; not a semantic or official benchmark result."
+}

@@ -1,0 +1,117 @@
+{
+  "case_id": "S1",
+  "question": "比较薄膜 A 与 B：分别给出两个湿度条件下第 28 天效率保持率及差值；计算高湿条件第 7 天到第 28 天各自下降多少个百分点；比较 550 nm 透过率并交代适用样品和湿度。逐项核对哪些实验条件在两个批次共同成立，参比校准是否也可称两批次共同控制。综合说明能否推荐无条件总体优胜者，并说明统计显著性、失效机制与外推范围。提供各结论的实际材料行号。",
+  "source_scope": "closed",
+  "synthetic_data_notice": "全部为新编合成封闭测试材料，不代表真实论文、实验、产品或玻尔官方题集；只验证有限流程与内容能力。",
+  "materials": [
+    {
+      "source_id": "S1-PROTOCOL",
+      "title": "封装薄膜比较：共同实验范围",
+      "synthetic": true,
+      "path": "materials/S1-PROTOCOL.txt",
+      "media_type": "text/plain"
+    },
+    {
+      "source_id": "S1-LOW",
+      "title": "低湿批次记录",
+      "synthetic": true,
+      "path": "materials/S1-LOW.txt",
+      "media_type": "text/plain"
+    },
+    {
+      "source_id": "S1-HIGH",
+      "title": "高湿批次记录",
+      "synthetic": true,
+      "path": "materials/S1-HIGH.txt",
+      "media_type": "text/plain"
+    },
+    {
+      "source_id": "S1-OPTICAL",
+      "title": "低湿薄膜光学测量",
+      "synthetic": true,
+      "path": "materials/S1-OPTICAL.txt",
+      "media_type": "text/plain"
+    },
+    {
+      "source_id": "S1-LIMITS",
+      "title": "记录边界与后续问题",
+      "synthetic": true,
+      "path": "materials/S1-LIMITS.txt",
+      "media_type": "text/plain"
+    }
+  ],
+  "output_contract": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "SyntheticClosedResearchResult",
+    "type": "object",
+    "required": [
+      "case_id",
+      "status",
+      "answer",
+      "evidence",
+      "uncertainty"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "case_id": {
+        "type": "string"
+      },
+      "status": {
+        "type": "string",
+        "enum": [
+          "complete",
+          "partial",
+          "blocked"
+        ],
+        "description": "complete 表示已按任务要求交代全部问题，包括有依据的不可确定项；partial 表示仍有未完成处理的必答部分；blocked 表示无法开展实质处理。"
+      },
+      "answer": {
+        "type": "string",
+        "description": "直接回答任务的中文文本；表达和组织自由，数值结论注明单位与必要计算。"
+      },
+      "evidence": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "source_id",
+            "locator",
+            "supports"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "source_id": {
+              "type": "string"
+            },
+            "locator": {
+              "type": "string",
+              "description": "材料实际文件行号，如 L4-L6；可附 P 段落标记。"
+            },
+            "supports": {
+              "type": "string",
+              "description": "该定位支持、限定或反对的具体表述。"
+            },
+            "excerpt": {
+              "type": "string",
+              "description": "可选的原文短引。"
+            }
+          }
+        }
+      },
+      "uncertainty": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "尚不能确定的结论、原因和适用限制；没有未解决项时为空数组。"
+      }
+    }
+  },
+  "instructions": {
+    "source_boundary": "只使用本 case 的 materials 中材料，不访问外部网络或 evaluator。",
+    "locator_rule": "实际文本文件物理行号，自 source_id 首行 L1 开始。",
+    "output_file": "result.json",
+    "style": "中文直接回答，附具体定位；内部工作形式自由，不要求使用任何 Skill 私有状态字段。",
+    "workflow": "在 work/ 中保留简短的子问题及依赖、检索覆盖与停止理由、实际工具调用及产物路径、证据对应、冲突处置、结论与研究空白。可合并为 research-notes.md；原始工具日志可独立保留。"
+  }
+}

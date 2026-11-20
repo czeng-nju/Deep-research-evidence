@@ -1,0 +1,1379 @@
+{
+  "candidate_id": "candidate-636d980e73",
+  "case_id": "S2",
+  "review_complete": true,
+  "all_factual_statements_reviewed": true,
+  "all_citations_reviewed": true,
+  "requirements": [
+    {
+      "requirement_id": "S2-R1",
+      "answerable": true,
+      "category": "scientific_content",
+      "coverage": "complete",
+      "correctness": "correct",
+      "output_excerpt": "v2 不是新增独立实验。……v2 明确更正并替代该 M 结果；不能把 v1 当作当前支持 M 的另一票。……当前仅有甲 v2 与乙两项独立执行记录……执行独立不等于测试样本独立。",
+      "rationale": "X-v1 L5、X-v2 L3-L5 支持明确更正关系及同研究去重；Y L3-L4 支持独立执行但复用同测试包；PROTOCOL L4-L6 支持样本并不独立。核心要求全部覆盖。"
+    },
+    {
+      "requirement_id": "S2-R2",
+      "answerable": true,
+      "category": "scientific_content",
+      "coverage": "complete",
+      "correctness": "correct",
+      "output_excerpt": "当前甲组按 v2：M−N=2.1−2.7=−0.6 dB，即 N 的汇总指标高 0.6 dB。",
+      "rationale": "X-v2 L4 的 2.1 与 2.7 相减得 −0.6 dB；PROTOCOL L5 明确高值较好，故甲报告 N 更高。没有把旧 M=3.2 用作当前值。"
+    },
+    {
+      "requirement_id": "S2-R3",
+      "answerable": true,
+      "category": "scientific_content",
+      "coverage": "complete",
+      "correctness": "correct",
+      "output_excerpt": "当前乙组：M−N=3.1−2.4=+0.7 dB，即 M 的汇总指标高 0.7 dB。",
+      "rationale": "Y L4 的 3.1 与 2.4 相减得 +0.7 dB；同协议高值较好，故乙报告 M 更高。"
+    },
+    {
+      "requirement_id": "S2-R4",
+      "answerable": true,
+      "category": "scientific_content",
+      "coverage": "complete",
+      "correctness": "correct",
+      "output_excerpt": "当前甲 v2 偏向 N、乙偏向 M，是声明同测试包、同方法发布版、同输入条件和同指标下的真正方向冲突",
+      "rationale": "PROTOCOL L4-L6 与 SCOPE L4 确认声明条件和指标可比；保留 X-v2 与 Y 相反方向，且不把声明一致当作已核验实际环境一致。没有把 v1/v2 更正误当新增独立冲突。"
+    },
+    {
+      "requirement_id": "S2-R5",
+      "answerable": true,
+      "category": "scientific_content",
+      "coverage": "complete",
+      "correctness": "correct",
+      "output_excerpt": "按篇数投票会重复计算同一研究并纳入已撤回的 M 数值……简单平均这两个汇总中位数或其差值，即使算术上可算，也不是有依据的合并效应……乙日期更晚不意味着它取代独立的甲 v2，也不自动更可靠。",
+      "rationale": "完整拒绝重复版本多数票、无根据平均和最新日期选优，保留甲 N 高 0.6 与乙 M 高 0.7 的相反现行结果，并说明不足确定稳定优胜。中位数不可一般直接合并为总体中位数这一推论合理。"
+    },
+    {
+      "requirement_id": "S2-R6",
+      "answerable": false,
+      "category": "scientific_content",
+      "coverage": "complete",
+      "correctness": "correct",
+      "output_excerpt": "不能从 −0.6 dB 和 +0.7 dB 这两个点估计判断显著性，也不能判断两组差异是否超出波动。……甲 v1 的通道对齐错误已纠正，它不能自动解释当前甲 v2 与乙的差异",
+      "rationale": "X-v2 L6、Y L5 与 SCOPE L4-L5 支持统计不确定性和当前原因未知；正确区分旧版已知纠错与当前跨组原因，提出配对输出、代码/环境复核等后续证据。属于任务要求的有据未知，不计入可回答分子。"
+    },
+    {
+      "requirement_id": "S2-R7",
+      "answerable": false,
+      "category": "scientific_content",
+      "coverage": "complete",
+      "correctness": "correct",
+      "output_excerpt": "还缺感知听音评分、实时延迟、资源消耗、真实场景结果、其他噪声/输入 SNR 覆盖和用户偏好权重；需在实际目标场景与硬件上评估，不能只凭此 SNR 指标选部署方案。",
+      "rationale": "Y L6 和 SCOPE L6 及完整封闭语料确认感知、延迟、资源、真实部署与跨条件资料缺失。没有从 SNR 排名外推部署/听感优胜。属于有据未知，不计入可回答分子。"
+    }
+  ],
+  "atomic_claims": [
+    {
+      "claim_id": "S2-A001",
+      "text": "这些记录为人工合成材料；原文片段：answer:「人工合成」；evidence[9].supports:「人工合成」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-PROTOCOL L3",
+        "S2-X-V1 L3",
+        "S2-X-V2 L3",
+        "S2-Y L3",
+        "S2-SCOPE L3"
+      ],
+      "scope_error": false,
+      "rationale": "五份原文均明示人工合成；非真实研究。"
+    },
+    {
+      "claim_id": "S2-A002",
+      "text": "结论限于本封闭案例、不能视为真实论文结果；原文片段：answer:「不代表真实论文结果」",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-PROTOCOL L3",
+        "task/case.json source_scope/synthetic_data_notice"
+      ],
+      "scope_error": false,
+      "rationale": "人工合成且封闭范围，限制结论范围合理。"
+    },
+    {
+      "claim_id": "S2-A003",
+      "text": "固定测试包为 Kestrel-40-v3；原文片段：answer:「Kestrel-40-v3」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-PROTOCOL L4"
+      ],
+      "scope_error": false,
+      "rationale": "测试包名称准确。"
+    },
+    {
+      "claim_id": "S2-A004",
+      "text": "同一测试包含 40 段语音；原文片段：answer:「40 段」；evidence[0].supports:「40段」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-PROTOCOL L4"
+      ],
+      "scope_error": false,
+      "rationale": "40 为同一批测试片段，非两组新增独立样本之和。"
+    },
+    {
+      "claim_id": "S2-A005",
+      "text": "测试语音为单声道；原文片段：answer:「单声道语音」；evidence[0].supports:「单声道语音」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-PROTOCOL L4"
+      ],
+      "scope_error": false,
+      "rationale": "声道属性直接载明。"
+    },
+    {
+      "claim_id": "S2-A006",
+      "text": "测试采用固定交通噪声；原文片段：answer:「固定交通噪声」；evidence[0].supports:「固定交通噪声」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-PROTOCOL L4"
+      ],
+      "scope_error": false,
+      "rationale": "噪声类型及固定属性直接载明。"
+    },
+    {
+      "claim_id": "S2-A007",
+      "text": "输入 SNR 为 −5 dB；原文片段：answer:「输入 SNR=-5 dB」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-PROTOCOL L4"
+      ],
+      "scope_error": false,
+      "rationale": "负号、数值与 dB 单位正确。"
+    },
+    {
+      "claim_id": "S2-A008",
+      "text": "输出采样率为 16 kHz；原文片段：answer:「输出 16 kHz」；evidence[0].supports:「输出16 kHz」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-PROTOCOL L4"
+      ],
+      "scope_error": false,
+      "rationale": "输出采样率准确。"
+    },
+    {
+      "claim_id": "S2-A009",
+      "text": "两组声明使用 M/N 发布版 1.0；原文片段：answer:「发布版 1.0」；evidence[0].supports:「发布版1.0」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-PROTOCOL L6",
+        "S2-Y L4"
+      ],
+      "scope_error": false,
+      "rationale": "这是报告声明的算法版本一致性，并非已核验实现二进制完全相同。"
+    },
+    {
+      "claim_id": "S2-A010",
+      "text": "两组声明使用完整包、不挑选子集；原文片段：answer:「完整测试包」；evidence[0].supports:「不得选子集」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-PROTOCOL L6",
+        "S2-X-V2 L4",
+        "S2-Y L4"
+      ],
+      "scope_error": false,
+      "rationale": "协议不允许挑子集，两个当前报告均明示完整使用。"
+    },
+    {
+      "claim_id": "S2-A011",
+      "text": "每段指标是降噪后 SNR 减去输入 SNR；原文片段：answer:「降噪后 SNR−输入 SNR」；evidence[0].supports:「每段输出减输入SNR」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-PROTOCOL L5"
+      ],
+      "scope_error": false,
+      "rationale": "指标定义准确；输出 SNR 是正文对降噪后 SNR 的等价描述。"
+    },
+    {
+      "claim_id": "S2-A012",
+      "text": "总体报告指标对 40 段取中位数；原文片段：answer:「再对 40 段取中位数」；evidence[0].supports:「后取中位数」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-PROTOCOL L5"
+      ],
+      "scope_error": false,
+      "rationale": "明确是片段改善值的中位数。"
+    },
+    {
+      "claim_id": "S2-A013",
+      "text": "报告指标单位为 dB；原文片段：answer:「单位 dB」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-PROTOCOL L5"
+      ],
+      "scope_error": false,
+      "rationale": "单位与协议一致。"
+    },
+    {
+      "claim_id": "S2-A014",
+      "text": "指标值越大越好；原文片段：answer:「越大越好」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-PROTOCOL L5"
+      ],
+      "scope_error": false,
+      "rationale": "方向规则为源文明确规定。"
+    },
+    {
+      "claim_id": "S2-A015",
+      "text": "甲组 v1 记录日期为 2025-02-03；原文片段：answer:「2025-02-03」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-X-V1 L2"
+      ],
+      "scope_error": false,
+      "rationale": "日期准确；并未用日期直接评质量。"
+    },
+    {
+      "claim_id": "S2-A016",
+      "text": "甲组 v2 记录日期为 2025-02-21；原文片段：answer:「2025-02-21」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-X-V2 L2"
+      ],
+      "scope_error": false,
+      "rationale": "日期准确。"
+    },
+    {
+      "claim_id": "S2-A017",
+      "text": "甲组 v1、v2 同属 X-204；原文片段：answer:「同属 X-204」；evidence[2].supports:「同系列」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-X-V1 L3",
+        "S2-X-V2 L3"
+      ],
+      "scope_error": false,
+      "rationale": "同报告系列明确。"
+    },
+    {
+      "claim_id": "S2-A018",
+      "text": "甲组两版使用同一测试数据；原文片段：answer:「同一测试数据」；evidence[2].supports:「同数据」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-X-V2 L3"
+      ],
+      "scope_error": false,
+      "rationale": "同数据关系明确。"
+    },
+    {
+      "claim_id": "S2-A019",
+      "text": "甲 v2 不是新增独立实验，不能把两版当两个独立研究；原文片段：answer:「不是新增独立实验」；evidence[2].supports:「非独立实验」",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-X-V2 L3"
+      ],
+      "scope_error": false,
+      "rationale": "源文明确非新增独立实验，去重解释合理。"
+    },
+    {
+      "claim_id": "S2-A020",
+      "text": "旧版甲 M 汇总中位数为 3.2 dB；原文片段：answer:「M=3.2 dB」；evidence[1].supports:「旧数值」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-X-V1 L4"
+      ],
+      "scope_error": false,
+      "rationale": "只作为撤回前历史数值，不混入当前比较。"
+    },
+    {
+      "claim_id": "S2-A021",
+      "text": "旧版甲 N 汇总中位数为 2.7 dB；原文片段：evidence[1].supports:「旧数值」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-X-V1 L4"
+      ],
+      "scope_error": false,
+      "rationale": "历史 N 原值确为 2.7；候选在 evidence.supports 的旧值/旧数值表述及引用中涵盖此值。"
+    },
+    {
+      "claim_id": "S2-A022",
+      "text": "旧版 M 因通道对齐代码错误撤回；原文片段：answer:「因通道对齐代码错误撤回」；evidence[1].supports:「因通道对齐代码错误撤回」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-X-V1 L5"
+      ],
+      "scope_error": false,
+      "rationale": "这是旧版撤回的已知原因，不等于当前组间差异原因。"
+    },
+    {
+      "claim_id": "S2-A023",
+      "text": "v2 更正并替代 v1 的 M 结果；原文片段：answer:「v2 明确更正并替代该 M 结果」；evidence[2].supports:「替代v1 M」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-X-V1 L5",
+        "S2-X-V2 L4-L5"
+      ],
+      "scope_error": false,
+      "rationale": "替代关系明确且限于已更正的 M 结果。"
+    },
+    {
+      "claim_id": "S2-A024",
+      "text": "当前甲 M 为 2.1 dB；原文片段：answer:「2.1−2.7」；evidence[2].supports:「M=2.1」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-X-V2 L4"
+      ],
+      "scope_error": false,
+      "rationale": "使用当前有效版本数值。"
+    },
+    {
+      "claim_id": "S2-A025",
+      "text": "当前甲 N 为 2.7 dB；原文片段：answer:「2.1−2.7」；evidence[2].supports:「N=2.7 dB」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-X-V2 L4"
+      ],
+      "scope_error": false,
+      "rationale": "当前 N 原值准确。"
+    },
+    {
+      "claim_id": "S2-A026",
+      "text": "甲更正后输入条件未变；原文片段：evidence[2].supports:「输入/算法发布版/指标不变」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-X-V2 L5"
+      ],
+      "scope_error": false,
+      "rationale": "限定为 L5 指定的输入属性；不证明所有代码/运行环境均未改变。"
+    },
+    {
+      "claim_id": "S2-A027",
+      "text": "甲更正后算法发布版未变；原文片段：evidence[2].supports:「输入/算法发布版/指标不变」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-X-V2 L5"
+      ],
+      "scope_error": false,
+      "rationale": "限定为发布版，不能由此证明所有实现细节一致。"
+    },
+    {
+      "claim_id": "S2-A028",
+      "text": "甲更正后指标定义未变；原文片段：evidence[2].supports:「输入/算法发布版/指标不变」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-X-V2 L5"
+      ],
+      "scope_error": false,
+      "rationale": "指标定义这一属性直接明确；候选“条件”概括按上下文中的声明条件理解。"
+    },
+    {
+      "claim_id": "S2-A029",
+      "text": "旧版 M 不能作为当前支持票；原文片段：answer:「不能把 v1 当作当前支持 M 的另一票」",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-X-V1 L5",
+        "S2-X-V2 L3-L5"
+      ],
+      "scope_error": false,
+      "rationale": "撤回和同研究版本关系足以排除当前独立票。"
+    },
+    {
+      "claim_id": "S2-A030",
+      "text": "乙组日期为 2025-03-08；原文片段：answer:「2025-03-08」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-Y L2"
+      ],
+      "scope_error": false,
+      "rationale": "日期准确。"
+    },
+    {
+      "claim_id": "S2-A031",
+      "text": "乙组记录日期晚于甲两版；原文片段：answer:「日期更晚」",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-X-V1 L2",
+        "S2-X-V2 L2",
+        "S2-Y L2"
+      ],
+      "scope_error": false,
+      "rationale": "三日期比较成立；需跨源而非仅由 Y 的单个日期独立证明。"
+    },
+    {
+      "claim_id": "S2-A032",
+      "text": "乙组独立执行处理；原文片段：answer:「独立执行」；evidence[4].supports:「独立执行」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-Y L3"
+      ],
+      "scope_error": false,
+      "rationale": "独立性对象是执行来源，不是重新独立抽样的语音。"
+    },
+    {
+      "claim_id": "S2-A033",
+      "text": "乙不属 X-204 的任何版本；原文片段：answer:「不属于 X-204」；evidence[4].supports:「非X-204版本」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-Y L3"
+      ],
+      "scope_error": false,
+      "rationale": "报告系列独立明确。"
+    },
+    {
+      "claim_id": "S2-A034",
+      "text": "乙使用同一完整 Kestrel-40-v3 测试包；原文片段：answer:「使用相同测试包」；evidence[4].supports:「完整相同基准」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-Y L4",
+        "S2-PROTOCOL L4-L6"
+      ],
+      "scope_error": false,
+      "rationale": "不是新抽样数据集；完整使用声明明确。"
+    },
+    {
+      "claim_id": "S2-A035",
+      "text": "材料没有证据表明乙组已被撤回；原文片段：answer:「没有材料表明乙被撤回」；evidence[7].supports:「无乙撤回」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-SCOPE L5"
+      ],
+      "scope_error": false,
+      "rationale": "这是证据缺失状态；与绝对证明乙从未撤回有区别。"
+    },
+    {
+      "claim_id": "S2-A036",
+      "text": "材料没有证据表明乙被甲的更正覆盖；原文片段：answer:「没有材料表明乙被撤回或被甲更正覆盖」；evidence[7].supports:「无乙撤回、被甲更正覆盖」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-SCOPE L5"
+      ],
+      "scope_error": false,
+      "rationale": "范围文件明确没有这种覆盖关系的证据。"
+    },
+    {
+      "claim_id": "S2-A037",
+      "text": "没有后续仲裁实验；原文片段：answer:「无后续仲裁」；uncertainty[1]:「无后续仲裁」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-SCOPE L5"
+      ],
+      "scope_error": false,
+      "rationale": "此处源文确为没有实验，不只是没有撤回证据。"
+    },
+    {
+      "claim_id": "S2-A038",
+      "text": "当前应同时保留甲 v2 与乙两个报告；原文片段：answer:「甲 v2 与乙两项独立执行记录」",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-X-V1 L5",
+        "S2-X-V2 L3-L5",
+        "S2-Y L3-L4",
+        "S2-SCOPE L4-L5"
+      ],
+      "scope_error": false,
+      "rationale": "排除失效旧 M 后，两个未被材料排除的现行报告都应保留。"
+    },
+    {
+      "claim_id": "S2-A039",
+      "text": "独立执行不等于两个独立抽样数据集；原文片段：answer:「执行独立不等于测试样本独立」",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-PROTOCOL L4-L6",
+        "S2-Y L3-L4"
+      ],
+      "scope_error": false,
+      "rationale": "相同固定 40 段被复用，不得冒充新增独立测试样本。"
+    },
+    {
+      "claim_id": "S2-A040",
+      "text": "甲当前 M−N = −0.6 dB；原文片段：answer:「2.1−2.7=−0.6 dB」",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-X-V2 L4"
+      ],
+      "scope_error": false,
+      "rationale": "直接算术 2.1−2.7=−0.6，单位与符号正确。"
+    },
+    {
+      "claim_id": "S2-A041",
+      "text": "甲当前 N 的汇总中位数高 0.6 dB；原文片段：answer:「N 的汇总指标高 0.6 dB」",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-X-V2 L4",
+        "S2-PROTOCOL L5"
+      ],
+      "scope_error": false,
+      "rationale": "数值差加越大越好规则；没有声称每段都优。"
+    },
+    {
+      "claim_id": "S2-A042",
+      "text": "乙 M 汇总中位数为 3.1 dB；原文片段：answer:「3.1−2.4」；evidence[4].supports:「M=3.1」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-Y L4"
+      ],
+      "scope_error": false,
+      "rationale": "原值准确。"
+    },
+    {
+      "claim_id": "S2-A043",
+      "text": "乙 N 汇总中位数为 2.4 dB；原文片段：answer:「3.1−2.4」；evidence[4].supports:「N=2.4」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-Y L4"
+      ],
+      "scope_error": false,
+      "rationale": "原值准确。"
+    },
+    {
+      "claim_id": "S2-A044",
+      "text": "乙 M−N = +0.7 dB；原文片段：answer:「3.1−2.4=+0.7 dB」",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-Y L4"
+      ],
+      "scope_error": false,
+      "rationale": "直接算术 3.1−2.4=0.7，正负与单位正确。"
+    },
+    {
+      "claim_id": "S2-A045",
+      "text": "乙 M 的汇总中位数高 0.7 dB；原文片段：answer:「M 的汇总指标高 0.7 dB」",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-Y L4",
+        "S2-PROTOCOL L5"
+      ],
+      "scope_error": false,
+      "rationale": "正确运用同协议的高值方向。"
+    },
+    {
+      "claim_id": "S2-A046",
+      "text": "计算量是两个方法的中位数之差，不可改称逐段配对差的中位数；原文片段：answer:「两种方法各自中位数之差」",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-PROTOCOL L5",
+        "S2-X-V2 L4",
+        "S2-Y L4"
+      ],
+      "scope_error": false,
+      "rationale": "中位数一般不与减法交换；声明的是不可等同统计量，并未断言真实数值必然不相等。"
+    },
+    {
+      "claim_id": "S2-A047",
+      "text": "甲只提供汇总中位数；原文片段：evidence[3].supports:「甲组只给汇总中位数」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-X-V2 L6"
+      ],
+      "scope_error": false,
+      "rationale": "原文明确只给汇总。"
+    },
+    {
+      "claim_id": "S2-A048",
+      "text": "甲未提供逐段结果；原文片段：answer:「甲未给逐段结果」；evidence[3].supports:「无逐段结果」；uncertainty[0]:「甲无逐段数据」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-X-V2 L6"
+      ],
+      "scope_error": false,
+      "rationale": "缺失对象限于甲报告中的结果。"
+    },
+    {
+      "claim_id": "S2-A049",
+      "text": "乙未提供逐段结果；原文片段：answer:「乙未给逐段结果」；evidence[5].supports:「乙组未提供逐段结果」；uncertainty[0]:「乙无逐段数据」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-Y L5"
+      ],
+      "scope_error": false,
+      "rationale": "乙缺逐段数据明示。"
+    },
+    {
+      "claim_id": "S2-A050",
+      "text": "仅凭汇总无法恢复逐段配对差值中位数；原文片段：answer:「不能改称逐段配对差的中位数」",
+      "kind": "unknown",
+      "verdict": "justified_unknown",
+      "evidence_refs": [
+        "S2-PROTOCOL L5",
+        "S2-X-V2 L6",
+        "S2-Y L5"
+      ],
+      "scope_error": false,
+      "rationale": "没有逐段配对值；中位数差不是配对差分布的充分信息。"
+    },
+    {
+      "claim_id": "S2-A051",
+      "text": "两个当前报告在声明条件及同指标上可比较；原文片段：answer:「声明同测试包」；evidence[7].supports:「声明条件/指标可比较」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-PROTOCOL L4-L6",
+        "S2-SCOPE L4"
+      ],
+      "scope_error": false,
+      "rationale": "限定为声明可比，未据此担保实际代码/环境一致。"
+    },
+    {
+      "claim_id": "S2-A052",
+      "text": "甲 v2 与乙的当前报告方向真正相反；原文片段：answer:「方向冲突」；evidence[7].supports:「方向相反」；uncertainty[1]:「方向冲突」；uncertainty[2]:「方向相反」",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-X-V2 L4",
+        "S2-Y L4",
+        "S2-SCOPE L4"
+      ],
+      "scope_error": false,
+      "rationale": "同声明条件、相同终点，甲负乙正；是真实报告冲突而非端点权衡。"
+    },
+    {
+      "claim_id": "S2-A053",
+      "text": "不能以指标或已知测试条件不同消解冲突；原文片段：answer:「不能用“指标不同”」",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-PROTOCOL L4-L6",
+        "S2-SCOPE L4"
+      ],
+      "scope_error": false,
+      "rationale": "两组明确声明这些条件及指标一致；不代表排除了未记录的执行差异。"
+    },
+    {
+      "claim_id": "S2-A054",
+      "text": "旧甲 v1 的撤回不能消除当前甲 v2 与乙的冲突；原文片段：answer:「v1 的撤回消除甲 v2 与乙的冲突」",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-X-V1 L5",
+        "S2-X-V2 L4-L5",
+        "S2-Y L3-L4",
+        "S2-SCOPE L4-L5"
+      ],
+      "scope_error": false,
+      "rationale": "乙独立且未被甲更正覆盖；撤回旧 M 不淘汰任何当前一边。"
+    },
+    {
+      "claim_id": "S2-A055",
+      "text": "尚未核验两组实际代码/环境/执行细节完全一致；原文片段：answer:「不等于代码及运行环境已经核验完全一致」",
+      "kind": "unknown",
+      "verdict": "justified_unknown",
+      "evidence_refs": [
+        "S2-Y L5",
+        "S2-SCOPE L4"
+      ],
+      "scope_error": false,
+      "rationale": "声明一致不能证明未报告代码及依赖环境实际一致。"
+    },
+    {
+      "claim_id": "S2-A056",
+      "text": "当前冲突原因未明；原文片段：answer:「差异来源仍未知」；evidence[7].supports:「差异来源未知」；uncertainty[1]:「原因未知」",
+      "kind": "unknown",
+      "verdict": "justified_unknown",
+      "evidence_refs": [
+        "S2-SCOPE L4"
+      ],
+      "scope_error": false,
+      "rationale": "明确未给差异来源；不归因给随机波动或任何特定实现。"
+    },
+    {
+      "claim_id": "S2-A057",
+      "text": "把三个文本当独立票会重复计算甲研究；原文片段：answer:「重复计算同一研究」",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-X-V2 L3",
+        "S2-Y L3"
+      ],
+      "scope_error": false,
+      "rationale": "同系列同数据两版不构成独立重复支持。"
+    },
+    {
+      "claim_id": "S2-A058",
+      "text": "三票多数表决还会纳入已撤回的旧 M 结果；原文片段：answer:「纳入已撤回的 M 数值」",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-X-V1 L5",
+        "S2-X-V2 L5"
+      ],
+      "scope_error": false,
+      "rationale": "撤回值不应参与当前证据投票。"
+    },
+    {
+      "claim_id": "S2-A059",
+      "text": "不能用简单平均汇总值或两组差值确定总体/稳定优胜；原文片段：answer:「不是有依据的合并效应」",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-PROTOCOL L4-L5",
+        "S2-X-V2 L6",
+        "S2-Y L5",
+        "S2-SCOPE L4-L5"
+      ],
+      "scope_error": false,
+      "rationale": "没有适当合并规则、不确定性及逐段资料，点估计平均不能裁决冲突；没有主张平均运算本身不可做。"
+    },
+    {
+      "claim_id": "S2-A060",
+      "text": "平均汇总中位数不能一般恢复合并数据的中位数；原文片段：answer:「中位数通常不能这样合并」",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-PROTOCOL L5",
+        "S2-X-V2 L6",
+        "S2-Y L5"
+      ],
+      "scope_error": false,
+      "rationale": "这是正确统计量关系推论，源文仅给前提，非声称原文证明了数学定理。"
+    },
+    {
+      "claim_id": "S2-A061",
+      "text": "现有材料未提供可辩护的合并权重/模型/方案；原文片段：answer:「可辩护的权重/合并规则」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-PROTOCOL L3-L6",
+        "S2-X-V2 L3-L6",
+        "S2-Y L3-L6",
+        "S2-SCOPE L4-L6"
+      ],
+      "scope_error": false,
+      "rationale": "核对完整封闭语料均无合并模型或权重；用户偏好权重也另有明确缺失声明。"
+    },
+    {
+      "claim_id": "S2-A062",
+      "text": "简单均值不能解决未解释的执行/报告冲突；原文片段：answer:「平均会掩盖未解释的冲突」",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-X-V2 L4",
+        "S2-Y L4",
+        "S2-SCOPE L4-L5"
+      ],
+      "scope_error": false,
+      "rationale": "相反方向及原因/仲裁缺失不会因算术平均而消失。"
+    },
+    {
+      "claim_id": "S2-A063",
+      "text": "较新记录日期不能自动代表更高质量或推翻另一独立报告；原文片段：answer:「也不自动更可靠」",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-X-V2 L2-L5",
+        "S2-Y L2-L5",
+        "S2-SCOPE L5"
+      ],
+      "scope_error": false,
+      "rationale": "日期不提供质量和仲裁证据，明确版本关系才使 v2 替代 v1。"
+    },
+    {
+      "claim_id": "S2-A064",
+      "text": "乙不是甲 v2 的替代更正版；原文片段：answer:「不意味着它取代独立的甲 v2」",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-Y L3",
+        "S2-SCOPE L5"
+      ],
+      "scope_error": false,
+      "rationale": "不同系列独立执行，材料无覆盖证据。"
+    },
+    {
+      "claim_id": "S2-A065",
+      "text": "现有证据不足确定固定基准的稳定/统一优胜者；原文片段：answer:「现有证据无法确定统一优胜者」",
+      "kind": "unknown",
+      "verdict": "justified_unknown",
+      "evidence_refs": [
+        "S2-X-V2 L4",
+        "S2-Y L4",
+        "S2-SCOPE L4-L5"
+      ],
+      "scope_error": false,
+      "rationale": "保留双方点估计，原因与仲裁缺失；没有以弃答代替可算的数值。"
+    },
+    {
+      "claim_id": "S2-A066",
+      "text": "甲没有报告置信区间；原文片段：answer:「甲未给逐段结果、置信区间」；evidence[3].supports:「无逐段结果、置信区间」；uncertainty[0]:「甲无逐段数据、置信区间」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-X-V2 L6"
+      ],
+      "scope_error": false,
+      "rationale": "源文直接说明。"
+    },
+    {
+      "claim_id": "S2-A067",
+      "text": "甲没有显著性检验；原文片段：answer:「甲未给逐段结果、置信区间或显著性检验」；evidence[3].supports:「无逐段结果、置信区间或显著性检验」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-X-V2 L6"
+      ],
+      "scope_error": false,
+      "rationale": "源文直接说明；不混同没有显著差异。"
+    },
+    {
+      "claim_id": "S2-A068",
+      "text": "不能判断任一方法差值的统计显著性；原文片段：answer:「不能从 −0.6 dB 和 +0.7 dB 这两个点估计判断显著性」；uncertainty[0]:「无法判定差值的统计显著性」",
+      "kind": "unknown",
+      "verdict": "justified_unknown",
+      "evidence_refs": [
+        "S2-X-V2 L6",
+        "S2-Y L5"
+      ],
+      "scope_error": false,
+      "rationale": "汇总中位数及两组点差不足以估计采样或运行不确定性。"
+    },
+    {
+      "claim_id": "S2-A069",
+      "text": "不能判断跨组差异是否显著或超出波动；原文片段：answer:「两组差异是否超出波动」；uncertainty[0]:「甲乙差异的统计不确定性」",
+      "kind": "unknown",
+      "verdict": "justified_unknown",
+      "evidence_refs": [
+        "S2-X-V2 L6",
+        "S2-Y L5"
+      ],
+      "scope_error": false,
+      "rationale": "缺完整不确定性资料；未断言实际存在随机波动。"
+    },
+    {
+      "claim_id": "S2-A070",
+      "text": "没有证明两方法相等或等效；原文片段：answer:「两方法相等」；uncertainty[2]:「两方法等效」",
+      "kind": "unknown",
+      "verdict": "justified_unknown",
+      "evidence_refs": [
+        "S2-X-V2 L6",
+        "S2-Y L5"
+      ],
+      "scope_error": false,
+      "rationale": "不能择优并不等于等效证据，候选正确区分。"
+    },
+    {
+      "claim_id": "S2-A071",
+      "text": "甲旧版通道对齐错误已被纠正；原文片段：answer:「甲 v1 的通道对齐错误已纠正」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-X-V2 L4-L5"
+      ],
+      "scope_error": false,
+      "rationale": "是报告明确的更正操作。"
+    },
+    {
+      "claim_id": "S2-A072",
+      "text": "已知旧版错误不能自动证明当前甲乙差异的原因；原文片段：answer:「它不能自动解释当前甲 v2 与乙的差异」；uncertainty[1]:「不能把已纠正的甲v1错误直接归因给甲v2或乙」",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-X-V1 L5",
+        "S2-X-V2 L4-L5",
+        "S2-SCOPE L4"
+      ],
+      "scope_error": false,
+      "rationale": "旧错误与当前差异之间没有归因链，候选未把待验假说当事实。"
+    },
+    {
+      "claim_id": "S2-A073",
+      "text": "乙未提供环境依赖版本；原文片段：answer:「环境依赖版本」；evidence[5].supports:「环境依赖版本」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-Y L5"
+      ],
+      "scope_error": false,
+      "rationale": "缺环境依赖版本的对象为乙，未误说协议输入条件缺失。"
+    },
+    {
+      "claim_id": "S2-A074",
+      "text": "乙未提供可执行代码；原文片段：answer:「可执行代码」；evidence[5].supports:「可执行代码」；uncertainty[1]:「乙缺环境依赖与代码」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-Y L5"
+      ],
+      "scope_error": false,
+      "rationale": "乙原文明示。"
+    },
+    {
+      "claim_id": "S2-A075",
+      "text": "需要两方法逐段配对结果以复核统计推断；原文片段：answer:「需两组 40 段的 M/N 配对结果」",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-X-V2 L6",
+        "S2-Y L5"
+      ],
+      "scope_error": false,
+      "rationale": "是针对已知缺失的合理研究建议，不是已经取得数据。"
+    },
+    {
+      "claim_id": "S2-A076",
+      "text": "建议明确推断对象并采用适当配对检验/重采样/不确定性分析；原文片段：answer:「明确推断对象」",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-PROTOCOL L4-L5",
+        "S2-X-V2 L6",
+        "S2-Y L5"
+      ],
+      "scope_error": false,
+      "rationale": "方法是有条件的后续建议，不声称某检验已执行或已具显著性。"
+    },
+    {
+      "claim_id": "S2-A077",
+      "text": "若存在处理随机性或运行波动，建议重复运行；原文片段：answer:「若处理含随机性，还需重复运行及其变异」",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-Y L5",
+        "S2-SCOPE L4"
+      ],
+      "scope_error": false,
+      "rationale": "明确 if 条件，没有推断实际算法含随机性。"
+    },
+    {
+      "claim_id": "S2-A078",
+      "text": "建议对照两组代码、环境及逐段输出并复现/仲裁；原文片段：answer:「需核对两组实现、依赖环境」",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-Y L5",
+        "S2-SCOPE L4-L5"
+      ],
+      "scope_error": false,
+      "rationale": "直接针对无法验证执行和没有仲裁的缺口；不冒充已完成复跑。"
+    },
+    {
+      "claim_id": "S2-A079",
+      "text": "参数、预处理、数据完整性或对齐日志属于待核验因素；原文片段：answer:「预处理/对齐与参数」",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-Y L5",
+        "S2-SCOPE L4"
+      ],
+      "scope_error": false,
+      "rationale": "范围文件未给原因，提出检查因素合理；正文明确非已证实原因。"
+    },
+    {
+      "claim_id": "S2-A080",
+      "text": "必要时核对随机种子和逐段中间输出；原文片段：answer:「必要时核对随机种子、逐段中间输出」",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-Y L5",
+        "S2-SCOPE L4"
+      ],
+      "scope_error": false,
+      "rationale": "是必要时的诊断建议，没有断言实际原因是种子或随机波动。"
+    },
+    {
+      "claim_id": "S2-A081",
+      "text": "乙未报告感知听音评分；封闭材料也未在别处补齐；原文片段：answer:「感知听音评分」；evidence[6].supports:「听音评分」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-Y L6",
+        "S2-PROTOCOL L3-L6",
+        "S2-X-V2 L3-L6",
+        "S2-SCOPE L4-L6"
+      ],
+      "scope_error": false,
+      "rationale": "Y 明示无评分；逐一检查其余全文也无听音结果，故全材料缺口可成立。"
+    },
+    {
+      "claim_id": "S2-A082",
+      "text": "乙未报告实时延迟；其余材料也未补齐；原文片段：answer:「实时延迟」；evidence[6].supports:「实时延迟」；uncertainty[3]:「实时延迟」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-Y L6",
+        "S2-SCOPE L6"
+      ],
+      "scope_error": false,
+      "rationale": "已核对完整材料，无延迟数据；不是声称系统必无延迟。"
+    },
+    {
+      "claim_id": "S2-A083",
+      "text": "乙未报告资源消耗；其余材料也未补齐；原文片段：answer:「资源消耗」；evidence[6].supports:「资源消耗」；uncertainty[3]:「资源消耗」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-Y L6",
+        "S2-SCOPE L6"
+      ],
+      "scope_error": false,
+      "rationale": "材料缺测量值，不是零资源或未发生资源消耗。"
+    },
+    {
+      "claim_id": "S2-A084",
+      "text": "材料不含其他噪声类型的结果；原文片段：answer:「其他噪声」；evidence[8].supports:「其他噪声」；uncertainty[3]:「其他噪声」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-SCOPE L6"
+      ],
+      "scope_error": false,
+      "rationale": "不同噪声场景缺失明示。"
+    },
+    {
+      "claim_id": "S2-A085",
+      "text": "材料不含其他输入 SNR 的结果；原文片段：answer:「其他噪声/输入 SNR」；evidence[8].supports:「其他噪声/输入SNR」；uncertainty[3]:「其他噪声/输入SNR」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-SCOPE L6"
+      ],
+      "scope_error": false,
+      "rationale": "除固定 −5 dB 外无输入 SNR 条件结果。"
+    },
+    {
+      "claim_id": "S2-A086",
+      "text": "材料不含真实部署结果；原文片段：answer:「真实部署」；evidence[8].supports:「真实部署结果」；uncertainty[3]:「真实部署」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-SCOPE L6"
+      ],
+      "scope_error": false,
+      "rationale": "封闭任务明确没有真实部署数据。"
+    },
+    {
+      "claim_id": "S2-A087",
+      "text": "材料不含用户偏好权重；原文片段：answer:「用户偏好权重」；evidence[8].supports:「用户偏好权重」；uncertainty[3]:「用户偏好权重」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-SCOPE L6"
+      ],
+      "scope_error": false,
+      "rationale": "偏好权重缺失直接载明。"
+    },
+    {
+      "claim_id": "S2-A088",
+      "text": "不能由 SNR 指标断定感知听感更优；原文片段：answer:「不能只凭此 SNR 指标选部署方案」",
+      "kind": "unknown",
+      "verdict": "justified_unknown",
+      "evidence_refs": [
+        "S2-Y L6",
+        "S2-SCOPE L6"
+      ],
+      "scope_error": false,
+      "rationale": "感知评分未测，SNR 排名不足以证明听感排名。"
+    },
+    {
+      "claim_id": "S2-A089",
+      "text": "不能判定实时速度/延迟优胜；原文片段：uncertainty[3]:「无法确定部署与跨场景性能」",
+      "kind": "unknown",
+      "verdict": "justified_unknown",
+      "evidence_refs": [
+        "S2-Y L6"
+      ],
+      "scope_error": false,
+      "rationale": "缺延迟测量；并非用 SNR 替代速度证据。"
+    },
+    {
+      "claim_id": "S2-A090",
+      "text": "不能判定资源消耗优胜；原文片段：uncertainty[3]:「无法确定部署与跨场景性能」",
+      "kind": "unknown",
+      "verdict": "justified_unknown",
+      "evidence_refs": [
+        "S2-Y L6"
+      ],
+      "scope_error": false,
+      "rationale": "没有资源数据，不作资源优劣结论。"
+    },
+    {
+      "claim_id": "S2-A091",
+      "text": "不能判定实际部署优胜；原文片段：uncertainty[3]:「无法确定部署与跨场景性能」",
+      "kind": "unknown",
+      "verdict": "justified_unknown",
+      "evidence_refs": [
+        "S2-Y L6",
+        "S2-SCOPE L6"
+      ],
+      "scope_error": false,
+      "rationale": "任务没有部署结果，也没有部署取舍指标。"
+    },
+    {
+      "claim_id": "S2-A092",
+      "text": "不能将当前固定条件结论外推到其他噪声或输入 SNR；原文片段：answer:「不能推广为其他噪声、其他输入 SNR」",
+      "kind": "unknown",
+      "verdict": "justified_unknown",
+      "evidence_refs": [
+        "S2-SCOPE L6"
+      ],
+      "scope_error": false,
+      "rationale": "外推范围限制正确。"
+    },
+    {
+      "claim_id": "S2-A093",
+      "text": "建议在目标硬件与真实场景评估部署相关指标；原文片段：answer:「需在实际目标场景与硬件上评估」",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-Y L6",
+        "S2-SCOPE L6"
+      ],
+      "scope_error": false,
+      "rationale": "后续实验设计建议恰好针对缺失的感知、延迟、资源与外推证据，不是已发生的实验。"
+    },
+    {
+      "claim_id": "S2-A094",
+      "text": "两组没有给出足以用于合并/推断的不确定性估计；原文片段：answer:「不确定性未报告」",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S2-X-V2 L4-L6",
+        "S2-Y L4-L6"
+      ],
+      "scope_error": false,
+      "rationale": "甲 L6 明确没有 CI/检验；逐行核对乙只有两个汇总值且无逐段值/不确定性估计。此处是在完整封闭语料内描述报告缺失，不宣称真实效应没有不确定性。"
+    }
+  ],
+  "citations": [
+    {
+      "evidence_index": 0,
+      "source_id": "S2-PROTOCOL",
+      "locator": "L4-L6",
+      "attached_statement": "统一基准含同一40段单声道语音、固定交通噪声、输入 -5 dB、输出16 kHz；指标是每段输出减输入SNR后取中位数；两组声明同包、同发布版1.0、同指标且不得选子集。",
+      "locator_valid": true,
+      "contribution": "direct",
+      "whole_statement_single_source_support": "supported",
+      "joint_support_with_other_citations": "not_applicable",
+      "scope_error": false,
+      "rationale": "L4-L6 分别承载固定样本/交通噪声/−5 dB/16 kHz、逐段改善中位数及两组完整包/1.0/同指标声明。所有摘录逐行一致，属性限定正确。"
+    },
+    {
+      "evidence_index": 1,
+      "source_id": "S2-X-V1",
+      "locator": "L2-L5",
+      "attached_statement": "v1日期、系列及旧数值；M数值因通道对齐代码错误撤回，由同一研究v2更正并替代。",
+      "locator_valid": true,
+      "contribution": "direct",
+      "whole_statement_single_source_support": "supported",
+      "joint_support_with_other_citations": "not_applicable",
+      "scope_error": false,
+      "rationale": "L2-L5 给日期、系列、历史值及旧 M 因对齐错误撤回/由 v2 替代。没有将本源当作更正数值来源。摘录一致。"
+    },
+    {
+      "evidence_index": 2,
+      "source_id": "S2-X-V2",
+      "locator": "L2-L5",
+      "attached_statement": "v2日期及同系列同数据非独立实验；完整重算M=2.1、N=2.7 dB；替代v1 M，除纠错外输入/算法发布版/指标不变。",
+      "locator_valid": true,
+      "contribution": "direct",
+      "whole_statement_single_source_support": "supported",
+      "joint_support_with_other_citations": "not_applicable",
+      "scope_error": false,
+      "rationale": "L2-L5 给日期、同系列同数据非独立实验、当前 2.1/2.7 及替代范围；未变属性明确只写输入/发布版/指标，没有偷渡代码环境全同。摘录一致。"
+    },
+    {
+      "evidence_index": 3,
+      "source_id": "S2-X-V2",
+      "locator": "L6",
+      "attached_statement": "甲组只给汇总中位数，无逐段结果、置信区间或显著性检验。",
+      "locator_valid": true,
+      "contribution": "direct",
+      "whole_statement_single_source_support": "supported",
+      "joint_support_with_other_citations": "not_applicable",
+      "scope_error": false,
+      "rationale": "L6 完全支持甲只给汇总、无逐段/CI/显著性检验。摘录一致。"
+    },
+    {
+      "evidence_index": 4,
+      "source_id": "S2-Y",
+      "locator": "L2-L4",
+      "attached_statement": "乙组日期、独立执行且非X-204版本；完整相同基准/发布版/指标，M=3.1、N=2.4 dB。",
+      "locator_valid": true,
+      "contribution": "direct",
+      "whole_statement_single_source_support": "supported",
+      "joint_support_with_other_citations": "not_applicable",
+      "scope_error": false,
+      "rationale": "L2-L4 完全支持乙日期、独立执行/非 X-204、完整同基准/发布版/指标及 3.1/2.4。摘录一致。"
+    },
+    {
+      "evidence_index": 5,
+      "source_id": "S2-Y",
+      "locator": "L5",
+      "attached_statement": "乙组未提供逐段结果、环境依赖版本或可执行代码。",
+      "locator_valid": true,
+      "contribution": "direct",
+      "whole_statement_single_source_support": "supported",
+      "joint_support_with_other_citations": "not_applicable",
+      "scope_error": false,
+      "rationale": "L5 完全支持乙逐段结果、环境依赖版本、可执行代码缺失。摘录一致。"
+    },
+    {
+      "evidence_index": 6,
+      "source_id": "S2-Y",
+      "locator": "L6",
+      "attached_statement": "乙组未报告听音评分、实时延迟或资源消耗。",
+      "locator_valid": true,
+      "contribution": "direct",
+      "whole_statement_single_source_support": "supported",
+      "joint_support_with_other_citations": "not_applicable",
+      "scope_error": false,
+      "rationale": "L6 完全支持乙未报告听感、延迟、资源；没有把缺失变成零值。摘录一致。"
+    },
+    {
+      "evidence_index": 7,
+      "source_id": "S2-SCOPE",
+      "locator": "L4-L5",
+      "attached_statement": "范围文件确认甲v2与乙的声明条件/指标可比较且方向相反，差异来源未知；无乙撤回、被甲更正覆盖或后续仲裁证据。",
+      "locator_valid": true,
+      "contribution": "direct",
+      "whole_statement_single_source_support": "supported",
+      "joint_support_with_other_citations": "not_applicable",
+      "scope_error": false,
+      "rationale": "L4-L5 明示声明可比、方向相反、原因未给；supports 保留“无……证据”，没有把无撤回证据升级成绝对未撤回。无后续仲裁亦明示。摘录一致。"
+    },
+    {
+      "evidence_index": 8,
+      "source_id": "S2-SCOPE",
+      "locator": "L6",
+      "attached_statement": "整个任务材料无其他噪声/输入SNR、真实部署结果或用户偏好权重。",
+      "locator_valid": true,
+      "contribution": "direct",
+      "whole_statement_single_source_support": "supported",
+      "joint_support_with_other_citations": "not_applicable",
+      "scope_error": false,
+      "rationale": "L6 直接给全材料其他噪声/输入 SNR/真实部署/偏好权重缺失，范围准确。摘录一致。"
+    },
+    {
+      "evidence_index": 9,
+      "source_id": "S2-PROTOCOL",
+      "locator": "L3",
+      "attached_statement": "材料明确为人工合成信号处理记录，不是真实论文。",
+      "locator_valid": true,
+      "contribution": "direct",
+      "whole_statement_single_source_support": "supported",
+      "joint_support_with_other_citations": "not_applicable",
+      "scope_error": false,
+      "rationale": "L3 直接声明人工合成信号处理记录、非真实论文。其他源同样有合成声明，整份任务限定一致；摘录一致。"
+    }
+  ],
+  "scope_errors": [],
+  "conflicts": [
+    {
+      "conflict_id": "S2-C1",
+      "handling": "correct",
+      "rationale": "保留甲 v2 的 −0.6 dB（N 高）与乙的 +0.7 dB（M 高），限定为声明同包、同输入、同发布版、同终点的未解决方向冲突；没有日期/多数/平均仲裁。原文依据：PROTOCOL L4-L6、X-v2 L4-L5、Y L4、SCOPE L4-L5。"
+    },
+    {
+      "conflict_id": "S2-C2",
+      "handling": "correct",
+      "rationale": "把 X-v1→X-v2 当明确纠错和替代；旧 M 只用于更正历史，不作为第二独立实验或与 v2 并列的当前矛盾。原文依据：X-v1 L5、X-v2 L3-L5。"
+    }
+  ],
+  "version_handling": {
+    "status": "correct",
+    "rationale": "明确 v2 替代 v1 的 M 结果，使用当前甲 2.1/2.7；旧 M=3.2 仅解释历史。Y 为另一执行来源而非 X-204 版本，复用固定 40 段，不用日期替代版本关系。"
+  },
+  "six_areas": {
+    "decomposition": {
+      "status": "complete",
+      "artifact_refs": [
+        "candidates/candidate-636d980e73/work/research-notes.md",
+        "candidates/candidate-636d980e73/work/plan-batch.json"
+      ],
+      "rationale": "实际笔记明确先版本与口径、再有效差值、再可比冲突和综合、最后统计/归因/部署缺口；依赖和停止条件有实质内容。内部合并为六分支并未漏掉冻结七要求。无需特定结构或阅读前落盘。"
+    },
+    "retrieval_coverage": {
+      "status": "complete",
+      "artifact_refs": [
+        "candidates/candidate-636d980e73/work/research-notes.md",
+        "candidates/candidate-636d980e73/work/acquisition-lines.txt",
+        "candidates/candidate-636d980e73/work/source-manifest.json"
+      ],
+      "rationale": "封闭材料共 5 份（6/5/6/6/6 行），可见编号全文/副本与最终证据涵盖全部材料；旧 v1 保留历史但排除当前票。停止因许可材料耗尽且必答均已处理，并未声称真实领域检索穷尽。此判断证实可见产物覆盖，不将自写调用记录认作独立原生调用追踪。"
+    },
+    "evidence_backlinks": {
+      "status": "complete",
+      "artifact_refs": [
+        "candidates/candidate-636d980e73/result.json",
+        "candidates/candidate-636d980e73/work/acquisition-lines.txt",
+        "candidates/candidate-636d980e73/work/calculations.json"
+      ],
+      "rationale": "十条 evidence 的物理行号和原文摘录全部真实，正文与 uncertainty 的关键结论也能回到原值及限定行；当前差值有对应计算产物。源属性不越界。"
+    },
+    "conflict_handling": {
+      "status": "complete",
+      "artifact_refs": [
+        "candidates/candidate-636d980e73/result.json",
+        "candidates/candidate-636d980e73/work/research-notes.md"
+      ],
+      "rationale": "文本即完整处理真冲突、版本更正、同数据执行独立性与未知原因；不要求独立冲突文件。结果保留甲 N 与乙 M 两边，没有通过多数、均值或新日期删边。"
+    },
+    "synthesis": {
+      "status": "complete",
+      "artifact_refs": [
+        "candidates/candidate-636d980e73/result.json",
+        "candidates/candidate-636d980e73/work/research-notes.md"
+      ],
+      "rationale": "有限综合明确给出双方差值、同声明条件方向不一致和不能稳定选优，统计、实现与部署限制没有混成一个含混弃答。"
+    },
+    "research_gaps": {
+      "status": "complete",
+      "artifact_refs": [
+        "candidates/candidate-636d980e73/result.json",
+        "candidates/candidate-636d980e73/work/research-notes.md"
+      ],
+      "rationale": "逐段配对数据/统计不确定性、代码依赖与对照复跑/仲裁、听感延迟资源/真实部署及跨条件与偏好均有明确缺口；建议保持条件性，不冒充实际完成。"
+    }
+  },
+  "limitations": [
+    "输出合同已核对：case_id=S2，五个必需字段齐全，无额外顶层字段，status=complete，answer 为中文字符串，evidence/uncertainty 类型与项目字段符合 case.json。complete 可包括有依据的未知；没有未处理必答项。",
+    "独立手工审阅仅使用当前 S2 case pack 的 task、gold、五份 source-texts 及候选 result/work。未读取组别映射、其他案例、候选所加载 skill 或原工作区；没有依据格式推断条件。",
+    "科学可回答覆盖为 S2-R1–R5 的 5/5；有据未知项 S2-R6–R7 单列为 2/2，不加入可回答覆盖分子。五个可回答项均 correct。",
+    "原始七要求均属 scientific_content，本 case 没有独立 actual_tool_process 评分要求；该分母为 0（不适用），没有混入科学覆盖。工作流交付按可见全文、计算产物与笔记核验。没有可独立认证的完整宿主原生调用 trace；自写 events、验证通过或 completed 不证明所有声称调用实际发生，也不用于推算模型调用数/token。",
+    "atomic_claims 按唯一原子命题去重；每条保留 answer、evidence.supports 和/或 uncertainty 中匹配的原文片段及出现字段。重复出现的同义命题合并，不增加分母；明显推荐也列作 inference 审查，未当已完成实验。覆盖全部事实，包括旧值、日期、固定条件、数学推论和未引用附加判断。",
+    "evidence 数组逐项审查，并已检查正文和 uncertainty 的实际引用区间。真实前提贡献与单源整句支持分开：仅需其他源补前提的正确综合不算无效引用；数学/方法推论标明为推论。",
+    "以下核验只针对人工合成封闭材料，不代表真实文献元分析、官方成绩或统计效应证据；没有产生官方分数或自动百分制估计。",
+    "work/plan-batch.json 的计划内容与笔记可核验分解；笔记已披露第一次计划写入失败、全文读取后修复。无需猜测未保存草稿是否先于阅读；也不因修复后的文件个数/审计字段给分。"
+  ]
+}

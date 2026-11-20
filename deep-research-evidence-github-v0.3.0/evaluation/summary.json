@@ -1,0 +1,590 @@
+{
+  "created_at": "2026-11-20T07:28:07.627903+00:00",
+  "official_score": null,
+  "groups": {
+    "A": {
+      "reviewed_runs": 3,
+      "answerable_scientific_requirements": 14,
+      "answerable_scientific_fully_correct_and_covered": 13,
+      "unknown_requirements": 6,
+      "unknown_correctly_handled": 6,
+      "citations": 31,
+      "valid_locators": 31,
+      "scope_errors": 1,
+      "atomic_claims_with_scope_error": 3,
+      "atomic_claim_verdicts": {
+        "supported": 239,
+        "justified_unknown": 54,
+        "partial": 3
+      },
+      "citation_contribution": {
+        "direct": 31
+      }
+    },
+    "B": {
+      "reviewed_runs": 3,
+      "answerable_scientific_requirements": 14,
+      "answerable_scientific_fully_correct_and_covered": 13,
+      "unknown_requirements": 6,
+      "unknown_correctly_handled": 6,
+      "citations": 30,
+      "valid_locators": 30,
+      "scope_errors": 1,
+      "atomic_claims_with_scope_error": 2,
+      "atomic_claim_verdicts": {
+        "supported": 244,
+        "justified_unknown": 46,
+        "partial": 2
+      },
+      "citation_contribution": {
+        "direct": 30
+      }
+    },
+    "C": {
+      "reviewed_runs": 3,
+      "answerable_scientific_requirements": 14,
+      "answerable_scientific_fully_correct_and_covered": 14,
+      "unknown_requirements": 6,
+      "unknown_correctly_handled": 6,
+      "citations": 29,
+      "valid_locators": 29,
+      "scope_errors": 0,
+      "atomic_claims_with_scope_error": 0,
+      "atomic_claim_verdicts": {
+        "supported": 229,
+        "justified_unknown": 40
+      },
+      "citation_contribution": {
+        "direct": 29
+      }
+    }
+  },
+  "runs": [
+    {
+      "run_id": "v3-01",
+      "condition": "A",
+      "case_id": "S1",
+      "answerable_scientific_requirements": 5,
+      "answerable_scientific_fully_correct_and_covered": 5,
+      "unknown_requirements": 2,
+      "unknown_correctly_handled": 2,
+      "actual_process_requirements": 0,
+      "actual_process_correct_and_covered": 0,
+      "atomic_claim_verdicts": {
+        "supported": 76,
+        "justified_unknown": 25
+      },
+      "citations": 11,
+      "valid_locators": 11,
+      "citation_contribution": {
+        "direct": 11
+      },
+      "single_source_whole_statement_support": {
+        "supported": 11
+      },
+      "joint_statement_support": {
+        "not_applicable": 11
+      },
+      "scope_errors": 0,
+      "atomic_claims_with_scope_error": 0,
+      "conflict_handling": {
+        "correct": 1
+      },
+      "version_handling": "not_applicable",
+      "six_areas": {
+        "decomposition": "complete",
+        "retrieval_coverage": "complete",
+        "evidence_backlinks": "complete",
+        "conflict_handling": "complete",
+        "synthesis": "complete",
+        "research_gaps": "complete"
+      },
+      "review_sha256": "1fa84476e4146f9b2f48b0036731a706eac6b3f68637f74f25ff1e3aba0ac37f"
+    },
+    {
+      "run_id": "v3-02",
+      "condition": "B",
+      "case_id": "S2",
+      "answerable_scientific_requirements": 5,
+      "answerable_scientific_fully_correct_and_covered": 4,
+      "unknown_requirements": 2,
+      "unknown_correctly_handled": 2,
+      "actual_process_requirements": 0,
+      "actual_process_correct_and_covered": 0,
+      "atomic_claim_verdicts": {
+        "supported": 83,
+        "justified_unknown": 12,
+        "partial": 2
+      },
+      "citations": 9,
+      "valid_locators": 9,
+      "citation_contribution": {
+        "direct": 9
+      },
+      "single_source_whole_statement_support": {
+        "supported": 8,
+        "partial": 1
+      },
+      "joint_statement_support": {
+        "not_applicable": 8,
+        "partial": 1
+      },
+      "scope_errors": 1,
+      "atomic_claims_with_scope_error": 2,
+      "conflict_handling": {
+        "correct": 2
+      },
+      "version_handling": "correct",
+      "six_areas": {
+        "decomposition": "complete",
+        "retrieval_coverage": "complete",
+        "evidence_backlinks": "partial",
+        "conflict_handling": "complete",
+        "synthesis": "complete",
+        "research_gaps": "complete"
+      },
+      "review_sha256": "04afac645bb23c0beef693f33c59a8f47c0cc88e8b0690c351e951963e8dec66"
+    },
+    {
+      "run_id": "v3-03",
+      "condition": "C",
+      "case_id": "S3",
+      "answerable_scientific_requirements": 4,
+      "answerable_scientific_fully_correct_and_covered": 4,
+      "unknown_requirements": 2,
+      "unknown_correctly_handled": 2,
+      "actual_process_requirements": 1,
+      "actual_process_correct_and_covered": 1,
+      "atomic_claim_verdicts": {
+        "supported": 75,
+        "justified_unknown": 11
+      },
+      "citations": 9,
+      "valid_locators": 9,
+      "citation_contribution": {
+        "direct": 9
+      },
+      "single_source_whole_statement_support": {
+        "supported": 8,
+        "partial": 1
+      },
+      "joint_statement_support": {
+        "not_applicable": 8,
+        "supported": 1
+      },
+      "scope_errors": 0,
+      "atomic_claims_with_scope_error": 0,
+      "conflict_handling": {
+        "correct": 1
+      },
+      "version_handling": "not_applicable",
+      "six_areas": {
+        "decomposition": "complete",
+        "retrieval_coverage": "complete",
+        "evidence_backlinks": "complete",
+        "conflict_handling": "complete",
+        "synthesis": "complete",
+        "research_gaps": "complete"
+      },
+      "review_sha256": "4c2a826cf4c41550612a3dd0bfa29df077d7ca6c7d6816d6fa3f6a699cfd0b96",
+      "service_audit": {
+        "present": true,
+        "valid_single_log": true,
+        "log_relative_path": "work/tool-state/events.jsonl",
+        "log_sha256": "df44566426a60827c067beb88a42738063d9903a9b1fc0d388b957d78b08a767",
+        "actual_simulator_calls": 9,
+        "checks": {
+          "empty_then_reformulated_success": true,
+          "429_then_same_source_success": true,
+          "native_failure_then_fallback_same_artifact": true,
+          "all_four_sources_fetched": true,
+          "sequential_unique_ids": true,
+          "parameters_and_timestamps": true,
+          "output_hashes_and_source_texts_match": true
+        },
+        "artifact_checks": [
+          {
+            "call_id": "S3-CALL-003",
+            "exists_and_hash_matches": true,
+            "matches_frozen_source_text_when_applicable": true
+          },
+          {
+            "call_id": "S3-CALL-005",
+            "exists_and_hash_matches": true,
+            "matches_frozen_source_text_when_applicable": null
+          },
+          {
+            "call_id": "S3-CALL-007",
+            "exists_and_hash_matches": true,
+            "matches_frozen_source_text_when_applicable": true
+          },
+          {
+            "call_id": "S3-CALL-008",
+            "exists_and_hash_matches": true,
+            "matches_frozen_source_text_when_applicable": true
+          },
+          {
+            "call_id": "S3-CALL-009",
+            "exists_and_hash_matches": true,
+            "matches_frozen_source_text_when_applicable": true
+          }
+        ],
+        "all_checks_pass": true,
+        "limitation": "Local synthetic tool only; logs are not a tamper-proof native model trace and do not measure real HTTP/PDF or model requests."
+      }
+    },
+    {
+      "run_id": "v3-09",
+      "condition": "B",
+      "case_id": "S3",
+      "answerable_scientific_requirements": 4,
+      "answerable_scientific_fully_correct_and_covered": 4,
+      "unknown_requirements": 2,
+      "unknown_correctly_handled": 2,
+      "actual_process_requirements": 1,
+      "actual_process_correct_and_covered": 1,
+      "atomic_claim_verdicts": {
+        "supported": 85,
+        "justified_unknown": 13
+      },
+      "citations": 11,
+      "valid_locators": 11,
+      "citation_contribution": {
+        "direct": 11
+      },
+      "single_source_whole_statement_support": {
+        "supported": 9,
+        "partial": 2
+      },
+      "joint_statement_support": {
+        "not_applicable": 9,
+        "supported": 2
+      },
+      "scope_errors": 0,
+      "atomic_claims_with_scope_error": 0,
+      "conflict_handling": {
+        "correct": 1
+      },
+      "version_handling": "not_applicable",
+      "six_areas": {
+        "decomposition": "complete",
+        "retrieval_coverage": "complete",
+        "evidence_backlinks": "complete",
+        "conflict_handling": "complete",
+        "synthesis": "complete",
+        "research_gaps": "complete"
+      },
+      "review_sha256": "b70f108529cf6350ee1108b885e3267a93ffad3714bd71b1d9f784d49e582386",
+      "service_audit": {
+        "present": true,
+        "valid_single_log": true,
+        "log_relative_path": "work/tool-state/events.jsonl",
+        "log_sha256": "3b54331eb1a0706abd371aa5d88e14facadaaf34f81fe6e5bfb99c878fe609e8",
+        "actual_simulator_calls": 9,
+        "checks": {
+          "empty_then_reformulated_success": true,
+          "429_then_same_source_success": true,
+          "native_failure_then_fallback_same_artifact": true,
+          "all_four_sources_fetched": true,
+          "sequential_unique_ids": true,
+          "parameters_and_timestamps": true,
+          "output_hashes_and_source_texts_match": true
+        },
+        "artifact_checks": [
+          {
+            "call_id": "S3-CALL-003",
+            "exists_and_hash_matches": true,
+            "matches_frozen_source_text_when_applicable": true
+          },
+          {
+            "call_id": "S3-CALL-005",
+            "exists_and_hash_matches": true,
+            "matches_frozen_source_text_when_applicable": null
+          },
+          {
+            "call_id": "S3-CALL-006",
+            "exists_and_hash_matches": true,
+            "matches_frozen_source_text_when_applicable": true
+          },
+          {
+            "call_id": "S3-CALL-007",
+            "exists_and_hash_matches": true,
+            "matches_frozen_source_text_when_applicable": true
+          },
+          {
+            "call_id": "S3-CALL-009",
+            "exists_and_hash_matches": true,
+            "matches_frozen_source_text_when_applicable": true
+          }
+        ],
+        "all_checks_pass": true,
+        "limitation": "Local synthetic tool only; logs are not a tamper-proof native model trace and do not measure real HTTP/PDF or model requests."
+      }
+    },
+    {
+      "run_id": "v3-04",
+      "condition": "B",
+      "case_id": "S1",
+      "answerable_scientific_requirements": 5,
+      "answerable_scientific_fully_correct_and_covered": 5,
+      "unknown_requirements": 2,
+      "unknown_correctly_handled": 2,
+      "actual_process_requirements": 0,
+      "actual_process_correct_and_covered": 0,
+      "atomic_claim_verdicts": {
+        "supported": 76,
+        "justified_unknown": 21
+      },
+      "citations": 10,
+      "valid_locators": 10,
+      "citation_contribution": {
+        "direct": 10
+      },
+      "single_source_whole_statement_support": {
+        "supported": 10
+      },
+      "joint_statement_support": {
+        "not_applicable": 10
+      },
+      "scope_errors": 0,
+      "atomic_claims_with_scope_error": 0,
+      "conflict_handling": {
+        "correct": 1
+      },
+      "version_handling": "not_applicable",
+      "six_areas": {
+        "decomposition": "complete",
+        "retrieval_coverage": "complete",
+        "evidence_backlinks": "complete",
+        "conflict_handling": "complete",
+        "synthesis": "complete",
+        "research_gaps": "complete"
+      },
+      "review_sha256": "1944fb394539c2ffbe3e31415ab04ce367b85ae6b57266ed13f3096ff437886e"
+    },
+    {
+      "run_id": "v3-05",
+      "condition": "C",
+      "case_id": "S2",
+      "answerable_scientific_requirements": 5,
+      "answerable_scientific_fully_correct_and_covered": 5,
+      "unknown_requirements": 2,
+      "unknown_correctly_handled": 2,
+      "actual_process_requirements": 0,
+      "actual_process_correct_and_covered": 0,
+      "atomic_claim_verdicts": {
+        "supported": 82,
+        "justified_unknown": 12
+      },
+      "citations": 10,
+      "valid_locators": 10,
+      "citation_contribution": {
+        "direct": 10
+      },
+      "single_source_whole_statement_support": {
+        "supported": 10
+      },
+      "joint_statement_support": {
+        "not_applicable": 10
+      },
+      "scope_errors": 0,
+      "atomic_claims_with_scope_error": 0,
+      "conflict_handling": {
+        "correct": 2
+      },
+      "version_handling": "correct",
+      "six_areas": {
+        "decomposition": "complete",
+        "retrieval_coverage": "complete",
+        "evidence_backlinks": "complete",
+        "conflict_handling": "complete",
+        "synthesis": "complete",
+        "research_gaps": "complete"
+      },
+      "review_sha256": "d5e96ce3ad9898d0b4aeb3d7c6111a48f25cc7837de456259ddefee6b5534cfe"
+    },
+    {
+      "run_id": "v3-07",
+      "condition": "C",
+      "case_id": "S1",
+      "answerable_scientific_requirements": 5,
+      "answerable_scientific_fully_correct_and_covered": 5,
+      "unknown_requirements": 2,
+      "unknown_correctly_handled": 2,
+      "actual_process_requirements": 0,
+      "actual_process_correct_and_covered": 0,
+      "atomic_claim_verdicts": {
+        "supported": 72,
+        "justified_unknown": 17
+      },
+      "citations": 10,
+      "valid_locators": 10,
+      "citation_contribution": {
+        "direct": 10
+      },
+      "single_source_whole_statement_support": {
+        "supported": 10
+      },
+      "joint_statement_support": {
+        "not_applicable": 10
+      },
+      "scope_errors": 0,
+      "atomic_claims_with_scope_error": 0,
+      "conflict_handling": {
+        "correct": 1
+      },
+      "version_handling": "not_applicable",
+      "six_areas": {
+        "decomposition": "complete",
+        "retrieval_coverage": "complete",
+        "evidence_backlinks": "complete",
+        "conflict_handling": "complete",
+        "synthesis": "complete",
+        "research_gaps": "complete"
+      },
+      "review_sha256": "cd7292b2cec32dce99a9dd08e8ab0a609ff18116ce44e617df520b32b2875f49"
+    },
+    {
+      "run_id": "v3-08",
+      "condition": "A",
+      "case_id": "S2",
+      "answerable_scientific_requirements": 5,
+      "answerable_scientific_fully_correct_and_covered": 4,
+      "unknown_requirements": 2,
+      "unknown_correctly_handled": 2,
+      "actual_process_requirements": 0,
+      "actual_process_correct_and_covered": 0,
+      "atomic_claim_verdicts": {
+        "supported": 78,
+        "justified_unknown": 14,
+        "partial": 3
+      },
+      "citations": 10,
+      "valid_locators": 10,
+      "citation_contribution": {
+        "direct": 10
+      },
+      "single_source_whole_statement_support": {
+        "supported": 6,
+        "partial": 4
+      },
+      "joint_statement_support": {
+        "not_applicable": 5,
+        "supported": 4,
+        "partial": 1
+      },
+      "scope_errors": 1,
+      "atomic_claims_with_scope_error": 3,
+      "conflict_handling": {
+        "correct": 2
+      },
+      "version_handling": "correct",
+      "six_areas": {
+        "decomposition": "complete",
+        "retrieval_coverage": "complete",
+        "evidence_backlinks": "partial",
+        "conflict_handling": "complete",
+        "synthesis": "complete",
+        "research_gaps": "complete"
+      },
+      "review_sha256": "c628c2d332234e7a8e4cf1f6955383029f5d2b14193a194046aca785f1deade4"
+    },
+    {
+      "run_id": "v3-06",
+      "condition": "A",
+      "case_id": "S3",
+      "answerable_scientific_requirements": 4,
+      "answerable_scientific_fully_correct_and_covered": 4,
+      "unknown_requirements": 2,
+      "unknown_correctly_handled": 2,
+      "actual_process_requirements": 1,
+      "actual_process_correct_and_covered": 1,
+      "atomic_claim_verdicts": {
+        "supported": 85,
+        "justified_unknown": 15
+      },
+      "citations": 10,
+      "valid_locators": 10,
+      "citation_contribution": {
+        "direct": 10
+      },
+      "single_source_whole_statement_support": {
+        "supported": 9,
+        "partial": 1
+      },
+      "joint_statement_support": {
+        "not_applicable": 5,
+        "supported": 5
+      },
+      "scope_errors": 0,
+      "atomic_claims_with_scope_error": 0,
+      "conflict_handling": {
+        "correct": 1
+      },
+      "version_handling": "not_applicable",
+      "six_areas": {
+        "decomposition": "complete",
+        "retrieval_coverage": "complete",
+        "evidence_backlinks": "complete",
+        "conflict_handling": "complete",
+        "synthesis": "complete",
+        "research_gaps": "complete"
+      },
+      "review_sha256": "55a595ea0f448f7e0e9b2c09040d0a300b470536b14301caf6032b0c4dce0080",
+      "service_audit": {
+        "present": true,
+        "valid_single_log": true,
+        "log_relative_path": "work/tool-state/events.jsonl",
+        "log_sha256": "12b83bf8f710f88853b8bb9f4363fbfd925569774f4198791d0f33b18f601907",
+        "actual_simulator_calls": 9,
+        "checks": {
+          "empty_then_reformulated_success": true,
+          "429_then_same_source_success": true,
+          "native_failure_then_fallback_same_artifact": true,
+          "all_four_sources_fetched": true,
+          "sequential_unique_ids": true,
+          "parameters_and_timestamps": true,
+          "output_hashes_and_source_texts_match": true
+        },
+        "artifact_checks": [
+          {
+            "call_id": "S3-CALL-003",
+            "exists_and_hash_matches": true,
+            "matches_frozen_source_text_when_applicable": true
+          },
+          {
+            "call_id": "S3-CALL-005",
+            "exists_and_hash_matches": true,
+            "matches_frozen_source_text_when_applicable": null
+          },
+          {
+            "call_id": "S3-CALL-007",
+            "exists_and_hash_matches": true,
+            "matches_frozen_source_text_when_applicable": true
+          },
+          {
+            "call_id": "S3-CALL-008",
+            "exists_and_hash_matches": true,
+            "matches_frozen_source_text_when_applicable": true
+          },
+          {
+            "call_id": "S3-CALL-009",
+            "exists_and_hash_matches": true,
+            "matches_frozen_source_text_when_applicable": true
+          }
+        ],
+        "all_checks_pass": true,
+        "limitation": "Local synthetic tool only; logs are not a tamper-proof native model trace and do not measure real HTTP/PDF or model requests."
+      }
+    }
+  ],
+  "review_errors": [],
+  "retained_missing_result_attempts": [],
+  "interpretation": "Descriptive paired comparison: 3 cases x 3 conditions x 1 run. No significance, repeat-stability, official-point or native-model-request claim. Counts are not independent sample sizes.",
+  "metric_notes": [
+    "Scientific answerable requirements exclude S3-R5 actual tool process.",
+    "Correct unknowns have a separate denominator.",
+    "Direct citation contribution differs from single-source whole-statement proof.",
+    "All failures remain visible; do not silently exclude incomplete reviews."
+  ]
+}

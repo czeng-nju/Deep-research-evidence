@@ -1,0 +1,7 @@
+使用仓库内 skill/SKILL.md 的 deep-research-evidence v0.3.0 完成最小合成研究任务。
+
+从仓库根目录工作。先读取 examples/minimal/run/input/task.md、examples/minimal/run/input/case.json 与其中列出的材料；材料路径相对于该 case.json 所在目录。
+本次只使用这两个合成输入来源；不得读取 examples/minimal/result.example.json 或把它复制成结果，也不得访问其他案例、外部网络或预制答案。
+初始化并维护 examples/minimal/run/work 的真实研究账本；遵循 Skill 的依赖、停止条件、证据范围、原子结论、六类交付与复核规则。调用过的工具才可记录为实际执行；原生调用计数不可见时记未知。
+将独立生成的科学答案写入 examples/minimal/run/result.json，遵循 case.json 的输出合同；将过程记录、原始产物和审计报告保存在 examples/minimal/run/work。
+实际执行后运行 research_audit.py 和 validate.py result，保留未验证事项；结构通过不等于科学正确。不要提交比赛、访问 GitHub 或发布任何结果。

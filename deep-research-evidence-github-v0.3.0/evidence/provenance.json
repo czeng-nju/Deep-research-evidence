@@ -1,0 +1,371 @@
+{
+  "version": "0.3.0",
+  "source": "Local completed v0.3.0 experiment, 2026-11-20",
+  "scope": "Selected portable evidence. Internal absolute paths are removed when present; original and published hashes recorded. Raw workspaces/native traces are not included. The runtime Skill and release archive are byte-for-byte unchanged.",
+  "files": [
+    {
+      "publication_path": "evaluation/cases/S1/case.json",
+      "source_path": "evaluation/score-v3/runtime/S1/case.json",
+      "original_sha256": "4b3627815401727dc26efab9a807c25f66e473c74c3e23d2fcf46646edd85fa2",
+      "published_sha256": "4b3627815401727dc26efab9a807c25f66e473c74c3e23d2fcf46646edd85fa2",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/cases/S1/materials/S1-HIGH.txt",
+      "source_path": "evaluation/score-v3/runtime/S1/materials/S1-HIGH.txt",
+      "original_sha256": "948b4f85d2068be69f8f64b7d1d244b3fc3e5de1cf2faa2b409d70b8c962e03d",
+      "published_sha256": "948b4f85d2068be69f8f64b7d1d244b3fc3e5de1cf2faa2b409d70b8c962e03d",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/cases/S1/materials/S1-LIMITS.txt",
+      "source_path": "evaluation/score-v3/runtime/S1/materials/S1-LIMITS.txt",
+      "original_sha256": "858bd717aa51120207241066319cb28580670cec29fec995a71d2a9d88c901ed",
+      "published_sha256": "858bd717aa51120207241066319cb28580670cec29fec995a71d2a9d88c901ed",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/cases/S1/materials/S1-LOW.txt",
+      "source_path": "evaluation/score-v3/runtime/S1/materials/S1-LOW.txt",
+      "original_sha256": "d3a61ece99b9e89aa7d8fd1f19cc2e86b7e3396f2a0b29185cbe1a59a1bf11f9",
+      "published_sha256": "d3a61ece99b9e89aa7d8fd1f19cc2e86b7e3396f2a0b29185cbe1a59a1bf11f9",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/cases/S1/materials/S1-OPTICAL.txt",
+      "source_path": "evaluation/score-v3/runtime/S1/materials/S1-OPTICAL.txt",
+      "original_sha256": "06978933921dc6aa013119f97ce3654cdc67804d892837448d3ea8f659a023a0",
+      "published_sha256": "06978933921dc6aa013119f97ce3654cdc67804d892837448d3ea8f659a023a0",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/cases/S1/materials/S1-PROTOCOL.txt",
+      "source_path": "evaluation/score-v3/runtime/S1/materials/S1-PROTOCOL.txt",
+      "original_sha256": "f2fbdef2f2b2179079c476960172ef589ad240e0f341d46b83af2981fe06173e",
+      "published_sha256": "f2fbdef2f2b2179079c476960172ef589ad240e0f341d46b83af2981fe06173e",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/cases/S1/task.md",
+      "source_path": "evaluation/score-v3/runtime/S1/task.md",
+      "original_sha256": "046a5ff2715fb1d8d56e7705b9b0336120922987eac3e6e10e454a179f21be7c",
+      "published_sha256": "046a5ff2715fb1d8d56e7705b9b0336120922987eac3e6e10e454a179f21be7c",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/cases/S2/case.json",
+      "source_path": "evaluation/score-v3/runtime/S2/case.json",
+      "original_sha256": "855b48f2aa399725884569cdeee56fe7422a64add9beca6974b69eec307a0702",
+      "published_sha256": "855b48f2aa399725884569cdeee56fe7422a64add9beca6974b69eec307a0702",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/cases/S2/materials/S2-PROTOCOL.txt",
+      "source_path": "evaluation/score-v3/runtime/S2/materials/S2-PROTOCOL.txt",
+      "original_sha256": "e7c18d6fc8d14a4826c8e45349a2938d1c06111b8c47a48c3da8250befa4ef16",
+      "published_sha256": "e7c18d6fc8d14a4826c8e45349a2938d1c06111b8c47a48c3da8250befa4ef16",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/cases/S2/materials/S2-SCOPE.txt",
+      "source_path": "evaluation/score-v3/runtime/S2/materials/S2-SCOPE.txt",
+      "original_sha256": "aeffc8edb4095739a4a8e5e6626185e89967d562a72e3ab674230416e74f517d",
+      "published_sha256": "aeffc8edb4095739a4a8e5e6626185e89967d562a72e3ab674230416e74f517d",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/cases/S2/materials/S2-X-V1.txt",
+      "source_path": "evaluation/score-v3/runtime/S2/materials/S2-X-V1.txt",
+      "original_sha256": "1e4331ee245dafb8bb0c7cd33ba75735e2004fc494706d7685386d6f701493ef",
+      "published_sha256": "1e4331ee245dafb8bb0c7cd33ba75735e2004fc494706d7685386d6f701493ef",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/cases/S2/materials/S2-X-V2.txt",
+      "source_path": "evaluation/score-v3/runtime/S2/materials/S2-X-V2.txt",
+      "original_sha256": "b3820d3f494bcd2093ceb32302cef01a50c7e2ed64ffdd29fb0515f415940ba2",
+      "published_sha256": "b3820d3f494bcd2093ceb32302cef01a50c7e2ed64ffdd29fb0515f415940ba2",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/cases/S2/materials/S2-Y.txt",
+      "source_path": "evaluation/score-v3/runtime/S2/materials/S2-Y.txt",
+      "original_sha256": "04a3ff3d3f8d274a967e1a22afde0e0b4ed276489409af30d7ef52badf39ead1",
+      "published_sha256": "04a3ff3d3f8d274a967e1a22afde0e0b4ed276489409af30d7ef52badf39ead1",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/cases/S2/task.md",
+      "source_path": "evaluation/score-v3/runtime/S2/task.md",
+      "original_sha256": "408a8bd7c93aba5b06af7c4944f98ae48b09a3da6dbe1b66112b39b7888a24c5",
+      "published_sha256": "408a8bd7c93aba5b06af7c4944f98ae48b09a3da6dbe1b66112b39b7888a24c5",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/cases/S3/case.json",
+      "source_path": "evaluation/score-v3/runtime/S3/case.json",
+      "original_sha256": "c285a72e4393a8c4290514672278d91683627264d5354cf8d32c4af6bf7d128a",
+      "published_sha256": "c285a72e4393a8c4290514672278d91683627264d5354cf8d32c4af6bf7d128a",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/cases/S3/corpus/S3-LIMITS.txt",
+      "source_path": "evaluation/score-v3/runtime/S3/corpus/S3-LIMITS.txt",
+      "original_sha256": "b57acdd6cc8473592c8e179f92d8f31ef0a06a91c757bbee28d04f996a2539c9",
+      "published_sha256": "b57acdd6cc8473592c8e179f92d8f31ef0a06a91c757bbee28d04f996a2539c9",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/cases/S3/corpus/S3-PROTOCOL.txt",
+      "source_path": "evaluation/score-v3/runtime/S3/corpus/S3-PROTOCOL.txt",
+      "original_sha256": "9bd82d5acd178bf6efe88e8c672165a608d755bfbb5d99c2da7743636ef10ab6",
+      "published_sha256": "9bd82d5acd178bf6efe88e8c672165a608d755bfbb5d99c2da7743636ef10ab6",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/cases/S3/corpus/S3-QUALITY.txt",
+      "source_path": "evaluation/score-v3/runtime/S3/corpus/S3-QUALITY.txt",
+      "original_sha256": "9f74189f5a07e61626854d47088b5e3d73f46dbfdb39e01e742c20c07d3cf9c1",
+      "published_sha256": "9f74189f5a07e61626854d47088b5e3d73f46dbfdb39e01e742c20c07d3cf9c1",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/cases/S3/corpus/S3-RUNS.mockpdf",
+      "source_path": "evaluation/score-v3/runtime/S3/corpus/S3-RUNS.mockpdf",
+      "original_sha256": "cdd64fc8787255625d9dd97f1b34359ec60763651aadcc0fe9c67224c2d8a9e6",
+      "published_sha256": "cdd64fc8787255625d9dd97f1b34359ec60763651aadcc0fe9c67224c2d8a9e6",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/cases/S3/materials/tool-interface.md",
+      "source_path": "evaluation/score-v3/runtime/S3/materials/tool-interface.md",
+      "original_sha256": "a309d12df43c660f27f98099850c9afbe3c3bb53d9d9073d7c59488fb0eb5a2b",
+      "published_sha256": "a309d12df43c660f27f98099850c9afbe3c3bb53d9d9073d7c59488fb0eb5a2b",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/cases/S3/service.py",
+      "source_path": "evaluation/score-v3/runtime/S3/service.py",
+      "original_sha256": "758d8def6951e277534c8ae26e9e011d35fe0b0f95d73d6953e585050be6196a",
+      "published_sha256": "758d8def6951e277534c8ae26e9e011d35fe0b0f95d73d6953e585050be6196a",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/cases/S3/task.md",
+      "source_path": "evaluation/score-v3/runtime/S3/task.md",
+      "original_sha256": "3f2c634ba84550c3349651cc907c843a7e054746e9958137a6994d8099f900bd",
+      "published_sha256": "3f2c634ba84550c3349651cc907c843a7e054746e9958137a6994d8099f900bd",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/references/S1/gold.json",
+      "source_path": "evaluation/score-v3/evaluator/S1/gold.json",
+      "original_sha256": "306eb898f3d473c4a70cc830a416bceb0e4fdd4e1b5aca24408dbde3f78d6eb9",
+      "published_sha256": "306eb898f3d473c4a70cc830a416bceb0e4fdd4e1b5aca24408dbde3f78d6eb9",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/references/S2/gold.json",
+      "source_path": "evaluation/score-v3/evaluator/S2/gold.json",
+      "original_sha256": "e7000b0b81e446f45107cac2d08b1fcea6a3d7ae13925965e3fd2d0d3e3a25aa",
+      "published_sha256": "e7000b0b81e446f45107cac2d08b1fcea6a3d7ae13925965e3fd2d0d3e3a25aa",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/references/S3/gold.json",
+      "source_path": "evaluation/score-v3/evaluator/S3/gold.json",
+      "original_sha256": "bbde7d9c3d0e92599e200c60c27a31ade80cddab72d0f7387de5c77d109a12d6",
+      "published_sha256": "bbde7d9c3d0e92599e200c60c27a31ade80cddab72d0f7387de5c77d109a12d6",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/references/S3/source-texts/S3-LIMITS.txt",
+      "source_path": "evaluation/score-v3/evaluator/S3/source-texts/S3-LIMITS.txt",
+      "original_sha256": "b57acdd6cc8473592c8e179f92d8f31ef0a06a91c757bbee28d04f996a2539c9",
+      "published_sha256": "b57acdd6cc8473592c8e179f92d8f31ef0a06a91c757bbee28d04f996a2539c9",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/references/S3/source-texts/S3-PROTOCOL.txt",
+      "source_path": "evaluation/score-v3/evaluator/S3/source-texts/S3-PROTOCOL.txt",
+      "original_sha256": "9bd82d5acd178bf6efe88e8c672165a608d755bfbb5d99c2da7743636ef10ab6",
+      "published_sha256": "9bd82d5acd178bf6efe88e8c672165a608d755bfbb5d99c2da7743636ef10ab6",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/references/S3/source-texts/S3-QUALITY.txt",
+      "source_path": "evaluation/score-v3/evaluator/S3/source-texts/S3-QUALITY.txt",
+      "original_sha256": "9f74189f5a07e61626854d47088b5e3d73f46dbfdb39e01e742c20c07d3cf9c1",
+      "published_sha256": "9f74189f5a07e61626854d47088b5e3d73f46dbfdb39e01e742c20c07d3cf9c1",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/references/S3/source-texts/S3-RUNS.txt",
+      "source_path": "evaluation/score-v3/evaluator/S3/source-texts/S3-RUNS.txt",
+      "original_sha256": "73c99f1fd94d05f71b69c27dedbdc035bb29e32a57334dd8996e41d5f89daf0e",
+      "published_sha256": "73c99f1fd94d05f71b69c27dedbdc035bb29e32a57334dd8996e41d5f89daf0e",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/REVIEW_PROTOCOL.md",
+      "source_path": "evaluation/score-v3/evaluator/REVIEW_PROTOCOL.md",
+      "original_sha256": "631417a73f640a4473016af6589ae937dec59b33ca6dffc74e61a5604dea1c45",
+      "published_sha256": "631417a73f640a4473016af6589ae937dec59b33ca6dffc74e61a5604dea1c45",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/results/A/S1.json",
+      "source_path": "evaluation/v3-runner/workspaces/v3-01/result.json",
+      "original_sha256": "42eb736deb4263974577b4caacdfd57cbe9713f485bf4952e5d360d1413e4cca",
+      "published_sha256": "42eb736deb4263974577b4caacdfd57cbe9713f485bf4952e5d360d1413e4cca",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/reviews/A/S1.json",
+      "source_path": "evaluation/v3-runner/blind-review/cases/S1/reviews/candidate-ecb9f2b00b.json",
+      "original_sha256": "1fa84476e4146f9b2f48b0036731a706eac6b3f68637f74f25ff1e3aba0ac37f",
+      "published_sha256": "1fa84476e4146f9b2f48b0036731a706eac6b3f68637f74f25ff1e3aba0ac37f",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/results/B/S2.json",
+      "source_path": "evaluation/v3-runner/workspaces/v3-02/result.json",
+      "original_sha256": "0f879a451059b3d0b800c7e4d994f0b0e7cf46df104f9f4bdc7dd1930a297fab",
+      "published_sha256": "0f879a451059b3d0b800c7e4d994f0b0e7cf46df104f9f4bdc7dd1930a297fab",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/reviews/B/S2.json",
+      "source_path": "evaluation/v3-runner/blind-review/cases/S2/reviews/candidate-4a3c2446da.json",
+      "original_sha256": "04afac645bb23c0beef693f33c59a8f47c0cc88e8b0690c351e951963e8dec66",
+      "published_sha256": "04afac645bb23c0beef693f33c59a8f47c0cc88e8b0690c351e951963e8dec66",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/results/C/S3.json",
+      "source_path": "evaluation/v3-runner/workspaces/v3-03/result.json",
+      "original_sha256": "548149bf4ed476faead5f4f27dd352c6fe49f0d4c3a5aab8406ae37a90e41d3b",
+      "published_sha256": "548149bf4ed476faead5f4f27dd352c6fe49f0d4c3a5aab8406ae37a90e41d3b",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/reviews/C/S3.json",
+      "source_path": "evaluation/v3-runner/blind-review/cases/S3/reviews/candidate-2a86b45406.json",
+      "original_sha256": "4c2a826cf4c41550612a3dd0bfa29df077d7ca6c7d6816d6fa3f6a699cfd0b96",
+      "published_sha256": "4c2a826cf4c41550612a3dd0bfa29df077d7ca6c7d6816d6fa3f6a699cfd0b96",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/results/B/S1.json",
+      "source_path": "evaluation/v3-runner/workspaces/v3-04/result.json",
+      "original_sha256": "e974ba67ff36ce781adbfe4cfd27c0faba1447f1d421a8ca0eaf342a2a453070",
+      "published_sha256": "e974ba67ff36ce781adbfe4cfd27c0faba1447f1d421a8ca0eaf342a2a453070",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/reviews/B/S1.json",
+      "source_path": "evaluation/v3-runner/blind-review/cases/S1/reviews/candidate-903150b325.json",
+      "original_sha256": "1944fb394539c2ffbe3e31415ab04ce367b85ae6b57266ed13f3096ff437886e",
+      "published_sha256": "1944fb394539c2ffbe3e31415ab04ce367b85ae6b57266ed13f3096ff437886e",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/results/C/S2.json",
+      "source_path": "evaluation/v3-runner/workspaces/v3-05/result.json",
+      "original_sha256": "80561ea7748f717127799eb7ddabaee4f78497d69e0f84316a02ae038bd4184e",
+      "published_sha256": "80561ea7748f717127799eb7ddabaee4f78497d69e0f84316a02ae038bd4184e",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/reviews/C/S2.json",
+      "source_path": "evaluation/v3-runner/blind-review/cases/S2/reviews/candidate-636d980e73.json",
+      "original_sha256": "d5e96ce3ad9898d0b4aeb3d7c6111a48f25cc7837de456259ddefee6b5534cfe",
+      "published_sha256": "d5e96ce3ad9898d0b4aeb3d7c6111a48f25cc7837de456259ddefee6b5534cfe",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/results/A/S3.json",
+      "source_path": "evaluation/v3-runner/workspaces/v3-06/result.json",
+      "original_sha256": "db576f9d9985c9a63569a9e96449a60449842ee55b153912da459f26bc8d01dc",
+      "published_sha256": "db576f9d9985c9a63569a9e96449a60449842ee55b153912da459f26bc8d01dc",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/reviews/A/S3.json",
+      "source_path": "evaluation/v3-runner/blind-review/cases/S3/reviews/candidate-d948ddd157.json",
+      "original_sha256": "55a595ea0f448f7e0e9b2c09040d0a300b470536b14301caf6032b0c4dce0080",
+      "published_sha256": "55a595ea0f448f7e0e9b2c09040d0a300b470536b14301caf6032b0c4dce0080",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/results/C/S1.json",
+      "source_path": "evaluation/v3-runner/workspaces/v3-07/result.json",
+      "original_sha256": "2c1fd9d4d7efba742e90d26e313e563de2b52400dc58dc99b058a1e6a42213e3",
+      "published_sha256": "2c1fd9d4d7efba742e90d26e313e563de2b52400dc58dc99b058a1e6a42213e3",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/reviews/C/S1.json",
+      "source_path": "evaluation/v3-runner/blind-review/cases/S1/reviews/candidate-806bcca017.json",
+      "original_sha256": "cd7292b2cec32dce99a9dd08e8ab0a609ff18116ce44e617df520b32b2875f49",
+      "published_sha256": "cd7292b2cec32dce99a9dd08e8ab0a609ff18116ce44e617df520b32b2875f49",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/results/A/S2.json",
+      "source_path": "evaluation/v3-runner/workspaces/v3-08/result.json",
+      "original_sha256": "87c20bd4ab3d056b0befd4923e691cf7b417179eff3adeaf3ec126583f88fe96",
+      "published_sha256": "87c20bd4ab3d056b0befd4923e691cf7b417179eff3adeaf3ec126583f88fe96",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/reviews/A/S2.json",
+      "source_path": "evaluation/v3-runner/blind-review/cases/S2/reviews/candidate-657f17ac38.json",
+      "original_sha256": "c628c2d332234e7a8e4cf1f6955383029f5d2b14193a194046aca785f1deade4",
+      "published_sha256": "c628c2d332234e7a8e4cf1f6955383029f5d2b14193a194046aca785f1deade4",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/results/B/S3.json",
+      "source_path": "evaluation/v3-runner/workspaces/v3-09/result.json",
+      "original_sha256": "985818e54676298754ff2f9325a22e3eb4d40aa2374bbf04a2e3fe9c9dfd97fa",
+      "published_sha256": "985818e54676298754ff2f9325a22e3eb4d40aa2374bbf04a2e3fe9c9dfd97fa",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/reviews/B/S3.json",
+      "source_path": "evaluation/v3-runner/blind-review/cases/S3/reviews/candidate-4c2e1fcc19.json",
+      "original_sha256": "b70f108529cf6350ee1108b885e3267a93ffad3714bd71b1d9f784d49e582386",
+      "published_sha256": "b70f108529cf6350ee1108b885e3267a93ffad3714bd71b1d9f784d49e582386",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evaluation/summary.json",
+      "source_path": "evaluation/v3-runner/review-summary.json",
+      "original_sha256": "a2f8d024ae576f2169ed0195abf310393719c9f99d508f321c7ba3073653e338",
+      "published_sha256": "a2f8d024ae576f2169ed0195abf310393719c9f99d508f321c7ba3073653e338",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evidence/regression-original.txt",
+      "source_path": "evaluation/v3-runner/checks/unit.txt",
+      "original_sha256": "8403d35221edd9102a5b080c2d8573163220197adf257d9ca054e42a549982c4",
+      "published_sha256": "8403d35221edd9102a5b080c2d8573163220197adf257d9ca054e42a549982c4",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evidence/regression-original.json",
+      "source_path": "evaluation/v3-runner/checks/unit.json",
+      "original_sha256": "11e1fa27cca09a88009a198ec75234213c896af2fb995ad96933ac44117ae313",
+      "published_sha256": "11e1fa27cca09a88009a198ec75234213c896af2fb995ad96933ac44117ae313",
+      "path_redaction_applied": false
+    },
+    {
+      "publication_path": "evidence/entry-length.json",
+      "source_path": "evaluation/v3-runner/checks/entry-length.json",
+      "original_sha256": "e369e916bca72c48b70a27b6ab116f304dcf65086ca12d1874e27abe1588a5d6",
+      "published_sha256": "e369e916bca72c48b70a27b6ab116f304dcf65086ca12d1874e27abe1588a5d6",
+      "path_redaction_applied": false
+    }
+  ]
+}

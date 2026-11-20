@@ -1,0 +1,1364 @@
+{
+  "candidate_id": "candidate-903150b325",
+  "case_id": "S1",
+  "review_complete": true,
+  "all_factual_statements_reviewed": true,
+  "all_citations_reviewed": true,
+  "requirements": [
+    {
+      "requirement_id": "S1-R1",
+      "answerable": true,
+      "category": "scientific_content",
+      "coverage": "complete",
+      "correctness": "correct",
+      "output_excerpt": "1. 第28天效率保持率：25 ℃、40%相对湿度时，A为97%，B为92%，A−B=97−92=5个百分点；25 ℃、85%相对湿度时，A为82%，B为74%，A−B=82−74=8个百分点。因此A在两个已测批次的该终点点估计均较高。差值为计算所得的“百分点”，不能据此说绝对光电转换效率也高出同样数值。[S1-LOW L3-L5；S1-HIGH L3-L4；S1-PROTOCOL L6-L7]",
+      "rationale": "40%RH的97%、92%、差5个百分点及85%RH的82%、74%、差8个百分点均正确，明确相对第0天的保持率而非绝对效率；LOW L3-L5、HIGH L3-L4、PROTOCOL L6-L7直接支持。"
+    },
+    {
+      "requirement_id": "S1-R2",
+      "answerable": true,
+      "category": "scientific_content",
+      "coverage": "complete",
+      "correctness": "correct",
+      "output_excerpt": "2. 高湿第7天到第28天：A从95%到82%，下降95−82=13个百分点；B从94%到74%，下降94−74=20个百分点。B的下降量比A多20−13=7个百分点；这只是两时点汇总值的描述性差异。[S1-HIGH L3-L4；S1-HIGH L6]",
+      "rationale": "95−82=13、94−74=20个百分点，均限定高湿第7至28天；HIGH L3-L4支持。没有误用相对百分比或将时段差当失效机制。"
+    },
+    {
+      "requirement_id": "S1-R3",
+      "answerable": true,
+      "category": "scientific_content",
+      "coverage": "complete",
+      "correctness": "correct",
+      "output_excerpt": "3. 550 nm透过率：A为83%，B为89%，B−A=89−83=6个百分点。这只适用于25 ℃、40%相对湿度下的未装器件薄膜。未测高湿薄膜、完整可见光谱和封装后器件透过率，故不能推广为B在高湿、整个可见光范围或封装器件中普遍更透明，也不能把该光学测量擅自认定为第28天测量。[S1-OPTICAL L3-L5]",
+      "rationale": "83%、89%及B高6个百分点正确，25℃、40%RH、未装器件薄膜、550 nm限制齐全；OPTICAL L3-L5支持，并保留高湿、封装器件及全谱未知。"
+    },
+    {
+      "requirement_id": "S1-R4",
+      "answerable": true,
+      "category": "scientific_content",
+      "coverage": "complete",
+      "correctness": "correct",
+      "output_excerpt": "4. 逐项核对共同实验条件：温度均为25 ℃；照射强度均为1 sun；照射总时长均为28天；器件有效面积均为0.10 cm²。这四项在共同方案中明确覆盖两个湿度实验，高湿记录还确认本批次A/B面积、强度、累计时间相同。效率保持率沿用同一定义，但湿度并不相同，分别为40%和85%，且两者是独立批次；不能声称初始绝对效率相等。[S1-PROTOCOL L5-L7；S1-HIGH L5；S1-LOW L3；S1-HIGH L3]\n参比校准不能列为已确认的两批次共同控制：低湿明确A/B使用同一台参比校准光源，每天测量前按同一参比电池校准；高湿未描述校准流程，也未说明是否与低湿一致。这里是“跨批次一致性未证实”，不是“高湿确定没有校准”。[S1-LOW L4；S1-HIGH L6]",
+      "rationale": "共同25℃、1 sun、28天、0.10 cm²逐项核对，PROTOCOL L5是跨批次证据；HIGH L5只作批次内补充。LOW L4有校准，HIGH L6没有流程及跨批次一致性记录；既未扩大低湿属性，也未断言高湿没校准。"
+    },
+    {
+      "requirement_id": "S1-R5",
+      "answerable": true,
+      "category": "scientific_content",
+      "coverage": "complete",
+      "correctness": "correct",
+      "output_excerpt": "5. 不能推荐无条件总体优胜者。若决策仅重视这些已测条件下的第28天效率保持率，点估计支持条件性倾向A；若仅重视25 ℃、40%相对湿度下未装器件薄膜550 nm透过率，点估计支持条件性倾向B。二者是不同终点的权衡，不是同一终点的矛盾。材料缺少终点权重、价格、生产能耗、生命周期和实际户外寿命，不能据此合成总体排名。[S1-LOW L3-L5；S1-HIGH L3-L4；S1-OPTICAL L3-L5；S1-LIMITS L5-L6]",
+      "rationale": "保留A保持率与B限定光学优势，给出条件性目标选择，因缺权重及范围外资料拒绝无条件总体排名。不同终点被正确当作取舍，非真冲突；LIMITS L5-L6与各数值来源联合支持。"
+    },
+    {
+      "requirement_id": "S1-R6",
+      "answerable": false,
+      "category": "scientific_content",
+      "coverage": "complete",
+      "correctness": "correct",
+      "output_excerpt": "6. 统计显著性和失效机制均不能确定。低湿没有重复数、个体数据、误差范围或显著性检验；高湿也没有重复数和误差范围。因而5或8个百分点等差值不构成统计显著性的证明；不能宣称显著，也不能反过来宣称已证明无差异。光学材料仅报告汇总透过率，亦未提供足以判定显著性的重复和误差信息。[S1-PROTOCOL L4；S1-LOW L6；S1-HIGH L6；S1-OPTICAL L3-L5]\n未做阻水率、界面化学、分解产物或失效机制表征，不能把A较高的保持率归因为更强阻水、某种界面保护或特定分解路径；这些只可能是待检验的假说。[S1-LIMITS L4]",
+      "rationale": "有依据说明统计显著性未知（LOW L6、HIGH L6；光学全文亦无推断资料），并说明缺机制表征（LIMITS L4）而不能归因为阻水/界面机制；未知正确，不计入可答项分子。"
+    },
+    {
+      "requirement_id": "S1-R7",
+      "answerable": false,
+      "category": "scientific_content",
+      "coverage": "complete",
+      "correctness": "correct",
+      "output_excerpt": "7. 外推范围限定为所述A/B叠层、25 ℃、40%或85%相对湿度、给定照射和面积条件下的两个独立批次及已报告终点；效率观察至第28天。不能外推至全部温湿度、其他封装结构、实际户外寿命或未测光学场景。也不能凭独立批次汇总值把跨湿度差异认定为湿度的独立因果效应，或推断A具有更高初始/绝对效率。[S1-PROTOCOL L4-L7；S1-OPTICAL L3-L5；S1-LIMITS L4-L6]\n初始绝对效率未提供，保持率不能给出绝对效率排名；两湿度为独立批次，不能隔离湿度因果效应。[S1-PROTOCOL L6-L7]",
+      "rationale": "PROTOCOL L6-L7缺初始绝对效率，所以不能给绝对输出排名；OPTICAL L3-L5和LIMITS L5-L6限制高湿/器件/全谱、全部环境、结构、户外寿命及经济能耗外推。正确保留不可确定，不计入可答项分子。"
+    }
+  ],
+  "atomic_claims": [
+    {
+      "claim_id": "S1-synthetic",
+      "text": "全部所供材料及数值是人工合成的封闭测试资料。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-PROTOCOL L3",
+        "S1-LOW L3",
+        "S1-HIGH L3",
+        "S1-OPTICAL L3",
+        "S1-LIMITS L3"
+      ],
+      "scope_error": false,
+      "rationale": "五份材料各自声明人工合成；候选没有把它们当作真实研究。 原文片段（answer）：“本任务的全部材料均为人工合成，以下结论只针对该封闭材料。A为薄膜叠层甲，B为薄膜叠层乙；每个条件报告一组汇总值。效率保持率是该时点效率÷本器件第0天效率×100%，不表示绝对效率；两湿度为独立实验批次，初始绝对效率未提供。[S1-PROTOCOL L3-L7]” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-stack_a",
+      "text": "A为薄膜叠层甲。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-PROTOCOL L4"
+      ],
+      "scope_error": false,
+      "rationale": "共同方案明确给出A的对象身份。 原文片段（evidence[0].supports）：“A为叠层甲、B为叠层乙；每条件仅一组汇总值。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-stack_b",
+      "text": "B为薄膜叠层乙。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-PROTOCOL L4"
+      ],
+      "scope_error": false,
+      "rationale": "共同方案明确给出B的对象身份。 原文片段（evidence[0].supports）：“A为叠层甲、B为叠层乙；每条件仅一组汇总值。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-summary",
+      "text": "每个条件仅报告一组汇总值。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-PROTOCOL L4"
+      ],
+      "scope_error": false,
+      "rationale": "一组汇总值是报告层级，不等同已知样本量为一。 原文片段（evidence[0].supports）：“A为叠层甲、B为叠层乙；每条件仅一组汇总值。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-definition",
+      "text": "保持率等于该时点光电转换效率除以本器件第0天效率再乘100%。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-PROTOCOL L6"
+      ],
+      "scope_error": false,
+      "rationale": "分母为本器件自身初始效率，定义和倍数无误。 原文片段（answer）：“1. 第28天效率保持率：25 ℃、40%相对湿度时，A为97%，B为92%，A−B=97−92=5个百分点；25 ℃、85%相对湿度时，A为82%，B为74%，A−B=82−74=8个百分点。因此A在两个已测批次的该终点点估计均较高。差值为计算所得的“百分点”，不能据此说绝对光电转换效率也高出同样数值。[S1-LOW L3-L5；S1-HIGH L3-L4；S1-PROTOCOL L6-L7]” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-not_absolute",
+      "text": "保持率不表示绝对效率。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-PROTOCOL L6"
+      ],
+      "scope_error": false,
+      "rationale": "原文明确区分归一化保持率与绝对效率。 原文片段（evidence[2].supports）：“保持率以本器件第0天效率为分母，不是绝对效率；两批次独立且初始绝对效率未知。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-independent",
+      "text": "低湿与高湿是两个独立实验批次。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-PROTOCOL L7"
+      ],
+      "scope_error": false,
+      "rationale": "独立批次来自明确记录，并非由作者身份猜测。 原文片段（evidence[2].supports）：“保持率以本器件第0天效率为分母，不是绝对效率；两批次独立且初始绝对效率未知。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-initial_missing",
+      "text": "各批次初始绝对效率未提供。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-PROTOCOL L7"
+      ],
+      "scope_error": false,
+      "rationale": "明确缺失声明；没有把缺失当作零值或相等。 原文片段（evidence[2].supports）：“保持率以本器件第0天效率为分母，不是绝对效率；两批次独立且初始绝对效率未知。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-low_temp",
+      "text": "低湿效率批次温度为25℃。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-LOW L3"
+      ],
+      "scope_error": false,
+      "rationale": "仅把该条件归于低湿效率批次。 原文片段（evidence[3].supports）：“低湿40%RH、25℃；第28天A97%、B92%，提供A−B=5个百分点的原始值；本批次A/B共用校准光源并在每日测量前按同一参比电池校准。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-low_rh",
+      "text": "低湿效率批次相对湿度为40%。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-LOW L3"
+      ],
+      "scope_error": false,
+      "rationale": "湿度取值和批次无误。 原文片段（evidence[3].supports）：“低湿40%RH、25℃；第28天A97%、B92%，提供A−B=5个百分点的原始值；本批次A/B共用校准光源并在每日测量前按同一参比电池校准。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-low_a",
+      "text": "低湿第28天A的效率保持率为97%。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-LOW L5"
+      ],
+      "scope_error": false,
+      "rationale": "对象、时点、终点和数值一致。 原文片段（evidence[3].supports）：“低湿40%RH、25℃；第28天A97%、B92%，提供A−B=5个百分点的原始值；本批次A/B共用校准光源并在每日测量前按同一参比电池校准。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-low_b",
+      "text": "低湿第28天B的效率保持率为92%。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-LOW L5"
+      ],
+      "scope_error": false,
+      "rationale": "对象、时点、终点和数值一致。 原文片段（evidence[3].supports）：“低湿40%RH、25℃；第28天A97%、B92%，提供A−B=5个百分点的原始值；本批次A/B共用校准光源并在每日测量前按同一参比电池校准。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-low_gap",
+      "text": "低湿第28天A比B高5个百分点。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-LOW L3-L5"
+      ],
+      "scope_error": false,
+      "rationale": "97−92=5，差值是百分点，不是相对提高5%。 原文片段（answer）：“1. 第28天效率保持率：25 ℃、40%相对湿度时，A为97%，B为92%，A−B=97−92=5个百分点；25 ℃、85%相对湿度时，A为82%，B为74%，A−B=82−74=8个百分点。因此A在两个已测批次的该终点点估计均较高。差值为计算所得的“百分点”，不能据此说绝对光电转换效率也高出同样数值。[S1-LOW L3-L5；S1-HIGH L3-L4；S1-PROTOCOL L6-L7]” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-high_temp",
+      "text": "高湿效率批次温度为25℃。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-HIGH L3"
+      ],
+      "scope_error": false,
+      "rationale": "仅把该条件归于高湿效率批次。 原文片段（evidence[5].supports）：“高湿85%RH、25℃；第7天A95%、B94%，第28天A82%、B74%，支持高湿差8个百分点及各自下降13、20个百分点。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-high_rh",
+      "text": "高湿效率批次相对湿度为85%。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-HIGH L3"
+      ],
+      "scope_error": false,
+      "rationale": "湿度取值和批次无误。 原文片段（evidence[5].supports）：“高湿85%RH、25℃；第7天A95%、B94%，第28天A82%、B74%，支持高湿差8个百分点及各自下降13、20个百分点。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-high_a7",
+      "text": "高湿第7天A保持率为95%。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-HIGH L4"
+      ],
+      "scope_error": false,
+      "rationale": "95%归于A及第7天。 原文片段（evidence[5].supports）：“高湿85%RH、25℃；第7天A95%、B94%，第28天A82%、B74%，支持高湿差8个百分点及各自下降13、20个百分点。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-high_b7",
+      "text": "高湿第7天B保持率为94%。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-HIGH L4"
+      ],
+      "scope_error": false,
+      "rationale": "94%归于B及第7天。 原文片段（evidence[5].supports）：“高湿85%RH、25℃；第7天A95%、B94%，第28天A82%、B74%，支持高湿差8个百分点及各自下降13、20个百分点。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-high_a28",
+      "text": "高湿第28天A保持率为82%。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-HIGH L4"
+      ],
+      "scope_error": false,
+      "rationale": "82%归于A及第28天。 原文片段（evidence[5].supports）：“高湿85%RH、25℃；第7天A95%、B94%，第28天A82%、B74%，支持高湿差8个百分点及各自下降13、20个百分点。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-high_b28",
+      "text": "高湿第28天B保持率为74%。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-HIGH L4"
+      ],
+      "scope_error": false,
+      "rationale": "74%归于B及第28天。 原文片段（evidence[5].supports）：“高湿85%RH、25℃；第7天A95%、B94%，第28天A82%、B74%，支持高湿差8个百分点及各自下降13、20个百分点。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-high_gap",
+      "text": "高湿第28天A比B高8个百分点。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-HIGH L3-L4"
+      ],
+      "scope_error": false,
+      "rationale": "82−74=8，方向、单位正确。 原文片段（answer）：“1. 第28天效率保持率：25 ℃、40%相对湿度时，A为97%，B为92%，A−B=97−92=5个百分点；25 ℃、85%相对湿度时，A为82%，B为74%，A−B=82−74=8个百分点。因此A在两个已测批次的该终点点估计均较高。差值为计算所得的“百分点”，不能据此说绝对光电转换效率也高出同样数值。[S1-LOW L3-L5；S1-HIGH L3-L4；S1-PROTOCOL L6-L7]” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-a_drop",
+      "text": "高湿第7至28天A保持率下降13个百分点。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-HIGH L3-L4"
+      ],
+      "scope_error": false,
+      "rationale": "95−82=13，只描述所给两时点之差。 原文片段（answer）：“2. 高湿第7天到第28天：A从95%到82%，下降95−82=13个百分点；B从94%到74%，下降94−74=20个百分点。B的下降量比A多20−13=7个百分点；这只是两时点汇总值的描述性差异。[S1-HIGH L3-L4；S1-HIGH L6]” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-b_drop",
+      "text": "高湿第7至28天B保持率下降20个百分点。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-HIGH L3-L4"
+      ],
+      "scope_error": false,
+      "rationale": "94−74=20，没有混为相对百分比。 原文片段（answer）：“2. 高湿第7天到第28天：A从95%到82%，下降95−82=13个百分点；B从94%到74%，下降94−74=20个百分点。B的下降量比A多20−13=7个百分点；这只是两时点汇总值的描述性差异。[S1-HIGH L3-L4；S1-HIGH L6]” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-a_retention_better",
+      "text": "两个已测湿度批次的第28天保持率报告值均有利于A。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-LOW L5",
+        "S1-HIGH L4"
+      ],
+      "scope_error": false,
+      "rationale": "97>92与82>74共同支持；不是统计显著性或总体性能结论。 原文片段（answer）：“5. 不能推荐无条件总体优胜者。若决策仅重视这些已测条件下的第28天效率保持率，点估计支持条件性倾向A；若仅重视25 ℃、40%相对湿度下未装器件薄膜550 nm透过率，点估计支持条件性倾向B。二者是不同终点的权衡，不是同一终点的矛盾。材料缺少终点权重、价格、生产能耗、生命周期和实际户外寿命，不能据此合成总体排名。[S1-LOW L3-L5；S1-HIGH L3-L4；S1-OPTICAL L3-L5；S1-LIMITS L5-L6]” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-a_drop_better",
+      "text": "高湿所给7至28天区间内A保持率下降较少。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-HIGH L4"
+      ],
+      "scope_error": false,
+      "rationale": "13<20；是有条件的描述性比较。 原文片段（answer）：“2. 高湿第7天到第28天：A从95%到82%，下降95−82=13个百分点；B从94%到74%，下降94−74=20个百分点。B的下降量比A多20−13=7个百分点；这只是两时点汇总值的描述性差异。[S1-HIGH L3-L4；S1-HIGH L6]” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-opt_temp",
+      "text": "光学测量温度为25℃。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-OPTICAL L3"
+      ],
+      "scope_error": false,
+      "rationale": "该温度只针对记录的光学测量。 原文片段（evidence[7].supports）：“仅25℃、40%RH未装器件薄膜的550nm透过率A83%、B89%，支持B高6个百分点；未测高湿、完整可见光谱和封装后器件透过率。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-opt_rh",
+      "text": "光学测量相对湿度为40%。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-OPTICAL L3"
+      ],
+      "scope_error": false,
+      "rationale": "没有将低湿光学结果移至高湿。 原文片段（evidence[7].supports）：“仅25℃、40%RH未装器件薄膜的550nm透过率A83%、B89%，支持B高6个百分点；未测高湿、完整可见光谱和封装后器件透过率。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-opt_sample",
+      "text": "光学测量对象为未装器件薄膜。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-OPTICAL L3"
+      ],
+      "scope_error": false,
+      "rationale": "不是封装后器件的光学测量。 原文片段（evidence[7].supports）：“仅25℃、40%RH未装器件薄膜的550nm透过率A83%、B89%，支持B高6个百分点；未测高湿、完整可见光谱和封装后器件透过率。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-opt_wave",
+      "text": "已报告透过率对应550 nm单波长。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-OPTICAL L4"
+      ],
+      "scope_error": false,
+      "rationale": "550 nm为波长，不代表全可见谱平均值。 原文片段（evidence[7].supports）：“仅25℃、40%RH未装器件薄膜的550nm透过率A83%、B89%，支持B高6个百分点；未测高湿、完整可见光谱和封装后器件透过率。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-opt_a",
+      "text": "该低湿未装器件薄膜在550 nm的A透过率为83%。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-OPTICAL L3-L4"
+      ],
+      "scope_error": false,
+      "rationale": "样品、湿度、波长、对象与数值一致。 原文片段（evidence[7].supports）：“仅25℃、40%RH未装器件薄膜的550nm透过率A83%、B89%，支持B高6个百分点；未测高湿、完整可见光谱和封装后器件透过率。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-opt_b",
+      "text": "该低湿未装器件薄膜在550 nm的B透过率为89%。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-OPTICAL L3-L4"
+      ],
+      "scope_error": false,
+      "rationale": "样品、湿度、波长、对象与数值一致。 原文片段（evidence[7].supports）：“仅25℃、40%RH未装器件薄膜的550nm透过率A83%、B89%，支持B高6个百分点；未测高湿、完整可见光谱和封装后器件透过率。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-opt_gap",
+      "text": "限定光学测量中B透过率比A高6个百分点。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-OPTICAL L3-L4"
+      ],
+      "scope_error": false,
+      "rationale": "89−83=6；未将光学优势推广为总体优胜。 原文片段（answer）：“3. 550 nm透过率：A为83%，B为89%，B−A=89−83=6个百分点。这只适用于25 ℃、40%相对湿度下的未装器件薄膜。未测高湿薄膜、完整可见光谱和封装后器件透过率，故不能推广为B在高湿、整个可见光范围或封装器件中普遍更透明，也不能把该光学测量擅自认定为第28天测量。[S1-OPTICAL L3-L5]” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-opt_high_unmeasured",
+      "text": "未测量高湿薄膜透过率。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-OPTICAL L5"
+      ],
+      "scope_error": false,
+      "rationale": "原文明说未测量；不等于高湿透过率为零。 原文片段（evidence[7].supports）：“仅25℃、40%RH未装器件薄膜的550nm透过率A83%、B89%，支持B高6个百分点；未测高湿、完整可见光谱和封装后器件透过率。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-opt_spectrum_unmeasured",
+      "text": "未测量完整可见光谱。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-OPTICAL L5"
+      ],
+      "scope_error": false,
+      "rationale": "这是波长范围缺失，不是已知全谱较差。 原文片段（evidence[7].supports）：“仅25℃、40%RH未装器件薄膜的550nm透过率A83%、B89%，支持B高6个百分点；未测高湿、完整可见光谱和封装后器件透过率。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-opt_device_unmeasured",
+      "text": "未测量封装后器件透过率。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-OPTICAL L5"
+      ],
+      "scope_error": false,
+      "rationale": "这是样品类型缺口。 原文片段（evidence[7].supports）：“仅25℃、40%RH未装器件薄膜的550nm透过率A83%、B89%，支持B高6个百分点；未测高湿、完整可见光谱和封装后器件透过率。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-opt_high_unknown",
+      "text": "不能由现有光学结果确定高湿薄膜透过率及优劣。",
+      "kind": "unknown",
+      "verdict": "justified_unknown",
+      "evidence_refs": [
+        "S1-OPTICAL L3-L5"
+      ],
+      "scope_error": false,
+      "rationale": "湿度不同且目标测量缺失，保留未知正确。 原文片段（answer）：“3. 550 nm透过率：A为83%，B为89%，B−A=89−83=6个百分点。这只适用于25 ℃、40%相对湿度下的未装器件薄膜。未测高湿薄膜、完整可见光谱和封装后器件透过率，故不能推广为B在高湿、整个可见光范围或封装器件中普遍更透明，也不能把该光学测量擅自认定为第28天测量。[S1-OPTICAL L3-L5]” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-opt_spectrum_unknown",
+      "text": "不能由550 nm单点确定完整可见光学表现。",
+      "kind": "unknown",
+      "verdict": "justified_unknown",
+      "evidence_refs": [
+        "S1-OPTICAL L3-L5"
+      ],
+      "scope_error": false,
+      "rationale": "未测完整光谱，不能把单点结果推广为全谱或平均优势。 原文片段（answer）：“3. 550 nm透过率：A为83%，B为89%，B−A=89−83=6个百分点。这只适用于25 ℃、40%相对湿度下的未装器件薄膜。未测高湿薄膜、完整可见光谱和封装后器件透过率，故不能推广为B在高湿、整个可见光范围或封装器件中普遍更透明，也不能把该光学测量擅自认定为第28天测量。[S1-OPTICAL L3-L5]” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-opt_device_unknown",
+      "text": "不能由裸膜光学结果确定封装后器件透过率。",
+      "kind": "unknown",
+      "verdict": "justified_unknown",
+      "evidence_refs": [
+        "S1-OPTICAL L3-L5"
+      ],
+      "scope_error": false,
+      "rationale": "样品类型不同，原文无桥接证据。 原文片段（answer）：“3. 550 nm透过率：A为83%，B为89%，B−A=89−83=6个百分点。这只适用于25 ℃、40%相对湿度下的未装器件薄膜。未测高湿薄膜、完整可见光谱和封装后器件透过率，故不能推广为B在高湿、整个可见光范围或封装器件中普遍更透明，也不能把该光学测量擅自认定为第28天测量。[S1-OPTICAL L3-L5]” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-common_temp",
+      "text": "两个效率批次共同温度为25℃。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-PROTOCOL L5"
+      ],
+      "scope_error": false,
+      "rationale": "共同方案明确覆盖两个批次，不从一个批次推给另一个。 原文片段（evidence[1].supports）：“两湿度批次均为25℃、1 sun、28天、有效面积0.10 cm²。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-common_light",
+      "text": "两个效率批次共同照射强度为1 sun。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-PROTOCOL L5"
+      ],
+      "scope_error": false,
+      "rationale": "共同方案直接给定。 原文片段（evidence[1].supports）：“两湿度批次均为25℃、1 sun、28天、有效面积0.10 cm²。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-common_time",
+      "text": "两个效率批次共同照射总时长为28天。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-PROTOCOL L5"
+      ],
+      "scope_error": false,
+      "rationale": "时长属于效率实验，不据此给光学测量定时点。 原文片段（evidence[1].supports）：“两湿度批次均为25℃、1 sun、28天、有效面积0.10 cm²。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-common_area",
+      "text": "两个效率批次器件有效面积均为0.10 cm²。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-PROTOCOL L5"
+      ],
+      "scope_error": false,
+      "rationale": "有效面积及平方单位准确。 原文片段（evidence[1].supports）：“两湿度批次均为25℃、1 sun、28天、有效面积0.10 cm²。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-high_area_same",
+      "text": "高湿批次内A、B器件面积相同。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-HIGH L5"
+      ],
+      "scope_error": false,
+      "rationale": "这是高湿批次内一致性证据；跨批次具体值另由共同方案支持。 原文片段（evidence[6].supports）：“高湿批次A/B器件面积、照射强度与累计时间相同；未描述参比校准和跨批次一致性，缺重复数、误差范围。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-high_light_same",
+      "text": "高湿批次内A、B照射强度相同。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-HIGH L5"
+      ],
+      "scope_error": false,
+      "rationale": "没有把该行当作独立证明两批次校准相同。 原文片段（evidence[6].supports）：“高湿批次A/B器件面积、照射强度与累计时间相同；未描述参比校准和跨批次一致性，缺重复数、误差范围。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-high_time_same",
+      "text": "高湿批次内A、B累计时间相同。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-HIGH L5"
+      ],
+      "scope_error": false,
+      "rationale": "累计时间一致性与原文相符。 原文片段（evidence[6].supports）：“高湿批次A/B器件面积、照射强度与累计时间相同；未描述参比校准和跨批次一致性，缺重复数、误差范围。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-rh_different",
+      "text": "两效率批次湿度取值不同，不能列为共同相同取值。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-LOW L3",
+        "S1-HIGH L3"
+      ],
+      "scope_error": false,
+      "rationale": "40%与85%来自两个来源，联合比较正确。 原文片段（answer）：“4. 逐项核对共同实验条件：温度均为25 ℃；照射强度均为1 sun；照射总时长均为28天；器件有效面积均为0.10 cm²。这四项在共同方案中明确覆盖两个湿度实验，高湿记录还确认本批次A/B面积、强度、累计时间相同。效率保持率沿用同一定义，但湿度并不相同，分别为40%和85%，且两者是独立批次；不能声称初始绝对效率相等。[S1-PROTOCOL L5-L7；S1-HIGH L5；S1-LOW L3；S1-HIGH L3]\n参比校准不能列为已确认的两批次共同控制：低湿明确A/B使用同一台参比校准光源，每天测量前按同一参比电池校准；高湿未描述校准流程，也未说明是否与低湿一致。这里是“跨批次一致性未证实”，不是“高湿确定没有校准”。[S1-LOW L4；S1-HIGH L6]” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-low_source_shared",
+      "text": "低湿A、B使用同一台参比校准光源。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-LOW L4"
+      ],
+      "scope_error": false,
+      "rationale": "共享属性只明确属于低湿批次。 原文片段（evidence[3].supports）：“低湿40%RH、25℃；第28天A97%、B92%，提供A−B=5个百分点的原始值；本批次A/B共用校准光源并在每日测量前按同一参比电池校准。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-low_reference_daily",
+      "text": "低湿每天测量前按同一参比电池校准。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-LOW L4"
+      ],
+      "scope_error": false,
+      "rationale": "频率、时机和参比一致性均由该行明确给出。 原文片段（evidence[3].supports）：“低湿40%RH、25℃；第28天A97%、B92%，提供A−B=5个百分点的原始值；本批次A/B共用校准光源并在每日测量前按同一参比电池校准。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-high_cal_not_reported",
+      "text": "高湿记录没有描述参比校准流程。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-HIGH L6"
+      ],
+      "scope_error": false,
+      "rationale": "这是信息缺失的事实，未改写成没有实施。 原文片段（evidence[6].supports）：“高湿批次A/B器件面积、照射强度与累计时间相同；未描述参比校准和跨批次一致性，缺重复数、误差范围。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-cross_cal_not_reported",
+      "text": "高湿记录没有说明其参比校准与低湿是否一致。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-HIGH L6"
+      ],
+      "scope_error": false,
+      "rationale": "缺的是跨批次一致性说明。 原文片段（evidence[6].supports）：“高湿批次A/B器件面积、照射强度与累计时间相同；未描述参比校准和跨批次一致性，缺重复数、误差范围。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-high_cal_unknown",
+      "text": "高湿是否实施参比校准以及具体流程未知。",
+      "kind": "unknown",
+      "verdict": "justified_unknown",
+      "evidence_refs": [
+        "S1-HIGH L6"
+      ],
+      "scope_error": false,
+      "rationale": "未说明不能变成已做或未做的确定判断。 原文片段（answer）：“4. 逐项核对共同实验条件：温度均为25 ℃；照射强度均为1 sun；照射总时长均为28天；器件有效面积均为0.10 cm²。这四项在共同方案中明确覆盖两个湿度实验，高湿记录还确认本批次A/B面积、强度、累计时间相同。效率保持率沿用同一定义，但湿度并不相同，分别为40%和85%，且两者是独立批次；不能声称初始绝对效率相等。[S1-PROTOCOL L5-L7；S1-HIGH L5；S1-LOW L3；S1-HIGH L3]\n参比校准不能列为已确认的两批次共同控制：低湿明确A/B使用同一台参比校准光源，每天测量前按同一参比电池校准；高湿未描述校准流程，也未说明是否与低湿一致。这里是“跨批次一致性未证实”，不是“高湿确定没有校准”。[S1-LOW L4；S1-HIGH L6]” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-cross_cal_unknown",
+      "text": "不能确认参比校准为两批次共同控制。",
+      "kind": "unknown",
+      "verdict": "justified_unknown",
+      "evidence_refs": [
+        "S1-LOW L4",
+        "S1-HIGH L6"
+      ],
+      "scope_error": false,
+      "rationale": "低湿肯定、高湿缺失；两来源联合只能得到共同性未证实。 原文片段（answer）：“4. 逐项核对共同实验条件：温度均为25 ℃；照射强度均为1 sun；照射总时长均为28天；器件有效面积均为0.10 cm²。这四项在共同方案中明确覆盖两个湿度实验，高湿记录还确认本批次A/B面积、强度、累计时间相同。效率保持率沿用同一定义，但湿度并不相同，分别为40%和85%，且两者是独立批次；不能声称初始绝对效率相等。[S1-PROTOCOL L5-L7；S1-HIGH L5；S1-LOW L3；S1-HIGH L3]\n参比校准不能列为已确认的两批次共同控制：低湿明确A/B使用同一台参比校准光源，每天测量前按同一参比电池校准；高湿未描述校准流程，也未说明是否与低湿一致。这里是“跨批次一致性未证实”，不是“高湿确定没有校准”。[S1-LOW L4；S1-HIGH L6]” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-not_no_calibration",
+      "text": "未记录高湿校准不等于证明高湿没有校准。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-HIGH L6"
+      ],
+      "scope_error": false,
+      "rationale": "正确区分记录缺失与实验行为否定。 原文片段（answer）：“4. 逐项核对共同实验条件：温度均为25 ℃；照射强度均为1 sun；照射总时长均为28天；器件有效面积均为0.10 cm²。这四项在共同方案中明确覆盖两个湿度实验，高湿记录还确认本批次A/B面积、强度、累计时间相同。效率保持率沿用同一定义，但湿度并不相同，分别为40%和85%，且两者是独立批次；不能声称初始绝对效率相等。[S1-PROTOCOL L5-L7；S1-HIGH L5；S1-LOW L3；S1-HIGH L3]\n参比校准不能列为已确认的两批次共同控制：低湿明确A/B使用同一台参比校准光源，每天测量前按同一参比电池校准；高湿未描述校准流程，也未说明是否与低湿一致。这里是“跨批次一致性未证实”，不是“高湿确定没有校准”。[S1-LOW L4；S1-HIGH L6]” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-low_n_missing",
+      "text": "低湿未提供重复数。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-LOW L6"
+      ],
+      "scope_error": false,
+      "rationale": "没有擅自推定无重复实验或n=1。 原文片段（evidence[4].supports）：“低湿未给重复数、个体数据、误差范围或显著性检验，不能据点估计判定显著性。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-low_individual_missing",
+      "text": "低湿未提供个体数据。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-LOW L6"
+      ],
+      "scope_error": false,
+      "rationale": "原文明确说明。 原文片段（evidence[4].supports）：“低湿未给重复数、个体数据、误差范围或显著性检验，不能据点估计判定显著性。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-low_error_missing",
+      "text": "低湿未提供误差范围。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-LOW L6"
+      ],
+      "scope_error": false,
+      "rationale": "原文明确说明。 原文片段（evidence[4].supports）：“低湿未给重复数、个体数据、误差范围或显著性检验，不能据点估计判定显著性。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-low_test_missing",
+      "text": "低湿未提供显著性检验。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-LOW L6"
+      ],
+      "scope_error": false,
+      "rationale": "未做显著性的确定判断。 原文片段（evidence[4].supports）：“低湿未给重复数、个体数据、误差范围或显著性检验，不能据点估计判定显著性。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-high_n_missing",
+      "text": "高湿未提供重复数。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-HIGH L6"
+      ],
+      "scope_error": false,
+      "rationale": "只描述记录缺失，不等同样本量为一。 原文片段（evidence[6].supports）：“高湿批次A/B器件面积、照射强度与累计时间相同；未描述参比校准和跨批次一致性，缺重复数、误差范围。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-high_error_missing",
+      "text": "高湿未提供误差范围。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-HIGH L6"
+      ],
+      "scope_error": false,
+      "rationale": "原文明确说明。 原文片段（evidence[6].supports）：“高湿批次A/B器件面积、照射强度与累计时间相同；未描述参比校准和跨批次一致性，缺重复数、误差范围。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-opt_stats_missing",
+      "text": "光学记录未提供足以进行统计推断的重复、个体或误差信息。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-OPTICAL L1-L5"
+      ],
+      "scope_error": false,
+      "rationale": "全文只有测量条件、单对汇总值与未测范围；这是对所供记录的完整性判断，不是说现实实验肯定无重复。 原文片段（uncertainty[1]）：“没有充分重复、个体或误差信息，不能确定效率和光学差异的统计显著性或精确不确定区间。[S1-PROTOCOL L4；S1-LOW L6；S1-HIGH L6；S1-OPTICAL L3-L5]” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-retention_significance",
+      "text": "不能确定保持率差异是否统计显著。",
+      "kind": "unknown",
+      "verdict": "justified_unknown",
+      "evidence_refs": [
+        "S1-PROTOCOL L4",
+        "S1-LOW L6",
+        "S1-HIGH L6"
+      ],
+      "scope_error": false,
+      "rationale": "汇总点值和缺失重复/误差不能支撑推断统计。 原文片段（answer）：“6. 统计显著性和失效机制均不能确定。低湿没有重复数、个体数据、误差范围或显著性检验；高湿也没有重复数和误差范围。因而5或8个百分点等差值不构成统计显著性的证明；不能宣称显著，也不能反过来宣称已证明无差异。光学材料仅报告汇总透过率，亦未提供足以判定显著性的重复和误差信息。[S1-PROTOCOL L4；S1-LOW L6；S1-HIGH L6；S1-OPTICAL L3-L5]\n未做阻水率、界面化学、分解产物或失效机制表征，不能把A较高的保持率归因为更强阻水、某种界面保护或特定分解路径；这些只可能是待检验的假说。[S1-LIMITS L4]” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-opt_significance",
+      "text": "不能确定透过率差异是否统计显著。",
+      "kind": "unknown",
+      "verdict": "justified_unknown",
+      "evidence_refs": [
+        "S1-OPTICAL L1-L5"
+      ],
+      "scope_error": false,
+      "rationale": "光学单对报告值缺少变异信息；不是将低湿效率误差属性自动转给光学。 原文片段（uncertainty[1]）：“没有充分重复、个体或误差信息，不能确定效率和光学差异的统计显著性或精确不确定区间。[S1-PROTOCOL L4；S1-LOW L6；S1-HIGH L6；S1-OPTICAL L3-L5]” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-no_sig_reverse",
+      "text": "不能证明显著也不等于已经证明不显著或无差异。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-LOW L6",
+        "S1-HIGH L6"
+      ],
+      "scope_error": false,
+      "rationale": "这是证据不足的合理逻辑边界，不是新增显著性结论。 原文片段（answer）：“6. 统计显著性和失效机制均不能确定。低湿没有重复数、个体数据、误差范围或显著性检验；高湿也没有重复数和误差范围。因而5或8个百分点等差值不构成统计显著性的证明；不能宣称显著，也不能反过来宣称已证明无差异。光学材料仅报告汇总透过率，亦未提供足以判定显著性的重复和误差信息。[S1-PROTOCOL L4；S1-LOW L6；S1-HIGH L6；S1-OPTICAL L3-L5]\n未做阻水率、界面化学、分解产物或失效机制表征，不能把A较高的保持率归因为更强阻水、某种界面保护或特定分解路径；这些只可能是待检验的假说。[S1-LIMITS L4]” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-descriptive",
+      "text": "现有数值优劣比较只属于所报告汇总值的描述性比较。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-PROTOCOL L4",
+        "S1-LOW L5-L6",
+        "S1-HIGH L4-L6",
+        "S1-OPTICAL L3-L5"
+      ],
+      "scope_error": false,
+      "rationale": "点值相减可做；群体稳定性、误差和显著性不能从点值推出。 原文片段（answer）：“6. 统计显著性和失效机制均不能确定。低湿没有重复数、个体数据、误差范围或显著性检验；高湿也没有重复数和误差范围。因而5或8个百分点等差值不构成统计显著性的证明；不能宣称显著，也不能反过来宣称已证明无差异。光学材料仅报告汇总透过率，亦未提供足以判定显著性的重复和误差信息。[S1-PROTOCOL L4；S1-LOW L6；S1-HIGH L6；S1-OPTICAL L3-L5]\n未做阻水率、界面化学、分解产物或失效机制表征，不能把A较高的保持率归因为更强阻水、某种界面保护或特定分解路径；这些只可能是待检验的假说。[S1-LIMITS L4]” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-water_not_measured",
+      "text": "未进行阻水率表征。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-LIMITS L4"
+      ],
+      "scope_error": false,
+      "rationale": "原文明确未做该类表征。 原文片段（evidence[8].supports）：“未进行阻水率、界面化学、分解产物或失效机制表征，无法确立失效机制。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-interface_not_measured",
+      "text": "未进行界面化学表征。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-LIMITS L4"
+      ],
+      "scope_error": false,
+      "rationale": "原文明确未做该类表征。 原文片段（evidence[8].supports）：“未进行阻水率、界面化学、分解产物或失效机制表征，无法确立失效机制。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-products_not_measured",
+      "text": "未进行分解产物表征。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-LIMITS L4"
+      ],
+      "scope_error": false,
+      "rationale": "原文明确未做该类表征。 原文片段（evidence[8].supports）：“未进行阻水率、界面化学、分解产物或失效机制表征，无法确立失效机制。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-mechanism_not_measured",
+      "text": "未进行失效机制表征。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-LIMITS L4"
+      ],
+      "scope_error": false,
+      "rationale": "原文明确未做该类表征。 原文片段（evidence[8].supports）：“未进行阻水率、界面化学、分解产物或失效机制表征，无法确立失效机制。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-mechanism_unknown",
+      "text": "不能确定保持率变化的失效机制。",
+      "kind": "unknown",
+      "verdict": "justified_unknown",
+      "evidence_refs": [
+        "S1-LIMITS L4"
+      ],
+      "scope_error": false,
+      "rationale": "没有机制观测，保留机制未知正确。 原文片段（uncertainty[3]）：“阻水率、界面化学、分解产物和失效机制未表征，观察差异的机理未建立。[S1-LIMITS L4]” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-water_causation_unknown",
+      "text": "不能把A较高保持率确认为更强阻水性导致。",
+      "kind": "unknown",
+      "verdict": "justified_unknown",
+      "evidence_refs": [
+        "S1-LOW L5",
+        "S1-HIGH L4",
+        "S1-LIMITS L4"
+      ],
+      "scope_error": false,
+      "rationale": "性能方向和机制缺口是不同前提；没有据保持率证明机制。 原文片段（answer）：“6. 统计显著性和失效机制均不能确定。低湿没有重复数、个体数据、误差范围或显著性检验；高湿也没有重复数和误差范围。因而5或8个百分点等差值不构成统计显著性的证明；不能宣称显著，也不能反过来宣称已证明无差异。光学材料仅报告汇总透过率，亦未提供足以判定显著性的重复和误差信息。[S1-PROTOCOL L4；S1-LOW L6；S1-HIGH L6；S1-OPTICAL L3-L5]\n未做阻水率、界面化学、分解产物或失效机制表征，不能把A较高的保持率归因为更强阻水、某种界面保护或特定分解路径；这些只可能是待检验的假说。[S1-LIMITS L4]” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-interface_causation_unknown",
+      "text": "不能确证优势来自界面化学或界面保护机制。",
+      "kind": "unknown",
+      "verdict": "justified_unknown",
+      "evidence_refs": [
+        "S1-LIMITS L4"
+      ],
+      "scope_error": false,
+      "rationale": "界面表征缺失，候选把具体机制保留为未建立。 原文片段（uncertainty[3]）：“阻水率、界面化学、分解产物和失效机制未表征，观察差异的机理未建立。[S1-LIMITS L4]” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-price_missing",
+      "text": "材料不含价格信息。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-LIMITS L5"
+      ],
+      "scope_error": false,
+      "rationale": "仅限定所供材料。 原文片段（evidence[9].supports）：“缺价格、生产能耗、生命周期、实际户外寿命和终点权重；仅两个湿度批次，不代表其他温湿度或封装结构。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-energy_missing",
+      "text": "材料不含生产能耗信息。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-LIMITS L5"
+      ],
+      "scope_error": false,
+      "rationale": "候选的能耗概括在此材料语境下指生产能耗。 原文片段（evidence[9].supports）：“缺价格、生产能耗、生命周期、实际户外寿命和终点权重；仅两个湿度批次，不代表其他温湿度或封装结构。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-lifecycle_missing",
+      "text": "材料不含生命周期信息。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-LIMITS L5"
+      ],
+      "scope_error": false,
+      "rationale": "不是声称生命周期无法在任何研究中测量。 原文片段（evidence[9].supports）：“缺价格、生产能耗、生命周期、实际户外寿命和终点权重；仅两个湿度批次，不代表其他温湿度或封装结构。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-outdoor_missing",
+      "text": "材料不含实际户外寿命信息。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-LIMITS L5"
+      ],
+      "scope_error": false,
+      "rationale": "室内28天记录不能替代实际户外寿命资料。 原文片段（evidence[9].supports）：“缺价格、生产能耗、生命周期、实际户外寿命和终点权重；仅两个湿度批次，不代表其他温湿度或封装结构。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-weights_missing",
+      "text": "材料不含终点权重。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-LIMITS L5"
+      ],
+      "scope_error": false,
+      "rationale": "总体推荐缺少目标权衡标准。 原文片段（evidence[9].supports）：“缺价格、生产能耗、生命周期、实际户外寿命和终点权重；仅两个湿度批次，不代表其他温湿度或封装结构。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-overall_unknown",
+      "text": "不能推荐无条件总体优胜者。",
+      "kind": "unknown",
+      "verdict": "justified_unknown",
+      "evidence_refs": [
+        "S1-LOW L5",
+        "S1-HIGH L4",
+        "S1-OPTICAL L3-L5",
+        "S1-LIMITS L5-L6"
+      ],
+      "scope_error": false,
+      "rationale": "不同终点各有优势、权重及范围外信息缺失，拒绝无条件排名有充分依据。 原文片段（answer）：“5. 不能推荐无条件总体优胜者。若决策仅重视这些已测条件下的第28天效率保持率，点估计支持条件性倾向A；若仅重视25 ℃、40%相对湿度下未装器件薄膜550 nm透过率，点估计支持条件性倾向B。二者是不同终点的权衡，不是同一终点的矛盾。材料缺少终点权重、价格、生产能耗、生命周期和实际户外寿命，不能据此合成总体排名。[S1-LOW L3-L5；S1-HIGH L3-L4；S1-OPTICAL L3-L5；S1-LIMITS L5-L6]” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-conditional_a",
+      "text": "若目标仅为所测条件下的效率保持，可条件性倾向A。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-LOW L3-L5",
+        "S1-HIGH L3-L4"
+      ],
+      "scope_error": false,
+      "rationale": "是给定端点点值的条件选择，没有扩大为总体或显著胜出。 原文片段（answer）：“5. 不能推荐无条件总体优胜者。若决策仅重视这些已测条件下的第28天效率保持率，点估计支持条件性倾向A；若仅重视25 ℃、40%相对湿度下未装器件薄膜550 nm透过率，点估计支持条件性倾向B。二者是不同终点的权衡，不是同一终点的矛盾。材料缺少终点权重、价格、生产能耗、生命周期和实际户外寿命，不能据此合成总体排名。[S1-LOW L3-L5；S1-HIGH L3-L4；S1-OPTICAL L3-L5；S1-LIMITS L5-L6]” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-conditional_b",
+      "text": "若目标仅为低湿裸膜550 nm透过率，可条件性倾向B。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-OPTICAL L3-L4"
+      ],
+      "scope_error": false,
+      "rationale": "样品、湿度和波长限制正确保留。 原文片段（answer）：“5. 不能推荐无条件总体优胜者。若决策仅重视这些已测条件下的第28天效率保持率，点估计支持条件性倾向A；若仅重视25 ℃、40%相对湿度下未装器件薄膜550 nm透过率，点估计支持条件性倾向B。二者是不同终点的权衡，不是同一终点的矛盾。材料缺少终点权重、价格、生产能耗、生命周期和实际户外寿命，不能据此合成总体排名。[S1-LOW L3-L5；S1-HIGH L3-L4；S1-OPTICAL L3-L5；S1-LIMITS L5-L6]” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-tradeoff",
+      "text": "保持率偏向A而低湿裸膜单波长透过率偏向B是不同终点取舍，不是同条件同终点矛盾。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-LOW L5",
+        "S1-HIGH L4",
+        "S1-OPTICAL L3-L5"
+      ],
+      "scope_error": false,
+      "rationale": "两方向不互相否定；工作笔记亦明确如此处理。 原文片段（answer）：“5. 不能推荐无条件总体优胜者。若决策仅重视这些已测条件下的第28天效率保持率，点估计支持条件性倾向A；若仅重视25 ℃、40%相对湿度下未装器件薄膜550 nm透过率，点估计支持条件性倾向B。二者是不同终点的权衡，不是同一终点的矛盾。材料缺少终点权重、价格、生产能耗、生命周期和实际户外寿命，不能据此合成总体排名。[S1-LOW L3-L5；S1-HIGH L3-L4；S1-OPTICAL L3-L5；S1-LIMITS L5-L6]” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-humidity_causal_unknown",
+      "text": "不能把跨湿度独立批次差异直接认定为湿度净因果效应。",
+      "kind": "unknown",
+      "verdict": "justified_unknown",
+      "evidence_refs": [
+        "S1-PROTOCOL L7",
+        "S1-HIGH L6"
+      ],
+      "scope_error": false,
+      "rationale": "未提供隔离其他批次因素的设计或校准一致性证据；这是不作因果确定归因，不是否认湿度可能有作用。 原文片段（answer）：“7. 外推范围限定为所述A/B叠层、25 ℃、40%或85%相对湿度、给定照射和面积条件下的两个独立批次及已报告终点；效率观察至第28天。不能外推至全部温湿度、其他封装结构、实际户外寿命或未测光学场景。也不能凭独立批次汇总值把跨湿度差异认定为湿度的独立因果效应，或推断A具有更高初始/绝对效率。[S1-PROTOCOL L4-L7；S1-OPTICAL L3-L5；S1-LIMITS L4-L6]” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-absolute_initial_unknown",
+      "text": "不能推断初始绝对效率及其优劣。",
+      "kind": "unknown",
+      "verdict": "justified_unknown",
+      "evidence_refs": [
+        "S1-PROTOCOL L6-L7"
+      ],
+      "scope_error": false,
+      "rationale": "缺初始绝对值，归一化结果不能反求分母。 原文片段（answer）：“1. 第28天效率保持率：25 ℃、40%相对湿度时，A为97%，B为92%，A−B=97−92=5个百分点；25 ℃、85%相对湿度时，A为82%，B为74%，A−B=82−74=8个百分点。因此A在两个已测批次的该终点点估计均较高。差值为计算所得的“百分点”，不能据此说绝对光电转换效率也高出同样数值。[S1-LOW L3-L5；S1-HIGH L3-L4；S1-PROTOCOL L6-L7]” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-absolute_day28_unknown",
+      "text": "不能由保持率确定第28天绝对效率或绝对输出排名。",
+      "kind": "unknown",
+      "verdict": "justified_unknown",
+      "evidence_refs": [
+        "S1-PROTOCOL L6-L7"
+      ],
+      "scope_error": false,
+      "rationale": "绝对终点效率还依赖各自初始效率，当前缺失。 原文片段（uncertainty[2]）：“初始绝对效率未提供，保持率不能给出绝对效率排名；两湿度为独立批次，不能隔离湿度因果效应。[S1-PROTOCOL L6-L7]” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-two_batches",
+      "text": "记录只描述上述两个湿度批次。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-LIMITS L6",
+        "S1-PROTOCOL L7"
+      ],
+      "scope_error": false,
+      "rationale": "没有增加其他批次证据。 原文片段（evidence[9].supports）：“缺价格、生产能耗、生命周期、实际户外寿命和终点权重；仅两个湿度批次，不代表其他温湿度或封装结构。” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-all_environments_unknown",
+      "text": "不能把结论推广为全部温湿度下的结论。",
+      "kind": "unknown",
+      "verdict": "justified_unknown",
+      "evidence_refs": [
+        "S1-LIMITS L6"
+      ],
+      "scope_error": false,
+      "rationale": "原文显式限制温湿度外推。 原文片段（answer）：“7. 外推范围限定为所述A/B叠层、25 ℃、40%或85%相对湿度、给定照射和面积条件下的两个独立批次及已报告终点；效率观察至第28天。不能外推至全部温湿度、其他封装结构、实际户外寿命或未测光学场景。也不能凭独立批次汇总值把跨湿度差异认定为湿度的独立因果效应，或推断A具有更高初始/绝对效率。[S1-PROTOCOL L4-L7；S1-OPTICAL L3-L5；S1-LIMITS L4-L6]” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-other_structures_unknown",
+      "text": "不能把结论推广至其他封装结构。",
+      "kind": "unknown",
+      "verdict": "justified_unknown",
+      "evidence_refs": [
+        "S1-LIMITS L6"
+      ],
+      "scope_error": false,
+      "rationale": "原文显式限制封装结构外推。 原文片段（answer）：“7. 外推范围限定为所述A/B叠层、25 ℃、40%或85%相对湿度、给定照射和面积条件下的两个独立批次及已报告终点；效率观察至第28天。不能外推至全部温湿度、其他封装结构、实际户外寿命或未测光学场景。也不能凭独立批次汇总值把跨湿度差异认定为湿度的独立因果效应，或推断A具有更高初始/绝对效率。[S1-PROTOCOL L4-L7；S1-OPTICAL L3-L5；S1-LIMITS L4-L6]” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-long_life_unknown",
+      "text": "不能由记录确定长期实际户外寿命。",
+      "kind": "unknown",
+      "verdict": "justified_unknown",
+      "evidence_refs": [
+        "S1-PROTOCOL L5",
+        "S1-LIMITS L5-L6"
+      ],
+      "scope_error": false,
+      "rationale": "28天给定照射记录与户外长期使用不是相同终点和环境。 原文片段（answer）：“7. 外推范围限定为所述A/B叠层、25 ℃、40%或85%相对湿度、给定照射和面积条件下的两个独立批次及已报告终点；效率观察至第28天。不能外推至全部温湿度、其他封装结构、实际户外寿命或未测光学场景。也不能凭独立批次汇总值把跨湿度差异认定为湿度的独立因果效应，或推断A具有更高初始/绝对效率。[S1-PROTOCOL L4-L7；S1-OPTICAL L3-L5；S1-LIMITS L4-L6]” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-retention_scope",
+      "text": "保持率结论仅限记录的叠层、25℃、40%/85%RH、规定照射面积与所给时点。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-PROTOCOL L4-L7",
+        "S1-LOW L3-L5",
+        "S1-HIGH L3-L5"
+      ],
+      "scope_error": false,
+      "rationale": "综合适用边界由共同方案和各批次共同提供；没有将高湿第7天数据补给低湿。 原文片段（answer）：“7. 外推范围限定为所述A/B叠层、25 ℃、40%或85%相对湿度、给定照射和面积条件下的两个独立批次及已报告终点；效率观察至第28天。不能外推至全部温湿度、其他封装结构、实际户外寿命或未测光学场景。也不能凭独立批次汇总值把跨湿度差异认定为湿度的独立因果效应，或推断A具有更高初始/绝对效率。[S1-PROTOCOL L4-L7；S1-OPTICAL L3-L5；S1-LIMITS L4-L6]” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-optical_scope",
+      "text": "光学结论另受低湿未装器件薄膜和550 nm的独立约束。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-OPTICAL L3-L5"
+      ],
+      "scope_error": false,
+      "rationale": "没有把效率照射时长、面积或高湿条件传递给光学样品。 原文片段（answer）：“7. 外推范围限定为所述A/B叠层、25 ℃、40%或85%相对湿度、给定照射和面积条件下的两个独立批次及已报告终点；效率观察至第28天。不能外推至全部温湿度、其他封装结构、实际户外寿命或未测光学场景。也不能凭独立批次汇总值把跨湿度差异认定为湿度的独立因果效应，或推断A具有更高初始/绝对效率。[S1-PROTOCOL L4-L7；S1-OPTICAL L3-L5；S1-LIMITS L4-L6]” 同义重复合并；判定仅针对本行原子命题。"
+    },
+    {
+      "claim_id": "S1-drop_gap",
+      "text": "高湿第7至28天B比A多下降7个百分点。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-HIGH L4"
+      ],
+      "scope_error": false,
+      "rationale": "20−13=7；额外算术正确。 原文片段（answer）：“2. 高湿第7天到第28天：A从95%到82%，下降95−82=13个百分点；B从94%到74%，下降94−74=20个百分点。B的下降量比A多20−13=7个百分点；这只是两时点汇总值的描述性差异。[S1-HIGH L3-L4；S1-HIGH L6]”"
+    },
+    {
+      "claim_id": "S1-common_definition",
+      "text": "两批次采用同一保持率指标定义。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-PROTOCOL L6-L7"
+      ],
+      "scope_error": false,
+      "rationale": "共同方案定义适用于两效率批次，不等同共同分母数值。 原文片段（answer）：“4. 逐项核对共同实验条件：温度均为25 ℃；照射强度均为1 sun；照射总时长均为28天；器件有效面积均为0.10 cm²。这四项在共同方案中明确覆盖两个湿度实验，高湿记录还确认本批次A/B面积、强度、累计时间相同。效率保持率沿用同一定义，但湿度并不相同，分别为40%和85%，且两者是独立批次；不能声称初始绝对效率相等。[S1-PROTOCOL L5-L7；S1-HIGH L5；S1-LOW L3；S1-HIGH L3]\n参比校准不能列为已确认的两批次共同控制：低湿明确A/B使用同一台参比校准光源，每天测量前按同一参比电池校准；高湿未描述校准流程，也未说明是否与低湿一致。这里是“跨批次一致性未证实”，不是“高湿确定没有校准”。[S1-LOW L4；S1-HIGH L6]”"
+    },
+    {
+      "claim_id": "S1-initial_equality",
+      "text": "不能断言两批次初始绝对效率相等。",
+      "kind": "unknown",
+      "verdict": "justified_unknown",
+      "evidence_refs": [
+        "S1-PROTOCOL L7"
+      ],
+      "scope_error": false,
+      "rationale": "初始值缺失，不能从相同归一化定义推得数值相等。 原文片段（answer）：“4. 逐项核对共同实验条件：温度均为25 ℃；照射强度均为1 sun；照射总时长均为28天；器件有效面积均为0.10 cm²。这四项在共同方案中明确覆盖两个湿度实验，高湿记录还确认本批次A/B面积、强度、累计时间相同。效率保持率沿用同一定义，但湿度并不相同，分别为40%和85%，且两者是独立批次；不能声称初始绝对效率相等。[S1-PROTOCOL L5-L7；S1-HIGH L5；S1-LOW L3；S1-HIGH L3]\n参比校准不能列为已确认的两批次共同控制：低湿明确A/B使用同一台参比校准光源，每天测量前按同一参比电池校准；高湿未描述校准流程，也未说明是否与低湿一致。这里是“跨批次一致性未证实”，不是“高湿确定没有校准”。[S1-LOW L4；S1-HIGH L6]”"
+    },
+    {
+      "claim_id": "S1-optical_time_missing",
+      "text": "光学测量时点未报告。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-OPTICAL L1-L5"
+      ],
+      "scope_error": false,
+      "rationale": "完整光学文件没有日期或实验日；不能从效率方案28天移入该属性。 原文片段（answer）：“3. 550 nm透过率：A为83%，B为89%，B−A=89−83=6个百分点。这只适用于25 ℃、40%相对湿度下的未装器件薄膜。未测高湿薄膜、完整可见光谱和封装后器件透过率，故不能推广为B在高湿、整个可见光范围或封装器件中普遍更透明，也不能把该光学测量擅自认定为第28天测量。[S1-OPTICAL L3-L5]”"
+    },
+    {
+      "claim_id": "S1-optical_not_day28",
+      "text": "不能认定光学测量发生在第28天。",
+      "kind": "unknown",
+      "verdict": "justified_unknown",
+      "evidence_refs": [
+        "S1-OPTICAL L1-L5",
+        "S1-PROTOCOL L5"
+      ],
+      "scope_error": false,
+      "rationale": "此处正确阻止跨实验时间属性传播。 原文片段（answer）：“3. 550 nm透过率：A为83%，B为89%，B−A=89−83=6个百分点。这只适用于25 ℃、40%相对湿度下的未装器件薄膜。未测高湿薄膜、完整可见光谱和封装后器件透过率，故不能推广为B在高湿、整个可见光范围或封装器件中普遍更透明，也不能把该光学测量擅自认定为第28天测量。[S1-OPTICAL L3-L5]”"
+    },
+    {
+      "claim_id": "S1-uncertainty_interval",
+      "text": "不能确定效率和光学差异的精确不确定区间。",
+      "kind": "unknown",
+      "verdict": "justified_unknown",
+      "evidence_refs": [
+        "S1-LOW L6",
+        "S1-HIGH L6",
+        "S1-OPTICAL L1-L5"
+      ],
+      "scope_error": false,
+      "rationale": "区间需要变异信息；材料未提供。 原文片段（uncertainty[1]）：“没有充分重复、个体或误差信息，不能确定效率和光学差异的统计显著性或精确不确定区间。[S1-PROTOCOL L4；S1-LOW L6；S1-HIGH L6；S1-OPTICAL L3-L5]”"
+    },
+    {
+      "claim_id": "S1-decomposition_causation",
+      "text": "不能将保持率优势归因于特定分解路径。",
+      "kind": "unknown",
+      "verdict": "justified_unknown",
+      "evidence_refs": [
+        "S1-LIMITS L4"
+      ],
+      "scope_error": false,
+      "rationale": "分解产物和机制均未表征。 原文片段（answer）：“6. 统计显著性和失效机制均不能确定。低湿没有重复数、个体数据、误差范围或显著性检验；高湿也没有重复数和误差范围。因而5或8个百分点等差值不构成统计显著性的证明；不能宣称显著，也不能反过来宣称已证明无差异。光学材料仅报告汇总透过率，亦未提供足以判定显著性的重复和误差信息。[S1-PROTOCOL L4；S1-LOW L6；S1-HIGH L6；S1-OPTICAL L3-L5]\n未做阻水率、界面化学、分解产物或失效机制表征，不能把A较高的保持率归因为更强阻水、某种界面保护或特定分解路径；这些只可能是待检验的假说。[S1-LIMITS L4]”"
+    },
+    {
+      "claim_id": "S1-hypothesis_only",
+      "text": "更强阻水、界面保护或特定分解路径最多是待检验假说。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-LIMITS L4"
+      ],
+      "scope_error": false,
+      "rationale": "明确假说地位，没有捏造真实机制证据。 原文片段（answer）：“6. 统计显著性和失效机制均不能确定。低湿没有重复数、个体数据、误差范围或显著性检验；高湿也没有重复数和误差范围。因而5或8个百分点等差值不构成统计显著性的证明；不能宣称显著，也不能反过来宣称已证明无差异。光学材料仅报告汇总透过率，亦未提供足以判定显著性的重复和误差信息。[S1-PROTOCOL L4；S1-LOW L6；S1-HIGH L6；S1-OPTICAL L3-L5]\n未做阻水率、界面化学、分解产物或失效机制表征，不能把A较高的保持率归因为更强阻水、某种界面保护或特定分解路径；这些只可能是待检验的假说。[S1-LIMITS L4]”"
+    },
+    {
+      "claim_id": "S1-pp_not_absolute",
+      "text": "保持率差5或8个百分点不表示绝对光电转换效率也高同样数值。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence_refs": [
+        "S1-PROTOCOL L6-L7",
+        "S1-LOW L5",
+        "S1-HIGH L4"
+      ],
+      "scope_error": false,
+      "rationale": "未知且可能不同的初始效率使绝对差无法由归一化差直接获得。 原文片段（answer）：“1. 第28天效率保持率：25 ℃、40%相对湿度时，A为97%，B为92%，A−B=97−92=5个百分点；25 ℃、85%相对湿度时，A为82%，B为74%，A−B=82−74=8个百分点。因此A在两个已测批次的该终点点估计均较高。差值为计算所得的“百分点”，不能据此说绝对光电转换效率也高出同样数值。[S1-LOW L3-L5；S1-HIGH L3-L4；S1-PROTOCOL L6-L7]”"
+    }
+  ],
+  "citations": [
+    {
+      "evidence_index": 0,
+      "source_id": "S1-PROTOCOL",
+      "locator": "L4",
+      "attached_statement": "A为叠层甲、B为叠层乙；每条件仅一组汇总值。",
+      "locator_valid": true,
+      "contribution": "direct",
+      "whole_statement_single_source_support": "supported",
+      "joint_support_with_other_citations": "not_applicable",
+      "scope_error": false,
+      "rationale": "原文该区间明确给出叠层身份和每条件一组汇总值；未把一组汇总值解读为已知仅一个样本。 该条supports的全部命题在本区间或其明确逻辑/算术后果内，故单条支持成立；综合答案另按原子命题核对联合来源。"
+    },
+    {
+      "evidence_index": 1,
+      "source_id": "S1-PROTOCOL",
+      "locator": "L5",
+      "attached_statement": "两湿度批次均为25℃、1 sun、28天、有效面积0.10 cm²。",
+      "locator_valid": true,
+      "contribution": "direct",
+      "whole_statement_single_source_support": "supported",
+      "joint_support_with_other_citations": "not_applicable",
+      "scope_error": false,
+      "rationale": "L5一句直接覆盖两个湿度实验及25℃、1 sun、28天、0.10 cm²四项共同属性，不需用单个批次外推。 该条supports的全部命题在本区间或其明确逻辑/算术后果内，故单条支持成立；综合答案另按原子命题核对联合来源。"
+    },
+    {
+      "evidence_index": 2,
+      "source_id": "S1-PROTOCOL",
+      "locator": "L6-L7",
+      "attached_statement": "保持率以本器件第0天效率为分母，不是绝对效率；两批次独立且初始绝对效率未知。",
+      "locator_valid": true,
+      "contribution": "direct",
+      "whole_statement_single_source_support": "supported",
+      "joint_support_with_other_citations": "not_applicable",
+      "scope_error": false,
+      "rationale": "L6直接定义本器件第0天归一化且非绝对效率；L7直接给独立批次和缺初始效率。绝对比较受限是合理推论。 该条supports的全部命题在本区间或其明确逻辑/算术后果内，故单条支持成立；综合答案另按原子命题核对联合来源。"
+    },
+    {
+      "evidence_index": 3,
+      "source_id": "S1-LOW",
+      "locator": "L3-L5",
+      "attached_statement": "低湿40%RH、25℃；第28天A97%、B92%，提供A−B=5个百分点的原始值；本批次A/B共用校准光源并在每日测量前按同一参比电池校准。",
+      "locator_valid": true,
+      "contribution": "direct",
+      "whole_statement_single_source_support": "supported",
+      "joint_support_with_other_citations": "not_applicable",
+      "scope_error": false,
+      "rationale": "L3给低湿25℃/40%RH，L4给本批次光源及每日同一参比电池校准，L5给第28天97%和92%；若附有差值，97−92=5正确。 该条supports的全部命题在本区间或其明确逻辑/算术后果内，故单条支持成立；综合答案另按原子命题核对联合来源。"
+    },
+    {
+      "evidence_index": 4,
+      "source_id": "S1-LOW",
+      "locator": "L6",
+      "attached_statement": "低湿未给重复数、个体数据、误差范围或显著性检验，不能据点估计判定显著性。",
+      "locator_valid": true,
+      "contribution": "direct",
+      "whole_statement_single_source_support": "supported",
+      "joint_support_with_other_citations": "not_applicable",
+      "scope_error": false,
+      "rationale": "L6逐项列出未提供重复数、个体数据、误差及显著性检验。不能做有依据的显著性/区间推断是与缺口一致的限定。 该条supports的全部命题在本区间或其明确逻辑/算术后果内，故单条支持成立；综合答案另按原子命题核对联合来源。"
+    },
+    {
+      "evidence_index": 5,
+      "source_id": "S1-HIGH",
+      "locator": "L3-L4",
+      "attached_statement": "高湿85%RH、25℃；第7天A95%、B94%，第28天A82%、B74%，支持高湿差8个百分点及各自下降13、20个百分点。",
+      "locator_valid": true,
+      "contribution": "direct",
+      "whole_statement_single_source_support": "supported",
+      "joint_support_with_other_citations": "not_applicable",
+      "scope_error": false,
+      "rationale": "L3给高湿25℃/85%RH；L4给A/B第7天95/94、第28天82/74。若附有派生值，82−74=8、95−82=13、94−74=20均为正确百分点差。 该条supports的全部命题在本区间或其明确逻辑/算术后果内，故单条支持成立；综合答案另按原子命题核对联合来源。"
+    },
+    {
+      "evidence_index": 6,
+      "source_id": "S1-HIGH",
+      "locator": "L5-L6",
+      "attached_statement": "高湿批次A/B器件面积、照射强度与累计时间相同；未描述参比校准和跨批次一致性，缺重复数、误差范围。",
+      "locator_valid": true,
+      "contribution": "direct",
+      "whole_statement_single_source_support": "supported",
+      "joint_support_with_other_citations": "not_applicable",
+      "scope_error": false,
+      "rationale": "L5仅说明高湿批次内A/B面积、强度、时间相同；L6说明校准流程及与低湿一致性未记录，并缺重复数/误差。没有将未记录误写为确定未校准。 该条supports的全部命题在本区间或其明确逻辑/算术后果内，故单条支持成立；综合答案另按原子命题核对联合来源。"
+    },
+    {
+      "evidence_index": 7,
+      "source_id": "S1-OPTICAL",
+      "locator": "L3-L5",
+      "attached_statement": "仅25℃、40%RH未装器件薄膜的550nm透过率A83%、B89%，支持B高6个百分点；未测高湿、完整可见光谱和封装后器件透过率。",
+      "locator_valid": true,
+      "contribution": "direct",
+      "whole_statement_single_source_support": "supported",
+      "joint_support_with_other_citations": "not_applicable",
+      "scope_error": false,
+      "rationale": "OPTICAL L3给25℃/40%RH未装器件薄膜，L4给550 nm处83/89。89−83=6正确；涉及未测范围时由L5明确支持。 该条supports的全部命题在本区间或其明确逻辑/算术后果内，故单条支持成立；综合答案另按原子命题核对联合来源。"
+    },
+    {
+      "evidence_index": 8,
+      "source_id": "S1-LIMITS",
+      "locator": "L4",
+      "attached_statement": "未进行阻水率、界面化学、分解产物或失效机制表征，无法确立失效机制。",
+      "locator_valid": true,
+      "contribution": "direct",
+      "whole_statement_single_source_support": "supported",
+      "joint_support_with_other_citations": "not_applicable",
+      "scope_error": false,
+      "rationale": "LIMITS L4明确没有阻水率、界面化学、分解产物或失效机制表征；不能确立具体机制的未知结论是该缺口的直接限制。 该条supports的全部命题在本区间或其明确逻辑/算术后果内，故单条支持成立；综合答案另按原子命题核对联合来源。"
+    },
+    {
+      "evidence_index": 9,
+      "source_id": "S1-LIMITS",
+      "locator": "L5-L6",
+      "attached_statement": "缺价格、生产能耗、生命周期、实际户外寿命和终点权重；仅两个湿度批次，不代表其他温湿度或封装结构。",
+      "locator_valid": true,
+      "contribution": "direct",
+      "whole_statement_single_source_support": "supported",
+      "joint_support_with_other_citations": "not_applicable",
+      "scope_error": false,
+      "rationale": "LIMITS L5列出价格、生产能耗、生命周期、实际户外寿命、终点权重缺失；L6限定两个湿度批次且不代表全部温湿度或其他结构。 该条supports的全部命题在本区间或其明确逻辑/算术后果内，故单条支持成立；综合答案另按原子命题核对联合来源。"
+    }
+  ],
+  "scope_errors": [],
+  "conflicts": [
+    {
+      "conflict_id": "S1-C1",
+      "handling": "correct",
+      "rationale": "LOW/HIGH的保持率方向与OPTICAL的低湿裸膜550 nm透过率方向不同，终点及样品范围不相同。答案与工作笔记保留两者，并明确按目标作条件性选择；没有误报同条件同终点矛盾，也未以多数票抹平取舍。"
+    }
+  ],
+  "version_handling": {
+    "status": "not_applicable",
+    "rationale": "许可材料中没有显式替代版本或更正链；不适用版本选择审查。"
+  },
+  "six_areas": {
+    "decomposition": {
+      "status": "complete",
+      "artifact_refs": [
+        "candidates/candidate-903150b325/work/research-notes.md"
+      ],
+      "rationale": "笔记实际列出数值、时段下降、光学范围、共同条件/校准、总体推荐、统计/机制/外推子问题，说明指标定义和总体判断依赖；以内容核验，不要求某种记录格式。"
+    },
+    "retrieval_coverage": {
+      "status": "complete",
+      "artifact_refs": [
+        "candidates/candidate-903150b325/work/research-notes.md",
+        "candidates/candidate-903150b325/work/numbered-corpus.txt"
+      ],
+      "rationale": "已对照带物理行号的五份完整原文副本，确实含协议7行、低湿6行、高湿6行、光学5行、限制6行。笔记按封闭清单说明停止理由，不把封闭覆盖称开放文献饱和。"
+    },
+    "evidence_backlinks": {
+      "status": "complete",
+      "artifact_refs": [
+        "candidates/candidate-903150b325/result.json",
+        "candidates/candidate-903150b325/work/numbered-corpus.txt",
+        "candidates/candidate-903150b325/work/calculations.json"
+      ],
+      "rationale": "逐条检查所有evidence source_id、物理行号及其supports，并审查answer/uncertainty的附加断言；计算文件可回到原始数值。精确摘录如存在亦与行内容一致。"
+    },
+    "conflict_handling": {
+      "status": "complete",
+      "artifact_refs": [
+        "candidates/candidate-903150b325/result.json",
+        "candidates/candidate-903150b325/work/research-notes.md"
+      ],
+      "rationale": "工作笔记实质解释保持率/透过率是终点取舍，并正确区分低湿已记校准与高湿未记校准；不要求独立冲突文件。"
+    },
+    "synthesis": {
+      "status": "complete",
+      "artifact_refs": [
+        "candidates/candidate-903150b325/result.json",
+        "candidates/candidate-903150b325/work/calculations.json"
+      ],
+      "rationale": "所有必答数值、四项共同条件、校准未知及目标条件选择实际写出；五项可答要求完整且正确，七项原始要求均有处理。"
+    },
+    "research_gaps": {
+      "status": "complete",
+      "artifact_refs": [
+        "candidates/candidate-903150b325/result.json",
+        "candidates/candidate-903150b325/work/research-notes.md"
+      ],
+      "rationale": "指出重复/误差、机制、初始绝对效率、校准一致性、其他光学条件、终点权重及经济/户外寿命缺口，并说明其对显著性、因果性、总体推荐和外推的影响。"
+    }
+  },
+  "limitations": [
+    "合同核对：case_id=S1；五个必需顶层字段、状态枚举、evidence字段类型及无额外顶层字段符合输出合同。complete表示包括科学未知在内的必答部分已处理，此处成立。",
+    "覆盖计数分开：科学可答要求S1-R1至R5为5/5完整且正确；不可确定要求S1-R6、R7为2/2有依据地处理，不并入可答分母。S1没有S3式实际工具过程的专门必答项，actual_tool_process要求分母为0/不适用。",
+    "过程证据边界：六类交付由已读实际文本、逐行原文副本、算术产物与最终答复核验。工作笔记或候选自记events不是完整独立宿主原生调用日志；不据其成功/完成字段推算实际模型调用数、token数，或认证所有工具调用顺序。",
+    "原子断言按语义去重；answer、evidence.supports和uncertainty中的同义重复合并到同一行，保留候选原文片段和逐项证据。附加的统计、因果或适用范围否定均按有依据未知/限定判断，不把它们计为额外可答覆盖。",
+    "此审查仅限人工合成封闭S1材料，不构成真实实验、产品优劣、统计显著性、官方成绩或自动分数判断。",
+    "全部10条evidence引用已逐项审查；所有定位有效且各自支持所附命题。未发现需登记的实质范围错误。"
+  ]
+}
